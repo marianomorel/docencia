@@ -1,0 +1,48 @@
+Rivas (9.5)
+-error en la consideracion de hie
+
+Gorgolini (7 u 8)
+-considera bien la llave, pero mal la red
+-llega a la ganancia de tension pedida
+-La z0 es coherente, pero lo calcula en base a parámetros Z
+-demuestra entender
+
+Rodriguez (10)
+-no tiene errores
+
+Maure (9.5)
+-Hace norton innecesariamente. Resuelve correctamente
+
+Reckziegel (9)
+-Afecta roo por (1+T0) en vez de dividir por tal factor
+
+Lezcano (9.5)
+-expresa la ganancia sin realimentar, cuando no se pide
+
+Puebla (6)
+-Trabaja con parámetros del modelo equivale.
+-no hace las consideraciones de "f" en forma acorde para calcular A
+
+Preves (6)
+-Considera bien la llave. 
+-Considera mal la red
+-no calcula A. Confunde A con A(s), pero entiende simplificacion cuando T0>>1 
+-interpreta bien zo
+
+Dominguez Catalano (10)
+-Resulve correctamente
+
+Torres (9.5)
+-No aclara posición de llave pero resuelve correctamente
+
+Aga (9.5)
+-Hace una consideración sobre Z0 que no es del todo correcta
+
+Batalla (6 o 7)
+-Intenta calcular a sin realimentar, luego se da cuenta de la simplificacion
+-calcula mal f, y arrastra error con A pero a nivel conceptual resuelve bien
+-calcula e interpreta mal z0
+
+Svane (3)
+-mal la configuracion
+-no calcula A ni Z0

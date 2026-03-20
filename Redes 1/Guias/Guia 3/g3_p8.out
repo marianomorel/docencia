@@ -1,0 +1,113 @@
+
+**** 08/30/23 12:25:01 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 3\g3_p8.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Wed Aug 30 12:25:01 2023
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "g3_p8.net"
+
+**** INCLUDING g3_p8.net ****
+* Schematics Netlist *
+
+
+
+V_V2         $N_0001 0 1V
+R_R2         0 $N_0002  5  
+V_V1         $N_0003 0 10V
+R_R1         $N_0003 $N_0002  2  
+R_R3         $N_0002 $N_0001  3  
+I_I3         $N_0001 $N_0003 DC 4A  
+
+**** RESUMING g3_p8.cir ****
+.INC "g3_p8.als"
+
+
+
+**** INCLUDING g3_p8.als ****
+* Schematics Aliases *
+
+.ALIASES
+V_V2            V2(+=$N_0001 -=0 )
+R_R2            R2(1=0 2=$N_0002 )
+V_V1            V1(+=$N_0003 -=0 )
+R_R1            R1(1=$N_0003 2=$N_0002 )
+R_R3            R3(1=$N_0002 2=$N_0001 )
+I_I3            I3(+=$N_0001 -=$N_0003 )
+.ENDALIASES
+
+
+**** RESUMING g3_p8.cir ****
+.probe
+
+
+.END
+
+**** 08/30/23 12:25:01 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 3\g3_p8.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    1.0000                   ($N_0002)    5.1613                       
+
+($N_0003)   10.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -2.613E+00
+    V_V1         1.581E+00
+
+    TOTAL POWER DISSIPATION  -1.32E+01  WATTS
+
+
+**** 08/30/23 12:25:01 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 3\g3_p8.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            0.00
+

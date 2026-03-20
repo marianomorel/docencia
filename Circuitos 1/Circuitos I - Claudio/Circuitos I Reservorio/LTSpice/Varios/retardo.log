@@ -1,0 +1,50 @@
+Circuit: * E:\Claudio\Docencia personal\LTSpice\Varios\retardo.asc
+
+Early termination of direct N-R iteration.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Increasing initial diagonal Gmin to 100
+Increasing initial diagonal Gmin to 1000
+Gmin = 1000
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+Gmin = 836.601
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+Gmin = 822.125
+vernier = 0.00195313
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 0
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source stepping succeeded in finding the operating point.
+
+
+Date: Wed May 04 18:30:28 2022
+Total elapsed time: 1.392 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 1818
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 67
+fillins = 171
+solver = Normal
+Matrix Compiler1:     695 opcodes
+Matrix Compiler2: 8.57 KB object code size  0.9/1.4/[0.8]
+

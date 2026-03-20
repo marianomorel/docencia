@@ -1,0 +1,128 @@
+
+**** 08/14/23 14:36:23 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 2\g2_p9.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Mon Aug 14 14:36:23 2023
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "g2_p9.net"
+
+**** INCLUDING g2_p9.net ****
+* Schematics Netlist *
+
+
+
+R_R1         $N_0002 $N_0001  1  
+R_R2         VRo $N_0001  3  
+R_R4         $N_0003 $N_0001  5  
+R_R3         $N_0002 VRo  2  
+R_R5         VRo $N_0003  4  
+V_V1         $N_0002 0 10V
+V_V2         $N_0003 0 2V
+V_V3         $N_0004 0 7.76V
+R_R8         $N_0004 VRo1  1  
+R_R6         0 VRo  10  
+R_R7         0 VRo1  10  
+
+**** RESUMING g2_p9.cir ****
+.INC "g2_p9.als"
+
+
+
+**** INCLUDING g2_p9.als ****
+* Schematics Aliases *
+
+.ALIASES
+R_R1            R1(1=$N_0002 2=$N_0001 )
+R_R2            R2(1=VRo 2=$N_0001 )
+R_R4            R4(1=$N_0003 2=$N_0001 )
+R_R3            R3(1=$N_0002 2=VRo )
+R_R5            R5(1=VRo 2=$N_0003 )
+V_V1            V1(+=$N_0002 -=0 )
+V_V2            V2(+=$N_0003 -=0 )
+V_V3            V3(+=$N_0004 -=0 )
+R_R8            R8(1=$N_0004 2=VRo1 )
+R_R6            R6(1=0 2=VRo )
+R_R7            R7(1=0 2=VRo1 )
+_    _(VRo=VRo)
+_    _(VRo1=VRo1)
+.ENDALIASES
+
+
+**** RESUMING g2_p9.cir ****
+.probe
+
+
+.END
+
+**** 08/14/23 14:36:23 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 2\g2_p9.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VRo)    6.9863  ( VRo1)    7.0545  ($N_0001)    8.3014                       
+
+($N_0002)   10.0000                   ($N_0003)    2.0000                       
+
+($N_0004)    7.7600                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -3.205E+00
+    V_V2         2.507E+00
+    V_V3        -7.055E-01
+
+    TOTAL POWER DISSIPATION   3.25E+01  WATTS
+
+
+**** 08/14/23 14:36:23 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 2\g2_p9.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            0.00
+

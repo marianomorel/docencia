@@ -1,0 +1,7 @@
+LTspice 24.1.9 for Windows
+Circuit: C:\Users\Mariano\Desktop\D+I\docencia\PT4\leds.lib
+Start Time: Tue Aug 19 14:10:47 2025
+C:\Users\Mariano\Desktop\D+I\docencia\PT4\leds.lib(18): Undefined model.
+.MODEL LED4 AKO:NSSWS108T
+                ^^^^^^^^^
+No analysis specified.

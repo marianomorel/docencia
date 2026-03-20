@@ -1,0 +1,36 @@
+:Base basic
+:Title Basic Operations
+1 General Information
+2 Understanding the SPECCTRA GUI
+3 About the SPECCTRA environment=About_the_SPECCTRA_Window@basic.hlp>main
+3 Using the Mouse=Using_the_Mouse@basic.hlp>main
+3 Using the tool bar=Using_the_tool_bar@basic.hlp>main
+3 Viewing the design=Viewing_the_design@basic.hlp>main
+3 Setting the interactive left mouse-button mode=Setting_the_left_button_mode@basic.hlp>main
+3 Using SPECCTRA commands=Using_SPECCTRA_commands@basic.hlp>main
+3 Switching between the routing and placement environments=Switching_between_routing_and_placement@basic.hlp>main
+2 Using Basic SPECCTRA features
+3 Zooming the work area=Zooming_the_work_area@basic.hlp>main
+3 Panning the work area=Panning_the_work_area@basic.hlp>main
+3 Scrolling the work area=Scrolling_the_work_area@basic.hlp>main
+3 Viewing the entire design=Viewing_the_entire_design@basic.hlp>main
+3 Changing back to the previous view=Changing_back_to_the_previous_view@basic.hlp>main
+3 Splitting the view into separate layers=Splitting_the_view_into_separate_layers@basic.hlp>main
+3 Viewing selected and components=Viewing_Selected_Nets_or_Components@basic.hlp>main
+3 Viewing routing guides=Viewing_routing_guides@basic.hlp>main
+3 Viewing component labels=Viewing_Component_Labels@basic.hlp>main
+2 Performing some general SPECCTRA tasks
+3 Changing the measurement unit=Changing_the_measurement_unit@basic.hlp>main
+3 Highlighting design objects=Highlighting_objects_and_conditions@basic.hlp>main
+3 Measuring distances and querying design objects=Measuring_distances_and_querying_design_objects@basic.hlp>main
+3 Using the layer panel=Using_the_layer_panel@basic.hlp>main
+3 Selecting design objects=Selecting_routing_or_placement_objects@basic.hlp>main
+3 Defining keepout areas=Creating_Keepout_Areas@basic.hlp>main
+3 Checking design rule violations=Checking_design_rule_violations@basic.hlp>main
+3 Pausing and stopping automatic commands=Pausing_and_stopping_auto_commands@basic.hlp>main
+3 Browsing files=Browsing_files@basic.hlp>main
+3 Using a do file=Using_a_do_file@basic.hlp>main
+3 Using a Did File=Using_the_Did_File@basic.hlp>main
+3 Saving the session=Saving_Your_Session_Results@basic.hlp>main
+3 Ending the session=Ending_the_session@basic.hlp>main
+3 Restarting a session=Restarting_a_session@basic.hlp>main

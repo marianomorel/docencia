@@ -1,0 +1,95 @@
+
+   --- Expanded Deck Component Count ---
+C's 1
+D's 2
+Q's 20
+R's 11
+V's 3
+tot: 37
+
+
+    --- Expanded Netlist ---
+* C:\Claudio\Docencia personal\LTSpice\741\741disc_transf.asc
+q1 n002 n005 n007 0 2n3904
+d1 n007 n010 cmdsh2-3
+q2 n002 0 n008 0 2n3904
+d2 n008 n011 cmdsh2-3
+q3 n015 n013 n010 0 2n3906
+q4 n016 n013 n011 0 2n3906
+q5 n015 n018 n021 0 2n3904
+q6 n016 n018 n022 0 2n3904
+q7 n001 n015 n018 0 2n3904
+q8 n002 n002 n001 0 2n3906
+r1 n021 n025 1k
+r2 n018 n025 51k
+r3 n022 n025 1k
+q9 n013 n002 n001 0 2n3906
+q10 n013 n017 n024 0 2n3904
+r4 n024 n025 4.7k
+q11 n017 n017 n025 0 2n3904
+r5 n003 n017 39k
+q12 n003 n003 n001 0 2n3906
+v1 n001 0 12
+v2 0 n025 12
+q13 n004 n003 n001 0 2n3906
+q14 n001 n004 n006 0 2n3904
+q15 n004 n006 n012 0 2n3904
+q16 n014 n016 n020 0 2n3904
+q17 n014 n020 n023 0 2n3904
+q18 n004 n009 n014 0 2n3904
+q20 n025 n014 n019 0 2n3906
+q22 n016 n023 n025 0 2n3904
+r7 n004 n009 4.7k
+r8 n009 n014 7.5k
+r9 n006 n012 24
+r10 n012 n019 51
+r11 n023 n025 51
+r12 n020 n025 51k
+c1 n004 n016 33p
+v3 n005 0 1
+.model 2n3906 pnp(is=1e-14 vaf=100 bf=200 ikf=0.4 xtb=1.5 br=4 cjc=4.5e-12 cje=10e-12 rb=20 rc=0.1 re=0.1 tr=250e-9 tf=350e-12 itf=1 vtf=2 xtf=3 vceo=40 icrating=200m mfg=philips)
+.model 2n3904 npn(is=1e-14 vaf=100 bf=300 ikf=0.4 xtb=1.5 br=4 cjc=4e-12 cje=8e-12 rb=20 rc=0.1 re=0.1 tr=250e-9 tf=350e-12 itf=1 vtf=2 xtf=3 vceo=40 icrating=200m mfg=philips)
+.model cmdsh2-3 d(is=210na rs=.5 n=1.09 cjo=50p m=.5 eg=.69 xti=2 iave=200m vpk=30 mfg=central type=schottky)
+.dc v3 -400u -100u 1u
+.end
+
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-005
+Gmin = 1.6455e-006
+Gmin = 1.76685e-007
+Gmin = 1.89714e-008
+Gmin = 2.03704e-009
+Gmin = 2.18725e-010
+Gmin = 2.34854e-011
+Gmin = 2.52173e-012
+Gmin = 2.70769e-013
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+
+Date: Mon Dec 02 16:24:33 2019
+Total elapsed time: 0.093 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 1231
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 90
+fillins = 94
+solver = Normal
+Thread vector: 13.4/8.2[2] 0.0/0.0[0] 3.3/2.1[2] 0.9/1.9[1]  2592/500
+Matrix Compiler1:     709 opcodes  5.9/4.7/[1.5]
+Matrix Compiler2: 10,0 KB object code size  2.2/2.6/[1.1]
+
+

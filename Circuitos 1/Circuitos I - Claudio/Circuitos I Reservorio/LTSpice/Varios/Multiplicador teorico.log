@@ -1,0 +1,11 @@
+LTspice 24.0.12 for Windows
+Circuit: * E:\Claudio\Docencia personal\LTSpice\Varios\Multiplicador teorico.asc
+Start Time: Mon Apr 14 14:25:20 2025
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = modified trap
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 20.707 seconds.
+

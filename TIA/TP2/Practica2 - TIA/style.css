@@ -1,0 +1,42 @@
+/* Fondo general */
+body {
+  background-color: lightblue;
+}
+
+/* Título principal */
+h1 {
+  color: darkred;
+}
+
+/* Subtítulos */
+h2 {
+  color: darkgreen;
+}
+
+/* Imagen del logo */
+.logo {
+  width: 200px;
+  height: 150px;
+  border: 5px solid orange;
+  border-radius: 60px;
+}
+
+/* Menú de navegación */
+.menu a {
+  text-decoration: none;
+  font-weight: bold;
+  color: darkblue;
+}
+
+/* Párrafo resumen */
+.resumen {
+  font-style: italic;
+  background-color: lightyellow;
+  text-align: justify;
+}
+
+/* Enlaces a canciones */
+.cancion {
+  color:deeppink;
+  text-decoration-color: blueviolet;
+}

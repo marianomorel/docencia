@@ -1,0 +1,66 @@
+Circuit: * E:\Claudio\Docencia personal\LTSpice\Varios\montecarlo1.asc
+
+Direct Newton iteration for .op point succeeded.
+.step q=1
+.step q=2
+.step q=3
+.step q=4
+.step q=5
+.step q=6
+.step q=7
+.step q=8
+.step q=9
+.step q=10
+.step q=11
+.step q=12
+.step q=13
+.step q=14
+.step q=15
+.step q=16
+.step q=17
+.step q=18
+.step q=19
+.step q=20
+
+
+Measurement: vmax
+  step	MAX(v(o))	FROM	TO
+     1	0.900237	0	0.005
+     2	0.938617	0	0.005
+     3	1.01696	0	0.005
+     4	0.970044	0	0.005
+     5	1.06452	0	0.005
+     6	0.934778	0	0.005
+     7	1.04205	0	0.005
+     8	0.960755	0	0.005
+     9	0.918238	0	0.005
+    10	0.929419	0	0.005
+    11	1.09766	0	0.005
+    12	0.923774	0	0.005
+    13	0.90174	0	0.005
+    14	1.00629	0	0.005
+    15	1.02031	0	0.005
+    16	0.933204	0	0.005
+    17	0.990113	0	0.005
+    18	0.911365	0	0.005
+    19	1.05662	0	0.005
+    20	1.00393	0	0.005
+
+
+Date: Mon Aug 12 15:52:55 2024
+Total elapsed time: 4.125 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 10054
+traniter = 10038
+tranpoints = 5020
+accept = 5020
+rejected = 0
+matrix size = 11
+fillins = 2
+solver = Normal
+Matrix Compiler1: 552 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: off  [0.2]/0.2/0.2
+

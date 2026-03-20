@@ -1,0 +1,56 @@
+
+   --- Expanded Deck Component Count ---
+C's 2
+D's 3
+Q's 4
+R's 6
+V's 3
+tot: 18
+
+
+    --- Expanded Netlist ---
+* C:\Claudio\Docencia personal\LTSpice\Varios\claseb2017.asc
+r2 n001 n002 100
+r3 n011 n012 108.43767
+v1 n001 0 11
+r5 n004 0 170k
+r6 n001 n007 4k7
+d1 n007 n009 1n4148
+d2 n009 n010 1n4148
+d3 n010 n012 1n4148
+c2 n001 n002 500µ
+c3 n004 n003 500µ
+v2 n003 0 sine(0 .002 1k)
+q1 n001 n005 n006 0 2n3904
+q2 n008 n007 n011 0 2n3904
+q3 n012 n008 n006 0 2n3906
+q4 n005 n004 n002 0 2n3906
+v3 0 n012 11
+r1 n005 n008 100
+r4 0 n006 50
+.model 2n3906 pnp(is=1e-14 vaf=100 bf=200 ikf=0.4 xtb=1.5 br=4 cjc=4.5e-12 cje=10e-12 rb=20 rc=0.1 re=0.1 tr=250e-9 tf=350e-12 itf=1 vtf=2 xtf=3 vceo=40 icrating=200m mfg=philips)
+.model 2n3904 npn(is=1e-14 vaf=100 bf=300 ikf=0.4 xtb=1.5 br=4 cjc=4e-12 cje=8e-12 rb=20 rc=0.1 re=0.1 tr=250e-9 tf=350e-12 itf=1 vtf=2 xtf=3 vceo=40 icrating=200m mfg=philips)
+.model 1n4148 d(is=2.52n rs=.568 n=1.752 cjo=4p m=.4 tt=20n iave=200m vpk=75 mfg=onsemi type=silicon)
+.tran 0 10m 0 .01m
+.end
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Mon Oct 29 10:19:55 2018
+Total elapsed time: 0.093 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2921
+traniter = 2898
+tranpoints = 1183
+accept = 1103
+rejected = 80
+matrix size = 30
+fillins = 10
+solver = Normal
+Matrix Compiler1: 2,54 KB object code size  1.2/1.0/[0.4]
+Matrix Compiler2: off  [0.6]/0.9/1.3
+
+

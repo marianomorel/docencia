@@ -1,0 +1,14 @@
+LTspice 24.0.12 for Windows
+Circuit: * E:\Claudio\Docencia personal\LTSpice\Fuentes\stepup.asc
+Start Time: Wed Mar  5 14:25:49 2025
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = modified trap
+Direct Newton iteration for .op point succeeded.
+Heightened Def Con from 0.025005 to 0.025005
+Heightened Def Con from 0.066615 to 0.066615
+Heightened Def Con from 0.083005 to 0.083005
+Total elapsed time: 0.660 seconds.
+

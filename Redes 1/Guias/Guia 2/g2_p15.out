@@ -1,0 +1,111 @@
+
+**** 08/14/23 14:58:58 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 2\g2_p15.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Mon Aug 14 14:58:58 2023
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "g2_p15.net"
+
+**** INCLUDING g2_p15.net ****
+* Schematics Netlist *
+
+
+
+V_V1         $N_0001 0 3V
+I_I1         0 $N_0001 DC 1A  
+R_R2         0 $N_0001  1  
+R_R1         $N_0001 Vo  1  
+I_I2         Vo $N_0001 DC 3A  
+R_R3         0 Vo  1  
+
+**** RESUMING g2_p15.cir ****
+.INC "g2_p15.als"
+
+
+
+**** INCLUDING g2_p15.als ****
+* Schematics Aliases *
+
+.ALIASES
+V_V1            V1(+=$N_0001 -=0 )
+I_I1            I1(+=0 -=$N_0001 )
+R_R2            R2(1=0 2=$N_0001 )
+R_R1            R1(1=$N_0001 2=Vo )
+I_I2            I2(+=Vo -=$N_0001 )
+R_R3            R3(1=0 2=Vo )
+_    _(Vo=Vo)
+.ENDALIASES
+
+
+**** RESUMING g2_p15.cir ****
+.probe
+
+
+.END
+
+**** 08/14/23 14:58:58 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 2\g2_p15.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   Vo) 1.500E-12  ($N_0001)    3.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.000E+00
+
+    TOTAL POWER DISSIPATION   6.00E+00  WATTS
+
+
+**** 08/14/23 14:58:58 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 2\g2_p15.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            0.00
+

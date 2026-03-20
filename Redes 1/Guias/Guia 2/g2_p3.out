@@ -1,0 +1,63 @@
+
+**** 08/14/23 14:02:14 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 2\g2_p3.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Mon Aug 14 14:02:10 2023
+
+
+
+** Analysis setup **
+.LOADBIAS ""
+------------$
+ERROR -- File name too long
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "g2_p3.net"
+
+**** INCLUDING g2_p3.net ****
+* Schematics Netlist *
+
+
+
+R_R2         0 $N_0001  5  
+V_V2         $N_0001 $N_0002 -5V
+V_V1         $N_0003 0 10V
+R_R1         $N_0003 $N_0002  3  
+
+**** RESUMING g2_p3.cir ****
+.INC "g2_p3.als"
+
+
+
+**** INCLUDING g2_p3.als ****
+* Schematics Aliases *
+
+.ALIASES
+R_R2            R2(1=0 2=$N_0001 )
+V_V2            V2(+=$N_0001 -=$N_0002 )
+V_V1            V1(+=$N_0003 -=0 )
+R_R1            R1(1=$N_0003 2=$N_0002 )
+.ENDALIASES
+
+
+**** RESUMING g2_p3.cir ****
+.probe
+
+
+.END
+

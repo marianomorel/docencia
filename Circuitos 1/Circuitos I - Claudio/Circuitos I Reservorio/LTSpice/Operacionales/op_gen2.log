@@ -1,0 +1,59 @@
+Circuit: * E:\Claudio\Docencia personal\LTSpice\Operacionales\op_gen2.asc
+
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-005
+Gmin = 1.6455e-006
+Gmin = 1.76685e-007
+vernier = 0.5
+vernier = 0.25
+Gmin = 5.44904e-008
+vernier = 0.125
+vernier = 0.0625
+vernier = 0.0833333
+Gmin = 5.08936e-008
+vernier = 0.111111
+Gmin = 4.00307e-008
+vernier = 0.148148
+vernier = 0.197531
+Gmin = 2.70973e-008
+vernier = 0.263374
+vernier = 0.351165
+Gmin = 1.47034e-008
+vernier = 0.46822
+Gmin = 5.55031e-009
+vernier = 0.624294
+vernier = 0.832392
+Gmin = 1.18039e-009
+vernier = 1
+Gmin = 1.40394e-010
+Gmin = 1.50747e-011
+Gmin = 1.61863e-012
+Gmin = 1.73799e-013
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+
+Date: Thu Aug 11 15:23:05 2022
+Total elapsed time: 0.528 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 1114
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 42
+fillins = 42
+solver = Normal
+Matrix Compiler1:     304 opcodes
+Matrix Compiler2: 4.45 KB object code size  0.4/0.7/[0.4]
+

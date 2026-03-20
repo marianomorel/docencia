@@ -1,0 +1,39 @@
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+h3 {
+    text-decoration: underline;
+    font-weight: 100;
+    font-size: medium;
+}
+
+article p {
+    padding-top: 10px;
+    font-style: italic;
+}
+
+section :nth-child(odd) {
+    background-color: var(--color-gris);
+}
+
+section :nth-child(even) {
+    background-color: var(--color-gris-claro);
+}

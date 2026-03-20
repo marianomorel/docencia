@@ -1,0 +1,10 @@
+Nicolás! Creo que llegue tarde con el tema de la simulación... De todos modos te adjunto el circuito modificado porque el tuyo no me funcionaba y de paso le puse su símbolo correspondiente. Fijate que el 741 lo puse como .lib (cambiale la ubicación donde lo vayas a guardar también).
+Si no entiendo mal, vos querés calcular la ganancia de tensión de 19/20 veces aproximadamente. El LTspice te da la opción de una ganancia de continua. Para la ganancia en alterna, se me ocurre hacerlo gráficamente de tres modos, la primera en el tiempo, es que midas la señal de entrada (100mv) y la señal de salida sobre el gráfico de la simulación, y hagas la división entre los picos de ambas y te va a dar.
+La otra es que hagas una relación gráfica como lo hacen acá y encuentres la transferencia:
+https://acortar.link/pyoNnh
+
+Otra forma sería que uses la función DC transfer (edit simulate command) y pienses al capacitor de entrada y salida como cortos, y los de la red de realimentación, uno como corto con la R de 1k a masa y el otro un circuito abierto y ahi vas a aproximar la transferencia (obvio trabajando a 1khz o cercano a esa frecuencia)
+
+Cualquier cosa si hubiera que hacer una reentrega, vemos las cosas que faltaron poner!
+
+Mariano

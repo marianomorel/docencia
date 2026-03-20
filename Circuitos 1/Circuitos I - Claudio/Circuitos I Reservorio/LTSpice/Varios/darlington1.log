@@ -1,0 +1,41 @@
+LTspice 24.0.12 for Windows
+Circuit: * E:\Claudio\Docencia personal\LTSpice\Varios\darlington1.asc
+Start Time: Fri May  9 15:29:56 2025
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = modified trap
+Direct Newton iteration for .op point succeeded.
+Semiconductor Device Operating Points:
+                        --- Diodes ---
+Name:    d:u1:1
+Model:   u1:dsub
+Id:     -1.60e-11
+Vd:     -1.00e+01
+Req:     1.00e+12
+CAP:     2.94e-11
+
+                        --- Bipolar Transistors ---
+Name:     q:u1:1      q:u1:2
+Model:    u1:qpwr     u1:qpwr
+Ib:       9.04e-04    7.04e-02
+Ic:       8.33e-02    3.81e+00
+Vbe:      9.59e-01    2.09e+00
+Vbc:     -6.95e+00   -7.91e+00
+Vce:      7.91e+00    1.00e+01
+BetaDC:   9.22e+01    5.41e+01
+Gm:       2.67e+00    9.54e+01
+Rpi:      2.89e+01    3.69e-01
+Rx:       1.32e+01    1.32e+00
+Ro:       1.69e+03    3.72e+01
+Cbe:      2.28e-07    8.14e-06
+Cbc:      6.07e-12    5.95e-11
+Cjs:      0.00e+00    0.00e+00
+BetaAC:   7.71e+01    3.52e+01
+Cbx:      0.00e+00    0.00e+00
+Ft:       1.86e+06    1.86e+06
+
+
+Total elapsed time: 0.170 seconds.
+

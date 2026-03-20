@@ -1,0 +1,167 @@
+Circuit: * E:\Claudio\Docencia personal\LTSpice\Fuentes\cargavariable2.asc
+
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Increasing initial diagonal Gmin to 100
+Increasing initial diagonal Gmin to 1000
+Gmin = 1000
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+Gmin = 836.601
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+Gmin = 822.125
+vernier = 0.00195313
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 0
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 3.10133%
+Source Step = 3.2197%
+Source Step = 3.33807%
+Source Step = 3.45644%
+Source Step = 3.57481%
+vernier = 0.00585938
+Source Step = 3.72277%
+Source Step = 3.90033%
+Source Step = 4.07789%
+Source Step = 4.25545%
+Source Step = 4.433%
+vernier = 0.00878906
+Source Step = 4.64607%
+Source Step = 4.91241%
+Source Step = 5.17874%
+Source Step = 5.44508%
+Source Step = 5.71141%
+vernier = 0.0131836
+Source Step = 6.0177%
+Source Step = 6.4172%
+Source Step = 6.8167%
+Source Step = 7.21621%
+Source Step = 7.61571%
+vernier = 0.0197754
+Source Step = 8.05516%
+Source Step = 8.65442%
+Source Step = 9.25367%
+Source Step = 9.85292%
+Source Step = 10.4522%
+vernier = 0.0296631
+Source Step = 11.0814%
+Source Step = 11.9803%
+Source Step = 12.8792%
+Source Step = 13.778%
+Source Step = 14.6769%
+Source Step = 15.5758%
+vernier = 0.0444946
+Source Step = 16.9241%
+Source Step = 18.2724%
+Source Step = 19.6208%
+Source Step = 20.9691%
+Source Step = 22.3174%
+vernier = 0.0667419
+Source Step = 24.2725%
+Source Step = 26.295%
+Source Step = 28.3174%
+Source Step = 30.3399%
+Source Step = 32.3624%
+vernier = 0.100113
+Source Step = 35.1939%
+Source Step = 38.2276%
+Source Step = 41.2613%
+Source Step = 44.2951%
+Source Step = 47.3288%
+vernier = 0.150169
+Source Step = 51.4243%
+Source Step = 55.9749%
+Source Step = 60.5255%
+Source Step = 65.0761%
+Source Step = 69.6267%
+vernier = 0.225254
+Source Step = 75.5424%
+Source Step = 82.3683%
+Source Step = 89.1942%
+Source Step = 96.0201%
+Source stepping succeeded in finding the operating point.
+
+Semiconductor Device Operating Points:
+                        --- Diodes ---
+Name:      d3        d:u3:p      d:u3:ln     d:u3:lp     d:u3:e
+Model: bzx84c6v2l     u3:dx       u3:dx       u3:dx       u3:dy
+Id:     -5.11e-03   -1.40e-11   -8.06e-11    1.58e-05   -1.78e-12
+Vd:     -6.33e+00   -1.40e+01   -8.06e+01    6.13e-01   -1.78e+00
+Req:     1.52e+01    1.00e+12    1.00e+12    1.64e+03    1.00e+12
+CAP:     6.83e-11    0.00e+00    0.00e+00    0.00e+00    6.00e-12
+
+Name:    d:u3:c      d:u2:1        d2          d1        d:u1:1
+Model:    u3:dy     u2:dmodel    1n4148      1n4148     u1:dmodel
+Id:     -9.77e-12   -1.43e-11    5.75e-03    5.75e-03   -2.67e-12
+Vd:     -1.02e+01   -1.33e+01    6.67e-01    6.67e-01   -1.67e+00
+Req:     1.00e+12    1.00e+12    7.87e+00    7.87e+00    1.00e+12
+CAP:     2.99e-12    0.00e+00    2.55e-09    2.55e-09    0.00e+00
+
+                        --- Bipolar Transistors ---
+Name:       q2        q:u3:2      q:u3:1      q:u2:2      q:u2:1
+Model:    2n2222       u3:qx       u3:qx    u2:q1model   u2:qmodel
+Ib:       2.21e-04    1.59e-07   -1.98e-11    1.43e-02    5.41e-04
+Ic:       3.99e-02    1.49e-05    1.41e-11    1.13e+00    3.99e-02
+Vbe:      7.63e-01    6.12e-01   -5.74e+00    1.05e+00    1.03e+00
+Vbc:     -2.08e+00   -7.59e+00   -1.41e+01   -1.23e+01   -1.12e+01
+Vce:      2.84e+00    8.20e+00    8.31e+00    1.33e+01    1.23e+01
+BetaDC:   1.81e+02    9.38e+01   -7.10e-01    7.92e+01    7.38e+01
+Gm:       1.38e+00    5.76e-04    0.00e+00    3.03e+01    1.12e+00
+Rpi:      1.17e+02    1.63e+05    1.00e+12    3.09e+00    8.50e+01
+Rx:       1.00e+01    0.00e+00    0.00e+00    4.02e-01    7.91e+00
+Ro:       2.56e+03    0.00e+00    0.00e+00    8.87e+02    2.52e+04
+Cbe:      6.00e-10    0.00e+00    0.00e+00    4.37e-08    1.63e-09
+Cbc:      5.17e-12    0.00e+00    0.00e+00      NaN       8.38e-10
+Cjs:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+BetaAC:   1.62e+02    9.37e+01    0.00e+00    9.35e+01    9.49e+01
+Cbx:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    9.31e-11
+Ft:       3.64e+08    0.00e+00    0.00e+00    1.10e+08    6.95e+07
+
+Name:       q1        q:u1:2      q:u1:1
+Model:    2n3906    u1:q1model   u1:qmodel
+Ib:      -3.06e-06    1.49e-02    5.58e-04
+Ic:      -6.87e-04    1.18e+00    4.06e-02
+Vbe:     -6.43e-01    1.05e+00    1.03e+00
+Vbc:      1.23e+01   -6.14e-01    4.17e-01
+Vce:     -1.30e+01    1.67e+00    6.14e-01
+BetaDC:   2.24e+02    7.88e+01    7.27e+01
+Gm:       2.65e-02    3.12e+01    1.13e+00
+Rpi:      8.44e+03    2.95e+00    8.30e+01
+Rx:       2.00e+01    4.02e-01    7.91e+00
+Ro:       1.63e+05    8.46e+02    1.67e+03
+Cbe:      2.48e-11    6.17e-08    2.27e-09
+Cbc:      1.75e-12    3.06e-32    1.81e-09
+Cjs:      0.00e+00    0.00e+00    0.00e+00
+BetaAC:   2.24e+02    9.20e+01    9.38e+01
+Cbx:      0.00e+00    0.00e+00    1.96e-10
+Ft:       1.59e+08    8.05e+07    4.20e+07
+
+
+
+Date: Fri Jun 28 14:21:00 2024
+Total elapsed time: 20.653 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 2891
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 68
+fillins = 82
+solver = Normal
+Matrix Compiler1: 8.59 KB object code size
+Matrix Compiler2: 7.42 KB object code size  0.9/1.4/[0.7]
+

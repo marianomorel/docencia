@@ -1,0 +1,1082 @@
+\chapter{Realimentación}
+
+\section{Introducción}
+
+La mayor parte de los sistemas físicos contienen una forma de
+realimentación. En este capítulo en particular se estudia la
+realimentación negativa aplicada a amplificadores.
+
+Se utiliza ampliamente la realimentación negativa en el diseño de
+amplificadores debido a que produce importantes beneficios, tales
+como:
+
+\begin{itemize}
+    \item Estabilización de la ganancia ante cambios en los
+    parámetros del circuito.
+    \item Reducción de la distorsión no lineal.
+    \item Reducción del efecto del ruido.
+    \item Control de las impedancias de entrada y salida.
+    \item Ampliación del ancho de banda del amplificador.
+\end{itemize}
+
+En general todos estos beneficios se obtienen a costa de una
+reducción en la ganancia.
+
+La realimentación puede ser negativa (degenerativa), o positiva
+(regenerativa). En los amplificadores se utiliza la realimentación
+negativa, bajo ciertas circunstancias de diseño la realimentación de
+un amplificador puede convertirse en positiva y de tal magnitud que
+lleve al sistema a zonas de inestabilidad. En el capítulo 2 se
+estudia el tema con detalle.
+
+\section{Estructura general de un amplificador realimentado}
+
+En la figura \ref{real1} se muestra la estructura básica de un
+amplificador con realimentación. En ella se muestran señales
+genéricas (\textbf{X}), que pueden ser tensiones o corrientes según
+el tipo de amplificador que se diseñe. La señal $X_o$ representa la
+salida mientras que la señal $X_i$ corresponde a la entrada. La
+señal $X_f=f X_o$ es una muestra de la salida, la señal $X_e$ es la
+resta $X_i-X_f$ y la señal de salida $X_o=a X_e$. De estas
+expresiones se deduce la expresión de la ganancia realimentada
+\textbf{A}:
+
+\begin{center}
+\begin{equation}\label{ecreal1}
+$$$A=\frac {\displaystyle X_o}{\displaystyle X_i}=\frac{ \displaystyle a}{\displaystyle 1+a
+ f}$$$
+\end{equation}
+\end{center}
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=4in]{real1}\\
+    \caption{Estructura general de un amplificador realimentado.}\label{real1}
+\end{figure}
+
+El signo del restador determina que la realimentación sea negativa.
+El esquema ideal mostrado en la figura \ref{real1} responde a las
+siguientes características:
+
+\begin{itemize}
+    \item Se denomina \textbf{ganancia de lazo cerrado}, o realimentada, $A$ a la
+    expresión de la ecuación \ref{ecreal1}.
+    \item La transferencia $a=\frac{\displaystyle X_o}{\displaystyle
+    X_e}$ es la \textbf{ganancia sin realimentar} (con $f=0$), en el esquema
+    ideal esta ganancia es unilateral en sentido directo.
+    \item La señal $X_e=X_i-X_f$, se denomina \textbf{señal de error}.
+    \item La transferencia $f=\frac{\displaystyle X_f}{\displaystyle
+    X_o}$ es la \textbf{red de realimentación}. En un esquema ideal
+    debe ser unilateral en sentido inverso.
+    \item Se define $T=af$ y se la denomina \textbf{ganancia de lazo}.
+    \item En un sistema ideal los efectos de la carga a la salida y
+    de la fuente en la entrada son nulos.
+\end{itemize}
+
+Bajo estas condiciones se puede expresar la ecuación \ref{ecreal1}
+del siguiente modo:
+\begin{center}
+\begin{equation}
+$$$A=\frac {\displaystyle X_o}{\displaystyle X_i}=\frac{ \displaystyle a}{\displaystyle
+1+T}$$$
+\end{equation}
+\end{center}
+
+En una primera aplicación si $T\gg 1 \Rightarrow A \simeq
+\frac{\displaystyle 1}{\displaystyle f}$, es decir que la ganancia
+$A$ estará determinada sólo por $f$ (independiente de $a$) y si
+$\mid f\mid < 1$, habrá amplificación.
+
+De las expresiones anteriores se puede también derivar:
+\begin{center}
+\begin{equation}
+$$$\frac {\displaystyle X_e}{\displaystyle X_i}=\frac{ \displaystyle 1}{\displaystyle
+1+T} \qquad , \frac {\displaystyle X_f}{\displaystyle X_i}=\frac{
+\displaystyle T}{\displaystyle 1+T}$$$
+\end{equation}
+\end{center}
+
+\section{Propiedades de la realimentación negativa.}
+
+En la introducción se enumeraron algunas de las propiedades más
+importantes de la realimentación negativa, a continuación se
+describirán con más detalle dichas propiedades.
+
+\subsection{Insensibilización de la ganancia}
+
+En general la ganancia sin realimentar $\textbf{a}$ depende
+fuertemente de los dispositivos activos que la componen, éstos
+pueden tener variaciones importantes en sus parámetros. Estas
+variaciones pueden darse por cambios en la temperatura, por
+envejecimiento, por dispersión en los parámetros de fabricación, por
+cambios en las polarizaciones, etc. Si se diseña a un sistema
+realimentado de modo que $T\gg 1$, la ganancia realimentada
+$\textbf{A}$ será $\simeq \frac{\displaystyle 1}{\displaystyle f}$,
+es decir dependerá de la red de realimentación $\textbf{f}$, que
+está generalmente compuesta por elementos pasivos, con una menor
+variación con respecto a la temperatura, envejecimiento, etc. Esta
+propiedad produce por lo tanto una reducción en la sensibilidad de
+$\textbf{A}$, con respecto a las variaciones que afecten a
+$\textbf{a}$.
+
+Esta propiedad de reducción de la sensibilidad puede establecerse
+analíticamente, diferenciando a ambos lados de la ecuación
+\ref{ecreal1} resulta:
+
+\begin{center}
+\begin{equation}
+$$$dA=\frac {\displaystyle da}{\displaystyle (1+af)^2}$$$
+\end{equation}
+\end{center}
+
+Dividiendo por la ganancia $\textbf{A}$ para realizar una
+comparación relativa se obtiene:
+
+\begin{center}
+\begin{equation}
+$$$\frac{\displaystyle dA}{\displaystyle A}=\frac {\displaystyle 1}{\displaystyle (1+af)}\frac{\displaystyle da}{\displaystyle a}$$$
+\end{equation}
+\end{center}
+
+Esta expresión indica que el cambio porcentual de $\textbf{A}$
+debido a variaciones de los parámetros del circuito, es más pequeño
+que el cambio porcentual de $\textbf{a}$, en una cantidad
+$1+af=1+T$.
+
+\subsection{Efectos sobre la distorsión no lineal}
+
+En la figura \ref{real2} se muestra la transferencia de un
+amplificador sin realimentar $\textbf{a}$ con una característica
+lineal por tramos con ganancias: $a_1=400$ en la zona central,
+$a_2=100$ en los extremos y $a_3=0$ en las zonas de saturación. Si
+se lo realimenta con una red de realimentación constante
+$f=\frac{\displaystyle 1}{\displaystyle 400}$, se obtienen:
+$A_1=\frac{\displaystyle 400}{\displaystyle 1+1}=200$,
+$A_2=\frac{\displaystyle 100}{\displaystyle 1+0,25}=80$ y $A_3=0$.
+Este resultado se ve también en la figura \ref{real2} en la curva de
+trazo grueso. El resultado cualitativo observado es el de una
+reducción en la distorsión no lineal cuando se realimenta, aún en
+este ejemplo en donde la ganancia de lazo es pequeña ($T_1=1\quad
+y\quad T_2=0,25$), si la ganancia de lazo en todas las zonas fuera
+$\gg 1$ la ganancia realimentada sería $\simeq \frac{\displaystyle
+1}{\displaystyle f}$, reduciendo la distorsión significativamente.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=5in]{real2}\\
+    \caption{Amplificador lineal por tramos; a) sin realimentar, línea gruesa y b) relimentado, línea fina.}\label{real2}
+\end{figure}
+
+\subsection{Incremento en el ancho de banda}
+
+Como se verá en el capítulo 2, tanto los amplificadores pasabajo
+como pasalto de un sólo polo incrementarán su ancho de banda, a
+medida que se incremente su realimentación ($T$). Este aumento del
+ancho de banda se producirá a expensas de una disminución
+equivalente de la ganancia.
+
+Para amplificadores com más singularidades la realimentación
+modificará la posición de sus polos, pudiendo llevarlos, en algunos
+casos, a zonas de inestabilidad. Estos temas serán abordados con más
+profundidad en el capítulo 2.
+
+\subsection{Relación señal-ruido}
+
+Si a un amplificador ``ruidoso'' (ver figura \ref{real3} a)), se lo
+realimenta directamente con una red de realimentación $\textbf{f}$
+se puede demostrar fácilmente que la relación señal-ruido no mejora.
+Esto se debe que la realimentación afecta de la misma forma a la
+señal útil y al ruido, no modificando sus valores relativos.
+
+Sin embargo bajo ciertas circunstancias la realimentación negativa
+puede utilizarse para reducir la relación señal-ruido en un
+amplificador. Si se considera la situación de la figura \ref{real3}
+se ve que el circuito a) es un amplificador $\textbf{a}_\textbf{1}$
+``ruidoso'' sin realimentar, si de alguna manera podemos anteponer
+un amplificador $\textbf{a}_\textbf{2}$ ``no ruidoso'', y
+realimentar al conjunto con una red $\textbf{f}$ de modo que la
+ganancia resultante siga siendo igual a $\textbf{a}_\textbf{1}$ y
+asegurando que $\textbf{a}_\textbf{2}>1$ (ver figura \ref{real3}
+b)), se puede lograr una mejora en la relación señal-ruido. En las
+siguientes expresiones se desarrolla la relación señal-ruido para
+los casos a) y b) de la figura \ref{real3}:
+
+\begin{center}
+\begin{equation}
+\nonumber
+$$$caso\quad a)\quad S_o=a_1S_i+a_1S_n\Rightarrow \frac{\displaystyle S}{\displaystyle N}=\frac{\displaystyle S_i}{\displaystyle S_n}$$$
+\end{equation}
+\end{center}
+
+\begin{center}
+\begin{equation}
+\nonumber
+$$$caso\quad b)\quad S_o=S_i\frac{\displaystyle a_1a_2}{\displaystyle 1+a_1a_2f}+S_n\frac{\displaystyle a_1}{\displaystyle 1+a_1a_2f}\Rightarrow \frac{\displaystyle S}{\displaystyle N}=a_2\frac{\displaystyle S_i}{\displaystyle S_n}$$$
+\end{equation}
+\end{center}
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=5in]{real3}\\
+    \caption{a) Amplificador ruidoso sin realimentar , b) esquema para mejorar la relación señal-ruido.}\label{real3}
+\end{figure}
+
+\subsection{Control de las impedancias de entrada y salida}
+
+Como se desarrollará en el punto siguiente las realimentación
+modifica las impedancias de entrada y salida de una forma que las
+hace tender, utilizando la configuración adecuada, hacia el ideal de
+$0$ o $\infty$ según corresponda.
+
+\section{Configuraciones de amplificadores realimentados}
+
+En función de la cantidad a ser amplificada (tensión o corriente) y
+a la forma deseada de salida (tensión o corriente), los
+amplificadores pueden clasificarse en cuatro categorías:
+\begin{itemize}
+    \item \textbf{Amplificadores de tensión}: son fuentes de
+    tensión controladas por tensión. Deben tener una alta impedancia
+    de entrada y una baja impedancia de salida para que las
+    impedancias de fuente y carga no influyan significativamente en la transferencia.
+    \item \textbf{Amplificadores de corriente}: son fuentes de
+    corriente controladas por corriente. Deben tener una baja impedancia
+    de entrada y una alta impedancia de salida para que las
+    impedancias de fuente y carga no influyan significativamente en la transferencia.
+    \item \textbf{Amplificadores de transconductancia}: son fuentes de
+    corriente controladas por tensión. Deben tener una alta impedancia
+    de entrada y una alta impedancia de salida para que las
+    impedancias de fuente y carga no influyan significativamente en la transferencia.
+    \item \textbf{Amplificadores de transresistencia}: son fuentes de
+    tensión controladas por corriente. Deben tener una baja impedancia
+    de entrada y una baja impedancia de salida para que las
+    impedancias de fuente y carga no influyan significativamente en la transferencia.
+\end{itemize}
+
+Estas cuatro categorías de amplificadores deben realimentarse de
+acuerdo a las características de entrada y salida deseada. En la
+figura \ref{real4} se muestran las cuatro configuraciones básicas de
+realimentación:
+\begin{itemize}
+    \item  En un amplificador de tensión se sensa la tensión
+de salida y se realimenta una tensión proporcional a ella en serie
+con la entrada. Configuración serie-paralelo. Figura \ref{real4} a)
+    \item En un amplificador de corriente se sensa la corriente
+de salida y se realimenta una corriente proporcional a ella en
+paralelo con la entrada. Configuración paralelo-serie. Figura
+\ref{real4} b)
+    \item En un amplificador de transconductancia se sensa la corriente
+de salida y se realimenta una tensión proporcional a ella en serie
+con la entrada. Configuración serie-serie. Figura \ref{real4} c)
+    \item En un amplificador de transresistencia se sensa la
+    tensión de salida y se realimenta una corriente proporcional a ella en
+    paralelo con la entrada. Configuración paralelo-paralelo. Figura \ref{real4} d)
+\end{itemize}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=4in]{real4}\\
+    \caption{Configuraciones: a) Serie-paralelo , b) Paralelo-serie , c) Serie-serie y d) Paralelo-paralelo.}\label{real4}
+\end{figure}
+
+\subsection{Configuración Serie-Paralelo}
+
+Los amplificadores de tensión son esencialmente fuentes de tensión
+controladas por tensión, es necesario que la impedancia de entrada
+sea alta y la impedancia de salida sea baja para que las
+resistencias de fuente y de carga no influyan apreciablemente en la
+transferencia . Como lo que se busca es estabilizar la transferencia
+de tensión se requiere un muestreo de tensión en paralelo a la
+salida y una realimentación de una tensión proporcional en serie a
+la entrada. En la figura \ref{real5} se muestra el esquema ideal de
+una realimentación serie-paralelo para un amplificador de tensión.
+
+En dicha figura se aprecia una correspondencia completa con el
+esquema ideal de la figura \ref{real1}; es decir $v_i$, $v_e$, $v_f$
+y $v_o$ corresponden a $x_i$, $x_e$, $x_f$ y $x_o$ y la ganancia
+$a_v$ a la ganancia sin realimentar $\textbf{a}$. En la figura
+\ref{real5} se muestran la impedancias de entrada y de salida
+realimentadas $R_{if}$ y $R_{of}$, siendo las impedancias
+respectivas sin realimentar (con $\textbf{f=0}$) $r_{i}$ y $r_{o}$.
+Es de notar que en este esquema ideal de un amplificador de tensión
+se supone que la impedancia de la fuente de entrada es nula y la
+salida se encuentra en vacío (impedancia de carga infinita).
+
+\begin{figure}
+    \centering
+    \includegraphics[width=4in]{real5}\\
+    \caption{Configuración Serie-Paralelo, esquema ideal.}\label{real5}
+\end{figure}
+
+Al ser el esquema de la figura \ref{real5} equivalente el de la
+figura \ref{real1} la ganancia realimentada será:
+
+\begin{center}
+\begin{equation}
+$$$A_v=\frac {\displaystyle v_o}{\displaystyle v_i}=\frac{ \displaystyle a_v}{\displaystyle
+1+a_v
+ f}$$$
+\end{equation}
+\end{center}
+
+En la figura \ref{real6} se muestran los circuitos para calcular las
+impedancias de entrada (figura \ref{real6} a)) y salida (figura
+\ref{real6} b)).
+
+La impedancia de entrada $R_{if}$ se calcula del siguiente modo:
+
+\begin{eqnarray*}
+  R_{if} &=& \frac{\displaystyle v_i}{\displaystyle  i_i} \\
+  R_{if} &=& \frac{\displaystyle i_ir_i+fv_o}{\displaystyle i_i}=\frac{\displaystyle i_ir_i+fa_vi_ir_i}{\displaystyle i_i} \\
+  R_{if} &=& r_i(1+fa_v)
+\end{eqnarray*}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=4in]{real6}\\
+    \caption{Configuración Serie-Paralelo. a) Resistencia de entrada. b) Resistencia de salida.}\label{real6}
+\end{figure}
+
+Como se observa, la impedancia de entrada realimentada se ve
+aumentada en el factor $(1+a_vf)=(1+T)$ con respecto a la impedancia
+de entrada sin realimentar ($r_i$). Si $T\gg 1$ la impedancia de
+entrada puede aumentar considerablemente acercándose a lo ideal en
+un amplificador de tensión.
+
+La impedancia de salida $R_{of}$ se calcula, anulando la fuente de
+entrada ($v_i=0$) y atacando la salida con un generador de tensión
+$v_o$:
+
+\begin{eqnarray*}
+  v_o &=& i_or_o+a_vv_e=i_or_o+a_v(-fv_o) \\
+  R_{of} &=& \frac{\displaystyle v_o}{\displaystyle i_o}=\frac{\displaystyle r_o}{\displaystyle 1+fa_v} \\
+\end{eqnarray*}
+
+De estas expresiones se observa que la impedancia de salida
+realimentada se ve disminuida en el factor $(1+a_vf)=(1+T)$ con
+respecto a la impedancia de salida sin realimentar ($r_o$). Si $T\gg
+1$ la impedancia de salida puede disminuir considerablemente
+acercándose a lo ideal en un amplificador de tensión.
+
+En la figura \ref{real7} a) se muestra un amplificador de tensión
+realimentado manejado por un generador de entrada real, que
+suministra tensión a una carga finita y que es realimentado por una
+red de resistencias físicas. Bajo estas condiciones el circuito
+mostrado representa apropiadamente a un amplificador de tensión
+real. Si se analiza por medio de cuadripolos la red de
+realimentación compuesta por $R_1$ y $R_2$  (ver figura \ref{real7}
+b)), y teniendo en cuenta que los parámetros privilegiados para esta
+configuración son los $\textbf{h}$, se obtiene lo siguiente:
+
+\begin{eqnarray*}
+  h_{11} &=& \frac{\displaystyle R_1R_2}{\displaystyle R_1+R_2} \\
+  h_{12} &=& \frac{\displaystyle R_1}{\displaystyle R_1+R_2} \\
+  h_{21} &=& -\frac{\displaystyle R_1}{\displaystyle R_1+R_2} \\
+  h_{22} &=& \frac{\displaystyle 1}{\displaystyle R_1+R_2} \\
+\end{eqnarray*}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=4in]{real7}\\
+    \caption{Configuración Serie-Paralelo. a) Amplificador de tensión con realimentación resistiva. b) Parámetros h de la red de realimentación.}\label{real7}
+\end{figure}
+
+Para resolver este circuito real se trata de adaptar el circuito a
+un esquema ideal, para ello se ``lleva'' al amplificador básico sin
+realimentar los efectos de carga de entrada y salida de la red de
+realimentación ($h_{11}$ y $h_{22}$) y las impedancias del generador
+y carga. El parámetro $h_{21}$ de la red de realimentación
+(transferencia directa de corriente de la realimentación) es llevado
+también al amplificador sin realimentación, pero este parámetro
+suele despreciarse frente a la gran ganancia directa del
+amplificador básico. El parámetro $h_{12}$ de la red de
+realimentación es el factor de realimentación $\textbf{f}$ del
+esquema ideal. El circuito dibujado con esta metodología es el
+mostrado en la figura \ref{real8} a), mientras que el circuito de la
+figura \ref{real8} b) es su equivalente llevado a la forma ideal.
+
+Estos dos circuitos son equivalentes, comparando ambos se llega a
+que la ganancia sin realimentar $\textbf{a}$, la transferencia de
+las red de realimentación $\textbf{f}$ y la ganancia realimentada
+$\textbf{A}$ del circuito de la figura \ref{real8} b) son:
+
+\begin{eqnarray*}
+  a &=& \frac{\displaystyle r_i}{\displaystyle r_i+R_g+h_{11}} a_v \frac{\displaystyle R_L}{\displaystyle r_o+R_L+r_oR_Lh_{22}}\\
+  f &=& h_{12} = \frac{\displaystyle R_1}{\displaystyle R_1+R_2} \\
+  A &=& \frac{\displaystyle v_o}{\displaystyle v_g} = \frac{\displaystyle a}{\displaystyle 1+af} \\
+\end{eqnarray*}
+
+Como el circuito de la figura \ref{real8} b) corresponde a un
+esquema ideal se pueden obtener las impedancias de entrada y salida
+realimentadas del siguiente modo:
+
+\begin{eqnarray*}
+  R_{io} &=& r_i+R_g+h_{11}\\
+  R_{if} &=& R_{io}(1+af)\\
+  R_{oo} &=& = \frac{\displaystyle 1}{\displaystyle \frac{\displaystyle 1}{\displaystyle r_o}+\frac{\displaystyle 1}{\displaystyle R_L}+h_{22}} \\
+  R_{of} &=& \frac{\displaystyle R_{oo}}{\displaystyle 1+af}\\
+\end{eqnarray*}
+
+
+\begin{figure}
+    \centering
+\includegraphics[width=4in]{real8}\\
+  \caption{Configuración Serie-Paralelo. a) Amplificador de tensión real. b) Equivalente llevado a la forma ideal.}\label{real8}
+\end{figure}
+
+Esta metodología de análisis de amplificadores realimentados tiene
+por finalidad utilizar los conceptos derivados del esquema ideal de
+realimentación. Para ello se trata de llevar a los circuitos reales
+al formato ideal, como se hizo en el ejemplo de la figura
+\ref{real8}. En ella se definió una ganancia sin realimentar
+$\textbf{a}$ en la que están incluidos: la ganancia directa propia
+del amplificador (\textbf{$a_v$}), los efectos de carga de entrada y
+salida de la red física de realimentación (parámetros
+\textbf{$h_{11}$} y \textbf{$h_{22}$}) y las impedancias del
+generador y de salida (\textbf{$R_g$} y \textbf{$R_L$}); se definió
+también la impedancia de entrada sin realimentar (\textbf{$R_{io}$})
+en la que están incluidos los efectos de carga de la entrada y la
+impedancia del generador y la impedancia de salida sin realimentar
+(\textbf{$R_{oo}$}) en la que están incluidos los efectos de carga
+de la salida y la impedancia de carga. Con estos valores se obtiene
+en forma sencilla la ganancia realimentada \textbf{$A$} y la
+impedancias de entrada y salida realimetadas $R_{if}$ y $R_{of}$.
+
+Es de notar que esta metodología sólo supone la aproximación de
+despreciar el parámetro \textbf{$h_{21}$} de la red de
+realimentación frente a su parámetro equivalente del amplificador
+básico, para todos los otros efectos es un método de análisis
+exacto. Si se quisiera hacer en forma exacta bastaría con agregar el
+parámetro \textbf{$h_{21}$} de la red de realimentación al cálculo
+de la ganancia \textbf{$a$}.
+
+Esta metodología de análisis será utilizada, con las adaptaciones
+lógicas, a las otras tres configuraciones de amplificadores
+realimentados.
+
+En la figura \ref{real9} a) se muestra un ejemplo circuital de un
+amplificador de tensión del que se quiere obtener la ganancia de
+tensión y las impedancias de entrada y salida. En la figura
+\ref{real9} b) se ve el circuito equivalente utilizando los
+conceptos de realimentación previamente desarrollados.
+
+Del método explicado previamente y suponiendo que los transistores
+bipolares son iguales se obtienen, del circuito de la figura
+\ref{real9} b), la ganancia de tensión sin realimentar  y las
+impedancias de entrada y salida sin realimentar anulando el
+generador de realimentación ( con $f=0$):
+
+\begin{eqnarray*}
+  a &=& \frac{v_o}{v_i}=\frac{\displaystyle h_{fe}R_4\parallel [h_{ie}+(h_{fe}+1)(R_6\parallel h_{22}^{-1})]}{\displaystyle R_1+2h_{ie}+h_{11}}\frac{\displaystyle (h_{fe}+1)R_6\parallel h_{22}^{-1}}{\displaystyle h_{ie}+(h_{fe}+1)(R_6\parallel h_{22}^{-1})}\\
+  R_{io} &=& R_1+2h_{ie}+h_{11}\\
+  R_{oo} &=& = R_6\parallel h_{22}^{-1}\parallel \frac{\displaystyle h_{ie}+R_4}{\displaystyle h_{fe}+1}\\
+\end{eqnarray*}
+
+Utilizando estos resultados y sabiendo que
+$f=h_{12}=\frac{\displaystyle R_2}{\displaystyle R_2+R_5}$ se
+obtiene que la ganancia de tensión y las impedancias de entrada y de
+salida realimentadas son:
+
+\begin{eqnarray*}
+  A &=& \frac{\displaystyle v_o}{\displaystyle v_i}=\frac{\displaystyle a}{\displaystyle 1+af}\\
+  Z_i &=& R_{if} = R_{io}(1+af)\\
+  Z_o &=& R_{of} = \frac{\displaystyle R_{oo}}{\displaystyle 1+af}\\
+\end{eqnarray*}
+
+
+
+\begin{figure}
+    \centering
+\includegraphics[width=4in]{real9}\\
+  \caption{Configuración Serie-Paralelo. a) Circuito real. b) Equivalente utilizando el método de realimentación.}\label{real9}
+\end{figure}
+
+\subsection{Configuración Paralelo-Serie}
+
+Los amplificadores de corriente son esencialmente fuentes de
+corriente controladas por corriente, es necesario que la impedancia
+de entrada sea baja y la impedancia de salida sea alta para que las
+resistencias de fuente y de carga no influyan apreciablemente en la
+transferencia . Como lo que se busca es estabilizar la transferencia
+de corriente se requiere un muestreo de corriente en serie a la
+salida y una realimentación de una corriente proporcional en
+paralelo con la entrada. En la figura \ref{real10} se muestra el
+esquema ideal de una realimentación paralelo-serie para un
+amplificador de corriente.
+
+En dicha figura se aprecia una correspondencia completa con el
+esquema ideal de la figura \ref{real1}; es decir $i_i$, $i_e$, $i_f$
+e $i_o$ corresponden a $x_i$, $x_e$, $x_f$ y $x_o$ y la ganancia
+$a_i$ a la ganancia sin realimentar $\textbf{a}$. En la figura
+\ref{real10} se muestra, también, la impedancia de entrada
+realimentada $R_{if}$. En esta configuración la impedancia de salida
+realimentada $R_{of}$ se calcula como la impedancia que ``ve'' un
+generador de inspección colocado en serie con la salida y anulando
+la entrada. Las impedancias respectivas sin realimentar (con
+$\textbf{f=0}$) son $r_{i}$ y $r_{o}$. Es de notar que en este
+esquema ideal de un amplificador de corriente se supone que la
+impedancia de la fuente de entrada es infinita y la salida se
+encuentra en cortocircuito (impedancia de carga nula).
+
+\begin{figure}
+    \centering
+    \includegraphics[width=4in]{real10}\\
+    \caption{Configuración Paralelo-Serie, esquema ideal.}\label{real10}
+\end{figure}
+
+Al ser el esquema de la figura \ref{real10} equivalente el de la
+figura \ref{real1} la ganancia de corriente realimentada será:
+
+\begin{center}
+\begin{equation}
+$$$A_i=\frac {\displaystyle i_o}{\displaystyle i_i}=\frac{ \displaystyle a_i}{\displaystyle
+1+a_i
+ f}$$$
+\end{equation}
+\end{center}
+
+En la figura \ref{real11} se muestran los circuitos para calcular
+las impedancias de entrada (figura \ref{real11} a)) y salida (figura
+\ref{real11} b)).
+
+La impedancia de entrada $R_{if}$ se calcula del siguiente modo:
+
+\begin{eqnarray*}
+  R_{if} &=& \frac{\displaystyle v_i}{\displaystyle i_i} \\
+  R_{if} &=& \frac{\displaystyle i_er_i}{\displaystyle i_e+fi_o}=\frac{\displaystyle i_er_i}{\displaystyle i_e+fa_ii_e} \\
+  R_{if} &=& \frac{\displaystyle r_i}{\displaystyle 1+fa_i}\\
+  \end{eqnarray*}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=4in]{real11}\\
+    \caption{Configuración Paralelo-Serie. a) Resistencia de entrada. b) Resistencia de salida.}\label{real11}
+\end{figure}
+
+Como se observa, la impedancia de entrada realimentada se ve
+disminuida en el factor $(1+a_if)=(1+T)$ con respecto a la
+impedancia de entrada sin realimentar ($r_i$). Si $T\gg 1$ la
+impedancia de entrada puede disminuir considerablemente acercándose
+a lo ideal en un amplificador de corriente.
+
+La impedancia de salida $R_{of}$ se calcula, anulando la fuente de
+entrada ($i_i=0$) y atacando la salida con un generador de corriente
+$i_o$ en serie:
+
+\begin{eqnarray*}
+  v_o &=& (i_o-a_ii_e)r_o=i_or_o-a_ir_o(-fi_o) \\
+  R_{of} &=& \frac{\displaystyle v_o}{\displaystyle i_o}=r_o(1+a_if) \\
+\end{eqnarray*}
+
+De estas expresiones se observa que la impedancia de salida
+realimentada se ve aumentada en el factor $(1+a_if)=(1+T)$ con
+respecto a la impedancia de salida sin realimentar ($r_o$). Si $T\gg
+1$ la impedancia de salida puede aumentar considerablemente
+acercándose a lo ideal en un amplificador de corriente.
+
+En la figura \ref{real12} a) se muestra un amplificador de corriente
+realimentado manejado por un generador de corriente de entrada real,
+que suministra corriente a una carga finita y que es realimentado
+por una red de resistencias físicas. Bajo estas condiciones el
+circuito mostrado representa apropiadamente a un amplificador de
+corriente real. Si se analiza por medio de cuadripolos la red de
+realimentación compuesta por $R_1$ y $R_2$  (ver figura \ref{real12}
+b)), y teniendo en cuenta que los parámetros privilegiados para esta
+configuración son los $\textbf{g}$, se obtiene lo siguiente:
+
+\begin{eqnarray*}
+  g_{11} &=& \frac{\displaystyle 1}{\displaystyle R_1+R_2} \\
+  g_{12} &=& -\frac{\displaystyle R_2}{\displaystyle R_1+R_2} \\
+  g_{21} &=& \frac{\displaystyle R_2}{\displaystyle R_1+R_2} \\
+  g_{22} &=& \frac{\displaystyle R_1R_2}{\displaystyle R_1+R_2} \\
+\end{eqnarray*}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=4in]{real12}\\
+    \caption{Configuración Paralelo-Serie. a) Amplificador de corriente con realimentación resistiva. b) Parámetros g de la red de realimentación.}\label{real12}
+\end{figure}
+
+Para resolver este circuito real se trata de adaptar el circuito a
+un esquema ideal, para ello se ``lleva'' al amplificador básico sin
+realimentar los efectos de carga de entrada y salida de la red de
+realimentación ($g_{11}$ y $g_{22}$) y las impedancias del generador
+y carga. El parámetro $g_{21}$ de la red de realimentación
+(transferencia directa de tensión de la realimentación) es llevado
+también al amplificador sin realimentación, pero este parámetro
+suele despreciarse frente a la gran ganancia directa del
+amplificador básico. El parámetro $g_{12}$ de la red de
+realimentación es el factor de realimentación $\textbf{f}$ del
+esquema ideal. El circuito dibujado con esta metodología es el
+mostrado en la figura \ref{real13} a), mientras que el circuito de
+la figura \ref{real13} b) es su equivalente llevado a la forma
+ideal.
+
+Estos dos circuitos son equivalentes, comparando ambos se llega a
+que la ganancia sin realimentar $\textbf{a}$, la transferencia de
+las red de realimentación $\textbf{f}$ y la ganancia realimentada
+$\textbf{A}$ del circuito de la figura \ref{real3} b) son:
+
+\begin{eqnarray*}
+  a &=& \frac{\displaystyle i_o}{\displaystyle i_g} = -\frac{\displaystyle r_o}{\displaystyle r_o+R_L+g_{22}} a_i \frac{\displaystyle R_g\parallel g_{11}^{-1}}{\displaystyle r_i+R_g\parallel g_{11}^{-1}}\\
+  f &=& g_{12} = -\frac{\displaystyle R_2}{\displaystyle R_1+R_2} \\
+  A &=& \frac{\displaystyle i_o}{\displaystyle i_g} = \frac{\displaystyle a}{\displaystyle 1+af} \\
+\end{eqnarray*}
+
+Como el circuito de la figura \ref{real13} b) corresponde a un
+esquema ideal se pueden obtener las impedancias de entrada y salida
+realimentadas del siguiente modo:
+
+\begin{eqnarray*}
+  R_{io} &=& r_i\parallel R_g\parallel g_{11}^{-1}\\
+  R_{if} &=& \frac{\displaystyle R_{io}}{\displaystyle 1+af}\\
+  R_{oo} &=& = r_o+R_L+g_{22} \\
+  R_{of} &=& R_{oo}(1+af)\\
+\end{eqnarray*}
+
+
+\begin{figure}
+    \centering
+\includegraphics[width=4in]{real13}\\
+  \caption{Configuración Paralelo-Serie. a) Amplificador de corriente real. b) Equivalente llevado a la forma ideal.}\label{real13}
+\end{figure}
+
+En la figura \ref{real14} a) se muestra un ejemplo circuital de un
+amplificador de corriente del que se quiere obtener la ganancia de
+corriente y las impedancias de entrada y salida. En la figura
+\ref{real14} b) se ve el circuito equivalente utilizando los
+conceptos de realimentación previamente desarrollados.
+
+Del método explicado previamente y suponiendo que los transistores
+bipolares son iguales se obtienen, del circuito de la figura
+\ref{real14} b), la ganancia de corriente sin realimentar  y las
+impedancias de entrada y salida sin realimentar anulando el
+generador de realimentación ( con $f=0$):
+
+\begin{eqnarray*}
+  a &=& \frac{i_o}{i_i}=-h_{fe}\frac{\displaystyle R_4}{\displaystyle R_4+h_{ie}+(h_{fe}+1)g_{22}}(h_{fe}+1)\frac{\displaystyle R_1\parallel R_2\parallel g_{11}^{-1}}{\displaystyle h_{ie}+R_1\parallel R_2\parallel g_{11}^{-1}}\\
+  R_{io} &=& R_1\parallel R_2\parallel g_{11}^{-1} \parallel h_{ie}\\
+  R_{oo} &\Rightarrow& \infty\\
+\end{eqnarray*}
+
+Utilizando estos resultados y sabiendo que
+$f=g_{12}=-\frac{\displaystyle R_6}{\displaystyle R_6+R_7}$ se
+obtiene que la ganancia de corriente y las impedancias de entrada y
+salida realimentadas son:
+
+\begin{eqnarray*}
+  A &=& \frac{\displaystyle i_o}{\displaystyle i_i}=\frac{\displaystyle a}{\displaystyle 1+af}\\
+  Z_i &=& R_{if} = \frac{\displaystyle R_{io}}{\displaystyle 1+af}\\
+  Z_o &\Rightarrow& \infty \\
+\end{eqnarray*}
+
+En este caso en particular la impedancia de salida $\Rightarrow
+\infty$ debido a que la salida física es la corriente de colector
+del transistor de salida, sin embargo la corriente realmente sensada
+es la de emisor, esta variante hace que la impedancia de salida
+vista desde el colector no se vea afectada por la realimentación,
+sin modificar sustancialmente el resto de los cálculos.
+
+\begin{figure}
+    \centering
+\includegraphics[width=3in]{real14}\\
+  \caption{Configuración Paralelo-Serie. a) Circuito real. b) Equivalente utilizando el método de realimentación.}\label{real14}
+\end{figure}
+
+
+
+\subsection{Configuración Paralelo-Paralelo}
+
+Los amplificadores de transresistencia son esencialmente fuentes de
+tensión controladas por corriente, es necesario que la impedancia de
+entrada sea baja y la impedancia de salida sea también baja para que
+las resistencias de fuente y de carga no influyan apreciablemente en
+la transferencia . Como lo que se busca es estabilizar la
+transferencia de transresistencia se requiere un muestreo de tensión
+en paralelo a la salida y una realimentación de una corriente
+proporcional en paralelo con la entrada. En la figura \ref{real15}
+se muestra el esquema ideal de una realimentación paralelo-paralelo
+para un amplificador de transresistencia.
+
+En dicha figura se aprecia una correspondencia completa con el
+esquema ideal de la figura \ref{real1}; es decir $i_i$, $i_e$, $i_f$
+y $v_o$ corresponden a $x_i$, $x_e$, $x_f$ y $x_o$ y la ganancia
+$a_z$ a la ganancia sin realimentar $\textbf{a}$. En la figura
+\ref{real15} se muestra, también, la impedancia de entrada
+realimentada $R_{if}$. En esta configuración la impedancia de salida
+realimentada $R_{of}$ se calcula como la impedancia que ``ve'' un
+generador de inspección colocado en paralelo con la salida y
+anulando la entrada. Las impedancias respectivas sin realimentar
+(con $\textbf{f=0}$) son $r_{i}$ y $r_{o}$. Es de notar que en este
+esquema ideal de un amplificador de transresistencia se supone que
+la impedancia de la fuente de entrada es infinita y la salida se
+encuentra en vacío (impedancia de carga infinita).
+
+\begin{figure}
+    \centering
+    \includegraphics[width=4in]{real15}\\
+    \caption{Configuración Paralelo-Paralelo, esquema ideal.}\label{real15}
+\end{figure}
+
+Al ser el esquema de la figura \ref{real15} equivalente el de la
+figura \ref{real1} la ganancia de transresistencia realimentada
+será:
+
+\begin{center}
+\begin{equation}
+$$$A_z=\frac {\displaystyle v_o}{\displaystyle i_i}=\frac{ \displaystyle a_z}{\displaystyle
+1+a_z
+ f}$$$
+\end{equation}
+\end{center}
+
+En la figura \ref{real16} se muestran los circuitos para calcular
+las impedancias de entrada (figura \ref{real16} a)) y salida (figura
+\ref{real16} b)).
+
+La impedancia de entrada $R_{if}$ se calcula del siguiente modo:
+
+\begin{eqnarray*}
+  R_{if} &=& \frac{\displaystyle v_i}{\displaystyle i_i} \\
+  R_{if} &=& \frac{\displaystyle i_er_i}{\displaystyle i_e+fv_o}=\frac{\displaystyle i_er_i}{\displaystyle i_e+fa_zi_e} \\
+  R_{if} &=& \frac{\displaystyle r_i}{\displaystyle 1+fa_z}\\
+  \end{eqnarray*}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=4in]{real16}\\
+    \caption{Configuración Paralelo-Paralelo. a) Resistencia de entrada. b) Resistencia de salida.}\label{real16}
+\end{figure}
+
+Como se observa, la impedancia de entrada realimentada se ve
+disminuida en el factor $(1+a_zf)=(1+T)$ con respecto a la
+impedancia de entrada sin realimentar ($r_i$). Si $T\gg 1$ la
+impedancia de entrada puede disminuir considerablemente acercándose
+a lo ideal en un amplificador de transresistencia.
+
+La impedancia de salida $R_{of}$ se calcula, anulando la fuente de
+entrada ($i_i=0$) y atacando la salida con un generador de tensión
+$v_o$ en paralelo:
+
+\begin{eqnarray*}
+  v_o &=& i_or_o+a_zi_e=i_or_o+a_z(-fv_o) \\
+  R_{of} &=& \frac{\displaystyle v_o}{\displaystyle i_o}=\frac{\displaystyle r_o}{\displaystyle 1+a_zf} \\
+\end{eqnarray*}
+
+De estas expresiones se observa que la impedancia de salida
+realimentada se ve disminuida en el factor $(1+a_zf)=(1+T)$ con
+respecto a la impedancia de salida sin realimentar ($r_o$). Si $T\gg
+1$ la impedancia de salida puede disminuir considerablemente
+acercándose a lo ideal en un amplificador de transresistencia.
+
+En la figura \ref{real17} a) se muestra un amplificador de
+transresistencia realimentado manejado por un generador de corriente
+de entrada real, que suministra corriente a una carga finita y que
+es realimentado por una resistencia física. Bajo estas condiciones
+el circuito mostrado representa apropiadamente a un amplificador de
+transresistencia real. Si se analiza por medio de cuadripolos la red
+de realimentación compuesta por $R_1$ (ver figura \ref{real17} b)),
+y teniendo en cuenta que los parámetros privilegiados para esta
+configuración son los $\textbf{y}$, se obtiene lo siguiente:
+
+\begin{eqnarray*}
+  y_{11} &=& \frac{\displaystyle 1}{\displaystyle R_1} \\
+  y_{12} &=& -\frac{\displaystyle 1}{\displaystyle R_1} \\
+  y_{21} &=& -\frac{\displaystyle 1}{\displaystyle R_1} \\
+  y_{22} &=& \frac{\displaystyle 1}{\displaystyle R_1} \\
+\end{eqnarray*}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=4in]{real17}\\
+    \caption{Configuración Paralelo-Paralelo. a) Amplificador de transresistencia con realimentación resistiva. b) Parámetros \textbf{y} de la red de realimentación.}\label{real17}
+\end{figure}
+
+Para resolver este circuito real se trata de adaptar el circuito a
+un esquema ideal, para ello se ``lleva'' al amplificador básico sin
+realimentar los efectos de carga de entrada y salida de la red de
+realimentación ($y_{11}$ y $y_{22}$) y las impedancias del generador
+y carga. El parámetro $y_{21}$ de la red de realimentación
+(transferencia directa de la red de realimentación) es llevado
+también al amplificador sin realimentación, pero este parámetro
+suele despreciarse frente a la gran ganancia directa del
+amplificador básico. El parámetro $y_{12}$ de la red de
+realimentación es el factor de realimentación $\textbf{f}$ del
+esquema ideal, hay que tener en cuenta en este caso que $\textbf{f}$
+tiene dimensiones de admitancia . El circuito dibujado con esta
+metodología es el mostrado en la figura \ref{real18} a), mientras
+que el circuito de la figura \ref{real18} b) es su equivalente
+llevado a la forma ideal.
+
+Estos dos circuitos son equivalentes, comparando ambos se llega a
+que la ganancia sin realimentar $\textbf{a}$, la transferencia de
+las red de realimentación $\textbf{f}$ y la ganancia realimentada
+$\textbf{A}$ del circuito de la figura \ref{real8} b) son:
+
+\begin{eqnarray*}
+  a &=& \frac{\displaystyle v_o}{\displaystyle i_g}=-\frac{\displaystyle R_g\parallel y_{11}^{-1}}{\displaystyle R_g\parallel y_{11}^{-1}+r_i} a_z \frac{\displaystyle R_L\parallel y_{22}^{-1}}{\displaystyle r_o+R_L\parallel y_{22}^{-1}}\\
+  f &=& y_{12} = -\frac{\displaystyle 1}{\displaystyle R_1} \\
+  A &=& \frac{\displaystyle v_o}{\displaystyle i_g} = \frac{\displaystyle a}{\displaystyle 1+af} \\
+\end{eqnarray*}
+
+Es de notar que la ganancia sin realimentar $\textbf{a}$ es
+negativa, como la transferencia de la red de realimentación
+$f=y_{12}$ también es negativa, el producto $T=af$ es positivo como
+corresponde a la realimentación negativa.
+
+El circuito de la figura \ref{real18} b) corresponde a un esquema
+ideal, por lo que se pueden obtener las impedancias de entrada y
+salida realimentadas del siguiente modo:
+
+\begin{eqnarray*}
+  R_{io} &=& r_i\parallel R_g\parallel y_{11}^{-1}\\
+  R_{if} &=& \frac{\displaystyle R_{io}}{\displaystyle 1+af}\\
+  R_{oo} &=& = \frac{\displaystyle 1}{\displaystyle \frac{\displaystyle 1}{\displaystyle r_o}+\frac{\displaystyle 1}{\displaystyle R_L}+y_{22}} \\
+  R_{of} &=& \frac{\displaystyle R_{oo}}{\displaystyle 1+af}\\
+\end{eqnarray*}
+
+
+\begin{figure}
+    \centering
+\includegraphics[width=4in]{real18}\\
+  \caption{Configuración Paralelo-Paralelo. a) Amplificador de transresistencia real. b) Equivalente llevado a la forma ideal.}\label{real18}
+\end{figure}
+
+En la figura \ref{real19} a) se muestra un ejemplo circuital de un
+amplificador de transresistencia del que se quiere obtener la
+ganancia de transresistencia y las impedancias de entrada y salida.
+En la figura \ref{real19} b) se ve el circuito equivalente
+utilizando los conceptos de realimentación previamente
+desarrollados.
+
+Del método explicado previamente se obtiene del circuito de la
+figura \ref{real19} b), la ganancia de transresistencia sin
+realimentar  y las impedancias de entrada y salida sin realimentar
+anulando el generador de realimentación ( con $f=0$):
+
+\begin{eqnarray*}
+  a &=& \frac{v_o}{i_i}=-\frac{\displaystyle h_{fe}R_4\parallel y_{11}^{-1}}{\displaystyle h_{ie}}R_1\parallel R_2\parallel y_{11}^{-1}\parallel h_{ie}\\
+  R_{io} &=& R_1\parallel R_2\parallel y_{11}^{-1} \parallel h_{ie}\\
+  R_{oo} &=& R_4\parallel y_{22}^{-1}\\
+\end{eqnarray*}
+
+Utilizando estos resultados y sabiendo que
+$f=y_{12}=-\frac{\displaystyle 1}{\displaystyle R_5}$ se obtiene que
+la ganancia de transresistencia y las impedancias de entrada y
+salida realimentadas son:
+
+\begin{eqnarray*}
+  A &=& \frac{\displaystyle v_o}{\displaystyle i_i}=\frac{\displaystyle a}{\displaystyle 1+af}\\
+  Z_i &=& R_{if} = \frac{\displaystyle R_{io}}{\displaystyle 1+af}\\
+  Z_o &=& R_{of} = \frac{\displaystyle R_{oo}}{\displaystyle 1+af} \\
+\end{eqnarray*}
+
+
+\begin{figure}
+    \centering
+\includegraphics[width=3in]{real19}\\
+  \caption{Configuración Paralelo-Paralelo. a) Circuito real. b) Equivalente utilizando el método de realimentación.}\label{real19}
+\end{figure}
+
+\subsection{Configuración Serie-Serie}
+
+Los amplificadores de transconductancia son esencialmente fuentes de
+corriente controladas por tensión, es necesario que la impedancia de
+entrada sea alta y la impedancia de salida sea también alta para que
+las resistencias de fuente y de carga no influyan apreciablemente en
+la transferencia . Como lo que se busca es estabilizar la
+transferencia de transconductancia se requiere un muestreo de
+corriente en serie a la salida y una realimentación de una tensión
+proporcional en serie con la entrada. En la figura \ref{real20} se
+muestra el esquema ideal de una realimentación serie-serie para un
+amplificador de transconductancia.
+
+En dicha figura se aprecia una correspondencia completa con el
+esquema ideal de la figura \ref{real1}; es decir $v_i$, $v_e$, $v_f$
+y $i_o$ corresponden a $x_i$, $x_e$, $x_f$ y $x_o$ y la ganancia
+$a_y$ a la ganancia sin realimentar $\textbf{a}$. En la figura
+\ref{real20} se muestra, también, la impedancia de entrada
+realimentada $R_{if}$. En esta configuración la impedancia de salida
+realimentada $R_{of}$ se calcula como la impedancia que ``ve'' un
+generador de inspección colocado en serie con la salida y anulando
+la entrada. Las impedancias respectivas sin realimentar (con
+$\textbf{f=0}$) son $r_{i}$ y $r_{o}$. Es de notar que en este
+esquema ideal de un amplificador de transconductancia se supone que
+la impedancia de la fuente de entrada es nula y la salida se
+encuentra en cortocircuito (impedancia de carga nula).
+
+\begin{figure}
+    \centering
+    \includegraphics[width=4in]{real20}\\
+    \caption{Configuración Serie-Serie, esquema ideal.}\label{real20}
+\end{figure}
+
+Al ser el esquema de la figura \ref{real20} equivalente el de la
+figura \ref{real1} la ganancia de transconductancia realimentada
+será:
+
+\begin{center}
+\begin{equation}
+$$$A_y=\frac {\displaystyle i_o}{\displaystyle v_i}=\frac{ \displaystyle a_y}{\displaystyle
+1+a_y
+ f}$$$
+\end{equation}
+\end{center}
+
+En la figura \ref{real21} se muestran los circuitos para calcular
+las impedancias de entrada (figura \ref{real21} a)) y salida (figura
+\ref{real21} b)).
+
+La impedancia de entrada $R_{if}$ se calcula del siguiente modo:
+
+\begin{eqnarray*}
+  R_{if} &=& \frac{\displaystyle v_i}{\displaystyle i_i} \\
+  R_{if} &=& \frac{\displaystyle v_e+fi_o}{\displaystyle i_i}= \frac{\displaystyle v_e+fa_yv_e}{\displaystyle i_i}\\
+  R_{if} &=& \frac{\displaystyle v_e}{\displaystyle i_i}(1+a_yf)=r_i(1+a_yf)\\
+  \end{eqnarray*}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=4in]{real21}\\
+    \caption{Configuración Serie-Serie. a) Resistencia de entrada. b) Resistencia de salida.}\label{real21}
+\end{figure}
+
+Como se observa, la impedancia de entrada realimentada se ve
+aumentada en el factor $(1+a_yf)=(1+T)$ con respecto a la impedancia
+de entrada sin realimentar ($r_i$). Si $T\gg 1$ la impedancia de
+entrada puede aumentar considerablemente acercándose a lo ideal en
+un amplificador de transconductancia.
+
+La impedancia de salida $R_{of}$ se calcula, anulando la fuente de
+entrada ($i_i=0$) y atacando la salida con un generador de corriente
+$i_o$ en serie:
+
+\begin{eqnarray*}
+  v_o &=& i_or_o-a_yv_er_o=i_or_o-a_y(-fi_o)r_o \\
+  R_{of} &=& \frac{\displaystyle v_o}{\displaystyle i_o}=r_o(1+a_yf) \\
+\end{eqnarray*}
+
+De estas expresiones se observa que la impedancia de salida
+realimentada se ve aumentada en el factor $(1+a_yf)=(1+T)$ con
+respecto a la impedancia de salida sin realimentar ($r_o$). Si $T\gg
+1$ la impedancia de salida puede aumentar considerablemente
+acercándose a lo ideal en un amplificador de transconductancia.
+
+En la figura \ref{real22} a) se muestra un amplificador de
+transconductancia realimentado manejado por un generador de tensión
+de entrada real, que suministra corriente a una carga finita y que
+es realimentado por una red de resistencias físicas. Bajo estas
+condiciones el circuito mostrado representa apropiadamente a un
+amplificador de transconductancia real. Si se analiza por medio de
+cuadripolos la red de realimentación compuesta por $R_1$, $R_2$ y
+$R_3$ (ver figura \ref{real22} b)), y teniendo en cuenta que los
+parámetros privilegiados para esta configuración son los
+$\textbf{z}$, se obtiene lo siguiente:
+
+\begin{eqnarray*}
+  z_{11} &=& R_1\parallel (R_2+R_3) \\
+  z_{12} &=& \frac{\displaystyle R_3}{\displaystyle R_1+R_2+R_3}R_1 \\
+  z_{21} &=& \frac{\displaystyle R_1}{\displaystyle R_1+R_2+R_3}R_3 \\
+  z_{22} &=& R_3\parallel (R_1+R_2) \\
+\end{eqnarray*}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=4in]{real22}\\
+    \caption{Configuración Serie-Serie. a) Amplificador de transconductancia con realimentación resistiva. b) Parámetros z de la red de realimentación.}\label{real22}
+\end{figure}
+
+Para resolver este circuito real se trata de adaptar el circuito a
+un esquema ideal, para ello se ``lleva'' al amplificador básico sin
+realimentar los efectos de carga de entrada y salida de la red de
+realimentación ($z_{11}$ y $z_{22}$) y las impedancias del generador
+y carga. El parámetro $z_{21}$ de la red de realimentación
+(transferencia directa de la realimentación) es llevado también al
+amplificador sin realimentación, pero este parámetro suele
+despreciarse frente a la gran ganancia directa del amplificador
+básico. El parámetro $z_{12}$ de la red de realimentación es el
+factor de realimentación $\textbf{f}$ del esquema ideal. El circuito
+dibujado con esta metodología es el mostrado en la figura
+\ref{real23} a), mientras que el circuito de la figura \ref{real23}
+b) es su equivalente llevado a la forma ideal.
+
+Estos dos circuitos son equivalentes, comparando ambos se llega a
+que la ganancia sin realimentar $\textbf{a}$, la transferencia de
+las red de realimentación $\textbf{f}$ y la ganancia realimentada
+$\textbf{A}$ del circuito de la figura \ref{real23} b) son:
+
+\begin{eqnarray*}
+  a &=& =\frac{\displaystyle i_o}{\displaystyle v_g}=\frac{\displaystyle r_o}{\displaystyle r_o+R_L+z_{22}} a_y \frac{\displaystyle r_i}{\displaystyle r_i+R_g+z_11}\\
+  f &=& z_{12} = \frac{\displaystyle R_3}{\displaystyle R_1+R_2+R_3}R_1 \\
+  A &=& \frac{\displaystyle i_o}{\displaystyle v_g} = \frac{\displaystyle a}{\displaystyle 1+af} \\
+\end{eqnarray*}
+
+Como el circuito de la figura \ref{real23} b) corresponde a un
+esquema ideal se pueden obtener las impedancias de entrada y salida
+realimentadas del siguiente modo:
+
+\begin{eqnarray*}
+  R_{io} &=& r_i+ R_g+ z_{11}\\
+  R_{if} &=& R_{io}(1+af)\\
+  R_{oo} &=& = R_L+r_o+z_{22} \\
+  R_{of} &=& R_{oo}(1+af)\\
+\end{eqnarray*}
+
+
+\begin{figure}
+    \centering
+\includegraphics[width=4in]{real23}\\
+  \caption{Configuración Serie-Serie. a) Amplificador de transconductancia real. b) Equivalente llevado a la forma ideal.}\label{real23}
+\end{figure}
+
+En la figura \ref{real24} a) se muestra un ejemplo circuital de un
+amplificador de transconductancia del que se quiere obtener la
+ganancia de transconductancia y las impedancias de entrada y salida.
+En la figura \ref{real24} b) se ve el circuito equivalente
+utilizando los conceptos de realimentación previamente
+desarrollados.
+
+Del método explicado previamente y suponiendo que los transistores
+bipolares son iguales se obtienen, del circuito de la figura
+\ref{real24} b), la ganancia de transconductancia sin realimentar  y
+las impedancias de entrada y salida sin realimentar anulando el
+generador de realimentación ( con $f=0$):
+
+
+\begin{eqnarray*}
+  a &=& \frac{i_o}{v_g}=h_{fe}^2(h_{fe}+1)\frac{\displaystyle R_5}{\displaystyle [R_5+h_{ie}+(h_{fe}+1)z_{22}]}\frac{\displaystyle R_4}{\displaystyle [R_4+h_{ie}]}\frac{\displaystyle 1}{\displaystyle [h_{ie}+(h_{fe}+1)z_{11}]}\\
+  R_{io} &=& h_{ie}+(h_{fe}+1)z_{11}\\
+  R_{oo} &\Rightarrow& \infty\\
+\end{eqnarray*}
+
+Utilizando estos resultados y sabiendo que
+$f=z_{12}=\frac{\displaystyle R_8}{\displaystyle R_3+R_7+R_8}R_3$ se
+obtiene que la ganancia de transconductancia y las impedancias de
+entrada y salida realimentadas son:
+
+\begin{eqnarray*}
+  A &=& \frac{\displaystyle i_o}{\displaystyle v_g}=\frac{\displaystyle a}{\displaystyle 1+af}\\
+  Z_i &=& R_{if} = R_{io}(1+af)\\
+  Z_o &\Rightarrow& \infty \\
+\end{eqnarray*}
+
+
+En este caso en particular la impedancia de salida $\Rightarrow
+\infty$ debido a que la salida física es la corriente de colector
+del transistor de salida, sin embargo la corriente realmente sensada
+es la de emisor, esta variante hace que la impedancia de salida
+vista desde el colector no se vea afectada por la realimentación,
+sin modificar sustancialmente el resto de los cálculos.
+
+
+\begin{figure}
+    \centering
+\includegraphics[width=2.5in]{real24a}\\
+\end{figure}
+\begin{figure}
+    \centering
+\includegraphics[width=2.5in]{real24b}\\
+  \caption{Configuración Serie-Serie. a) Circuito real. b) Equivalente utilizando el método de realimentación.}\label{real24}
+\end{figure}

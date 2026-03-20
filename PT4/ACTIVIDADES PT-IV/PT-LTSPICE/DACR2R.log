@@ -1,0 +1,15 @@
+LTspice 24.1.9 for Windows
+Circuit: C:\Users\maria\Desktop\PT-SPICE\DACR2R.net
+Start Time: Thu Aug 28 13:54:07 2025
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 0.949 seconds.
+
+Files loaded:
+C:\Users\maria\Desktop\PT-SPICE\DACR2R.net
+C:\Users\maria\Desktop\PT-SPICE\LM741.lib
+

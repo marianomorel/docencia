@@ -1,0 +1,39 @@
+
+   --- Expanded Deck Component Count ---
+E's 1
+R's 5
+V's 1
+tot: 7
+
+
+    --- Expanded Netlist ---
+* C:\Claudio\Docencia personal\LTSpice\Varios\prueba real2.asc
+e1 n002 0 0 n003 100
+r1 a n002 100
+r2 0 a 1k
+r3 n003 0 50k
+r5 n003 a 9k
+r6 n003 n001 1k
+v1 n001 0 1
+.tf v(a) v1
+.end
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Fri Nov 08 15:54:12 2019
+Total elapsed time: 0.047 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 3
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 6
+fillins = 0
+solver = Normal
+Matrix Compiler1: 200 bytes object code size
+Matrix Compiler2: 388 bytes object code size
+

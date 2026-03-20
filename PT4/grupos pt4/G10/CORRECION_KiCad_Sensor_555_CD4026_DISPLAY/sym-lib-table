@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "555-op-display-rescue")(type "KiCad")(uri "${KIPRJMOD}/555-op-display-rescue.kicad_sym")(options "")(descr ""))
+)

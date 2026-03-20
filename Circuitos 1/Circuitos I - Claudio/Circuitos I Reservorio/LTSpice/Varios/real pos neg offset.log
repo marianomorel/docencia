@@ -1,0 +1,21 @@
+Circuit: * E:\Claudio\Docencia personal\LTSpice\Varios\real pos neg offset.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Mon Jul 04 12:37:10 2022
+Total elapsed time: 5.824 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 404376
+traniter = 404368
+tranpoints = 201917
+accept = 201491
+rejected = 426
+matrix size = 12
+fillins = 4
+solver = Normal
+Matrix Compiler1: 866 bytes object code size  0.3/0.2/[0.1]
+Matrix Compiler2: 1.22 KB object code size  0.2/0.3/[0.2]
+

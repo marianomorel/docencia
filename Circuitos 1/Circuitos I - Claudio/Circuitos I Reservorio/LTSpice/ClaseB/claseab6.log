@@ -1,0 +1,21 @@
+Circuit: * E:\Claudio\Docencia personal\LTSpice\ClaseB\claseab6.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Wed Apr 17 13:40:04 2024
+Total elapsed time: 0.259 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 952
+traniter = 947
+tranpoints = 418
+accept = 418
+rejected = 0
+matrix size = 11
+fillins = 0
+solver = Normal
+Matrix Compiler1: 522 bytes object code size  0.4/0.2/[0.2]
+Matrix Compiler2: 951 bytes object code size  0.3/0.4/[0.3]
+

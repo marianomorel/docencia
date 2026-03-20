@@ -1,0 +1,10 @@
+LTspice 24.0.12 for Windows
+Circuit: * E:\Claudio\Docencia personal\LTSpice\Osciladores\ujt4.asc
+Start Time: Fri Mar 21 14:51:31 2025
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = modified trap
+Total elapsed time: 0.289 seconds.
+

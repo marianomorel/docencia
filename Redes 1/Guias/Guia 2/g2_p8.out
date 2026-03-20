@@ -1,0 +1,139 @@
+
+**** 08/14/23 14:32:02 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 2\g2_p8.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Mon Aug 14 14:32:02 2023
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "g2_p8.net"
+
+**** INCLUDING g2_p8.net ****
+* Schematics Netlist *
+
+
+
+R_R1         $N_0002 $N_0001  2  
+R_R2         $N_0003 $N_0001  3  
+R_R4         VRo $N_0001  5  
+R_R3         $N_0002 $N_0003  1  
+V_V1         $N_0002 0 10
+V_V2         $N_0003 0 5
+R_R12         $N_0005 $N_0004  2  
+R_R13         $N_0006 $N_0004  3  
+R_R14         VRo1 $N_0004  5  
+V_V5         $N_0005 0 10
+V_V6         $N_0006 0 5
+R_R5         $N_0003 VRo  4  
+R_R16         $N_0006 VRo1  4  
+R_R6         0 VRo  10  
+R_R17         0 VRo1  10  
+
+**** RESUMING g2_p8.cir ****
+.INC "g2_p8.als"
+
+
+
+**** INCLUDING g2_p8.als ****
+* Schematics Aliases *
+
+.ALIASES
+R_R1            R1(1=$N_0002 2=$N_0001 )
+R_R2            R2(1=$N_0003 2=$N_0001 )
+R_R4            R4(1=VRo 2=$N_0001 )
+R_R3            R3(1=$N_0002 2=$N_0003 )
+V_V1            V1(+=$N_0002 -=0 )
+V_V2            V2(+=$N_0003 -=0 )
+R_R12           R12(1=$N_0005 2=$N_0004 )
+R_R13           R13(1=$N_0006 2=$N_0004 )
+R_R14           R14(1=VRo1 2=$N_0004 )
+V_V5            V5(+=$N_0005 -=0 )
+V_V6            V6(+=$N_0006 -=0 )
+R_R5            R5(1=$N_0003 2=VRo )
+R_R16           R16(1=$N_0006 2=VRo1 )
+R_R6            R6(1=0 2=VRo )
+R_R17           R17(1=0 2=VRo1 )
+_    _(VRo=VRo)
+_    _(VRo1=VRo1)
+.ENDALIASES
+
+
+**** RESUMING g2_p8.cir ****
+.probe
+
+
+.END
+
+**** 08/14/23 14:32:02 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 2\g2_p8.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VRo)    4.9685  ( VRo1)    4.9685  ($N_0001)    7.4132                       
+
+($N_0002)   10.0000                   ($N_0003)    5.0000                       
+
+($N_0004)    7.4132                   ($N_0005)   10.0000                       
+
+($N_0006)    5.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -6.293E+00
+    V_V2         5.797E+00
+    V_V5        -1.293E+00
+    V_V6         7.965E-01
+
+    TOTAL POWER DISSIPATION   4.29E+01  WATTS
+
+
+**** 08/14/23 14:32:02 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 2\g2_p8.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            0.00
+

@@ -1,0 +1,70 @@
+:Base plsyn.HLP
+1 PLSyn Overview
+2 Overview=plsyn_overview
+2 PLSyn Display=plsyn_display
+1 Menu Command Summary
+2 File Menu=menu_file
+2 Edit Menu=menu_edit
+2 Tools Menu=menu_tools
+2 Window Menu=menu_window
+2 Help Menu=menu_help
+1 DSL Language Reference
+2 DSL Overview=dsl_overview
+2 Conventions and Syntax
+3 Identifiers=dsl_identifiers
+3 Comments=dsl_comments
+3 Integer Constants=dsl_constants
+2 Procedures and Functions
+3 PROCEDURE Definitions=dsl_procedure
+3 FUNCTION Definitions=dsl_function
+3 INPUT and OUTPUT Parameters=dsl_inputsoutputs
+2 Signal Declarations
+3 NODE=dsl_node
+3 Arrays=dsl_arrays
+3 Flip-Flops=dsl_flipflops
+3 Control Information Constructs=dsl_controlinfo
+3 Default Information Constructs=dsl_defaultinfo
+3 System-Level Signals=dsl_systemsignals
+2 Expressions
+3 Operators=dsl_operators
+3 Constant Expressions=dsl_constexpr
+3 Groups and Ranges=dsl_groups
+3 Array Expressions=dsl_arrayexpr
+2 Statements and Constructs
+3 Assignment Statement (\=)=dsl_assignment
+3 IF Statement=dsl_if
+3 CASE Statement=dsl_case
+3 TRUTH_TABLE Statement=dsl_truthtable
+3 STATE_MACHINE Statement=dsl_statemachine
+2 Miscellaneous
+3 MACRO Definitions=dsl_macro
+3 INCLUDE Statement=dsl_include
+3 USE Statement=dsl_use
+1 PIL Language Reference
+2 Overview=pil_overview
+2 Conventions and Syntax
+3 Help Conventions=pil_help_conventions
+3 Syntax=pil_syntax
+3 Referencing Signal Names=pil_signalnames
+2 Constructs
+3 Global Properties=pil_globalproperties
+3 Ungrouped Signals=pil_ungroupedsignals
+3 VIRTUAL Signals=pil_virtualsignals
+3 GROUP Specifications=pil_group
+3 DEVICE Specifications=pil_device
+2 How to...
+3 Control the Size of Equations=pil_howto1
+3 Fit Signals Together in a Device=pil_howto2
+3 Use a Specific Part Number=pil_howto3
+3 Maintain Pin Assignments=pil_howto4
+3 Fit a Design into One Device=pil_howto5
+3 Fit a Design into Multiple Devices=pil_howto6
+3 Refit a Design into the Same Footprint=pil_howto7
+3 Recreate a Pinout after Fitting=pil_howto8
+1 Supported Devices
+2 PLD Design Module Device List=pld_dm
+2 AMD MACH Design Module Device List=mach_dm
+2 Atmel Design Module Device List=atmel_dm
+1 Programmable Logic Symbol Reference
+2 74xx Programmable Logic Symbols=74xx_symbols
+2 Generic Primitives=pldprims_symbols

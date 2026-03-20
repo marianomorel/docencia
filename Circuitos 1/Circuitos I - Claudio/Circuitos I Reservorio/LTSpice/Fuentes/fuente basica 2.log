@@ -1,0 +1,228 @@
+Circuit: * E:\Claudio\Docencia personal\LTSpice\Fuentes\fuente basica 2.asc
+
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Increasing initial diagonal Gmin to 100
+Increasing initial diagonal Gmin to 1000
+Gmin = 1000
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+Gmin = 836.601
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+Gmin = 822.125
+vernier = 0.00195313
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 0
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+vernier = 0.25
+Source Step = 0.0177557%
+Source Step = 0.0473485%
+Source Step = 0.0769413%
+Source Step = 0.106534%
+Source Step = 0.136127%
+vernier = 0.00146484
+Source Step = 0.168679%
+Source Step = 0.213068%
+Source Step = 0.257457%
+Source Step = 0.301847%
+Source Step = 0.346236%
+vernier = 0.00219727
+Source Step = 0.392844%
+Source Step = 0.459428%
+Source Step = 0.526012%
+Source Step = 0.592596%
+Source Step = 0.65918%
+Source Step = 0.725763%
+vernier = 0.0032959
+Source Step = 0.825639%
+Source Step = 0.925515%
+Source Step = 1.02539%
+Source Step = 1.12527%
+Source Step = 1.22514%
+vernier = 0.00494385
+Source Step = 1.36996%
+Source Step = 1.51978%
+Source Step = 1.66959%
+Source Step = 1.8194%
+Source Step = 1.96922%
+vernier = 0.00741577
+Source Step = 2.17896%
+Source Step = 2.40368%
+Source Step = 2.6284%
+Source Step = 2.85312%
+Source Step = 3.07784%
+vernier = 0.0111237
+Source Step = 3.38121%
+Source Step = 3.71829%
+Source Step = 4.05537%
+Source Step = 4.39245%
+Source Step = 4.72953%
+vernier = 0.0166855
+Source Step = 5.16774%
+Source Step = 5.67336%
+Source Step = 6.17898%
+Source Step = 6.6846%
+Source Step = 7.19022%
+vernier = 0.0250282
+Source Step = 7.82224%
+Source Step = 8.58068%
+Source Step = 9.33911%
+Source Step = 10.0975%
+Source Step = 10.856%
+vernier = 0.0375423
+Source Step = 11.7661%
+Source Step = 12.9037%
+Source Step = 14.0414%
+Source Step = 15.179%
+Source Step = 16.3167%
+vernier = 0.0563135
+Source Step = 17.625%
+Source Step = 19.3314%
+Source Step = 21.0379%
+Source Step = 22.7444%
+Source Step = 24.4508%
+vernier = 0.0844703
+Source Step = 26.328%
+Source Step = 28.8877%
+Source Step = 31.4474%
+Source Step = 34.0071%
+Source Step = 36.5668%
+vernier = 0.126705
+Source Step = 39.2545%
+Source Step = 43.094%
+Source Step = 46.9336%
+Source Step = 50.7732%
+Source Step = 54.6127%
+Source Step = 58.4523%
+vernier = 0.190058
+Source Step = 64.2116%
+Source Step = 69.9709%
+Source Step = 75.7303%
+Source Step = 81.4896%
+Source Step = 87.2489%
+vernier = 0.285087
+Source Step = 93.0623%
+vernier = 0.00445449
+Source Step = 93.0387%
+Source Step = 93.0724%
+Source Step = 93.1062%
+Source Step = 93.1399%
+Source Step = 93.1736%
+Source Step = 93.2074%
+Source Step = 93.2411%
+Source Step = 93.2749%
+Source Step = 93.3086%
+Source Step = 93.3424%
+Source Step = 93.3761%
+Source Step = 93.4099%
+Source Step = 93.4436%
+Source Step = 93.4774%
+Source Step = 93.5111%
+Source Step = 93.5448%
+vernier = 0.00167043
+Source Step = 93.587%
+Source Step = 93.6377%
+Source Step = 93.6883%
+Source Step = 93.7389%
+Source Step = 93.7895%
+vernier = 0.00250565
+Source Step = 93.8503%
+Source Step = 93.9262%
+Source Step = 94.0021%
+Source Step = 94.078%
+Source Step = 94.154%
+vernier = 0.00375847
+Source Step = 94.2413%
+Source Step = 94.3552%
+Source Step = 94.4691%
+Source Step = 94.583%
+Source Step = 94.6969%
+vernier = 0.00563771
+Source Step = 94.8221%
+Source Step = 94.993%
+Source Step = 95.1638%
+Source Step = 95.3347%
+Source Step = 95.5055%
+vernier = 0.00845657
+Source Step = 95.6849%
+Source Step = 95.9411%
+Source Step = 96.1974%
+Source Step = 96.4537%
+Source Step = 96.7099%
+Source Step = 96.9662%
+vernier = 0.0126848
+Source Step = 97.3506%
+Source Step = 97.735%
+Source Step = 98.1193%
+Source Step = 98.5037%
+Source Step = 98.8881%
+vernier = 0.0190273
+Source Step = 99.4455%
+Source Step = 100%
+Source stepping succeeded in finding the operating point.
+
+Semiconductor Device Operating Points:
+                        --- Diodes ---
+Name:    d:u2:p      d:u2:ln     d:u2:lp     d:u2:e      d:u2:c
+Model:    u2:dx       u2:dx       u2:dx       u2:dy       u2:dy
+Id:     -1.90e-11   -4.02e-11   -3.98e-11   -1.29e-11   -1.78e-12
+Vd:     -1.90e+01   -4.02e+01   -3.98e+01   -1.30e+01   -4.01e+00
+Req:     1.00e+12    1.00e+12    1.00e+12    1.00e+12    1.00e+12
+CAP:     0.00e+00    0.00e+00    0.00e+00    2.67e-12    4.47e-12
+
+Name:      d1        d:u1:1
+Model: bzx84c6v2l    u1:dsub
+Id:     -1.59e-03   -1.25e-11
+Vd:     -6.24e+00   -6.49e+00
+Req:     4.89e+01    1.00e+12
+CAP:     6.88e-11    3.56e-11
+
+                        --- Bipolar Transistors ---
+Name:       q1        q:u2:2      q:u2:1      q:u1:2      q:u1:1
+Model:      npn        u2:qx       u2:qx      u1:qpwr     u1:qpwr
+Ib:       3.01e-10    7.78e-08    7.81e-08    5.00e-03    9.64e-05
+Ic:       3.02e-08    7.30e-06    7.32e-06    4.95e-01    1.03e-02
+Vbe:      5.05e-01    5.93e-01    5.93e-01    8.25e-01    6.46e-01
+Vbc:     -1.47e+00   -1.40e+01   -1.40e+01   -5.66e+00   -5.01e+00
+Vce:      1.98e+00    1.46e+01    1.46e+01    6.49e+00    5.66e+00
+BetaDC:   1.00e+02    9.38e+01    9.38e+01    9.90e+01    1.07e+02
+Gm:       1.17e-06    2.82e-04    2.83e-04    1.68e+01    3.87e-01
+Rpi:      8.57e+07    3.32e+05    3.31e+05    5.24e+00    2.75e+02
+Rx:       0.00e+00    0.00e+00    0.00e+00    1.32e+00    1.32e+01
+Ro:       1.30e+39    0.00e+00    0.00e+00    2.83e+02    1.35e+04
+Cbe:      0.00e+00    0.00e+00    0.00e+00    1.44e-06    3.31e-08
+Cbc:      0.00e+00    0.00e+00    0.00e+00    6.32e-11    6.46e-12
+Cjs:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+BetaAC:   1.00e+02    9.37e+01    9.37e+01    8.83e+01    1.07e+02
+Cbx:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Ft:       0.00e+00    0.00e+00    0.00e+00    1.86e+06    1.86e+06
+
+
+
+Date: Wed Jun 26 13:38:56 2024
+Total elapsed time: 0.896 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 15123
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 45
+fillins = 74
+solver = Normal
+Matrix Compiler1: 6.32 KB object code size
+Matrix Compiler2: 5.17 KB object code size  0.8/1.2/[0.7]
+

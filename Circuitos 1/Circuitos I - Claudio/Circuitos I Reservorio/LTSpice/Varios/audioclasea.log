@@ -1,0 +1,22 @@
+Circuit: * E:\Claudio\Docencia personal\LTSpice\Varios\audioclasea.asc
+
+Direct Newton iteration for .op point succeeded.
+Heightened Def Con from 5.6762e-011 to 2.05676e-009
+
+Date: Wed Jun 05 15:42:05 2024
+Total elapsed time: 2.351 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 200668
+traniter = 200656
+tranpoints = 100114
+accept = 100083
+rejected = 32
+matrix size = 47
+fillins = 57
+solver = Normal
+Matrix Compiler1: 5.81 KB object code size  2.7/1.6/[0.9]
+Matrix Compiler2: 4.94 KB object code size  1.3/2.0/[0.8]
+

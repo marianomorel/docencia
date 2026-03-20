@@ -1,0 +1,119 @@
+
+**** 09/14/23 11:20:20 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 3\g3_p9.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Thu Sep 14 11:20:17 2023
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "g3_p9.net"
+
+**** INCLUDING g3_p9.net ****
+* Schematics Netlist *
+
+
+
+R_R7         $N_0002 $N_0001  1  
+R_R6         0 $N_0001  1  
+R_R5         0 $N_0002  1  
+R_R3         $N_0002 $N_0003  1  
+R_R8         $N_0003 $N_0004  1  
+R_R4         $N_0001 $N_0004  1  
+R_R1         $N_0004 $N_0005  1  
+R_R2         $N_0003 $N_0005  1  
+I_I1         0 $N_0005 DC 10A  
+
+**** RESUMING g3_p9.cir ****
+.INC "g3_p9.als"
+
+
+
+**** INCLUDING g3_p9.als ****
+* Schematics Aliases *
+
+.ALIASES
+R_R7            R7(1=$N_0002 2=$N_0001 )
+R_R6            R6(1=0 2=$N_0001 )
+R_R5            R5(1=0 2=$N_0002 )
+R_R3            R3(1=$N_0002 2=$N_0003 )
+R_R8            R8(1=$N_0003 2=$N_0004 )
+R_R4            R4(1=$N_0001 2=$N_0004 )
+R_R1            R1(1=$N_0004 2=$N_0005 )
+R_R2            R2(1=$N_0003 2=$N_0005 )
+I_I1            I1(+=0 -=$N_0005 )
+.ENDALIASES
+
+
+**** RESUMING g3_p9.cir ****
+.probe
+
+
+.END
+
+**** 09/14/23 11:20:20 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 3\g3_p9.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    5.0000                   ($N_0002)    5.0000                       
+
+($N_0003)   10.0000                   ($N_0004)   10.0000                       
+
+($N_0005)   15.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 09/14/23 11:20:20 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 3\g3_p9.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            0.00
+

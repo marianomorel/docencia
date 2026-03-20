@@ -1,0 +1,51 @@
+
+   --- Expanded Deck Component Count ---
+C's 4
+Q's 2
+R's 9
+V's 2
+tot: 17
+
+
+    --- Expanded Netlist ---
+* C:\Claudio\Docencia personal\LTSpice\realimentación\realimentacion1.asc
+v1 n001 0 12
+q1 n003 n006 n008 0 2n3904
+q2 n002 n003 n007 0 2n3904
+r1 n001 n003 10k
+r2 n001 n006 100k
+r3 n006 0 15k
+r4 n008 0 870
+r5 n001 n002 8.2k
+r6 n007 0 3.3k
+r7 n009 n006 10k
+r8 n005 n004 10k
+r9 0 vo 1k
+c1 n007 n009 10µ
+c2 vo n002 10µ
+c3 n006 n005 10µ
+c4 0 n008 10µ
+v2 n004 0 ac 1
+.model 2n3904 npn(is=1e-14 vaf=100 bf=300 ikf=0.4 xtb=1.5 br=4 cjc=4e-12 cje=8e-12 rb=20 rc=0.1 re=0.1 tr=250e-9 tf=350e-12 itf=1 vtf=2 xtf=3 vceo=40 icrating=200m mfg=philips)
+.ac dec 1000 10 100k
+.end
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Fri Mar 02 10:28:32 2018
+Total elapsed time: 0.156 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 7
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 18
+fillins = 8
+solver = Normal
+Matrix Compiler1:      85 opcodes
+Matrix Compiler2: 1,59 KB object code size
+

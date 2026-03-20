@@ -1,0 +1,52 @@
+:Base route
+:Title Automatic Routing
+1 Automatic Routing
+2 Setting the Environment
+3 Measuring distances and querying design objects=Measuring_distances_and_querying_design_objects@route.hlp>main
+3 Setting wire and via grids=Setting_wire_and_via_grids@route.hlp>main
+3 Defining a class of nets=Defining_a_class_of_nets@route.hlp>main
+3 Defining a group of fromtos=Defining_a_group_of_fromtos@route.hlp>main
+3 Defining a group set=Defining_a_group_set@route.hlp>main
+2 Setting Rules
+3 General information about setting rules=About_setting_rules@route.hlp>main
+3 Setting wire width rules=Setting_width_rules@route.hlp>main
+3 Setting clearance rules=Setting_clearance_rules@route.hlp>main
+3 Setting multiple width and clearance rules=Setting_multiple_rules@route.hlp>main
+3 Setting rules by layer=Setting_rules_by_layer@route.hlp>main
+3 Setting padstack rules=Setting_padstack_rules@route.hlp>main
+3 Controlling impedance=Controlling_impedance@route.hlp>main
+3 Controlling wire segment crosstalk=Controlling_wire_segment_crosstalk@route.hlp>main
+3 Controlling accumulative coupled noise=Controlling_accumulative_coupled_noise@route.hlp>main
+3 Controlling timing=Controlling_timing@route.hlp>main
+3 Shielding=Shielding@route.hlp>main
+3 Using area rules=Using_area_rules@route.hlp>main
+2 Routing
+3 Using smart_route=Using_smart_route@route.hlp>main
+3 Applying standard routing passes=Applying_standard_routing_passes@route.hlp>main
+3 Routing two nets as a differential pair=Routing_two_nets_as_a_differential_pair@route.hlp>main
+3 Routing short escape wires=Routing_short_escape_wires@route.hlp>main
+3 Reducing or enlarging wire width on a segment=Reducing_wire_width_on_a_segment@route.hlp>main
+3 Separating analog and digital signals=Separating_analog_and_digital_signals@route.hlp>main
+3 Separating clock lines=Separating_clock_lines@route.hlp>main
+3 Controlling the routing layers=Controlling_the_routing_layers@route.hlp>main
+3 Turning on same net checking=Turning_on_same_net_checking@route.hlp>main
+3 Limiting the wrong way routing distance=Limiting_the_wrong_way_routing_distance@route.hlp>main
+3 Prioritizing how nets are routed=Prioritizing_how_nets_are_routed@route.hlp>main
+3 Preventing routing on external layers=Preventing_routing_on_external_layers@route.hlp>main
+3 Controlling routing topologies=Controlling_routing_topologies@route.hlp>main
+3 Controlling via use=Controlling_via_use@route.hlp>main
+3 Satisfying buried via requirements=Satisfying_buried_via_requirements@route.hlp>main
+3 Ignoring nets during autorouting=Ignoring_nets_during_autorouting@route.hlp>main
+3 Preventing rerouting=Preventing_rerouting@route.hlp>main
+2 Meeting Manufacturing and Test Requirements
+3 Generating and controlling test points=Generating_and_controlling_test_points@route.hlp>main
+3 Mitering 90 degree corners=Mitering_90_degree_corners@route.hlp>main
+3 Creating round corners=Creating_round_corners@route.hlp>main
+3 Adding extra wire-to-object clearances=Adding_extra_wire_to_object_clearances@route.hlp>main
+3 Creating a special wire-boundary clearance=Creating_a_special_wire_boundary_clearance@route.hlp>main
+2 Postrouting
+3 Checking design rule violations=Checking_design_rule_violations@route.hlp>main
+3 Pausing and stopping automatic commands=Pausing_and_stopping_auto_commands@route.hlp>main
+3 Saving routing and placement information=Saving_Your_Session_Results@route.hlp>main
+3 Restarting a session=Restarting_a_session@route.hlp>main
+3 Applying engineering changes=Applying_Engineering_Changes@route.hlp>main

@@ -1,0 +1,31 @@
+Program Anidados;
+Var
+    P, N, NP, ContM,  i, Max, MaxP : word;
+Begin
+Max:=0;                   {máximo general de todos los primos, se inicia fuera del ciclo (externo) de los primos}
+Writeln('Ingrese la cantidad de no  primos'); Readln(N);
+Writeln('Ingrese un número primo'); Readln(P);
+While  P <> 0 do
+       begin    
+       ContM:= 0;          {contador particular de cada primo se inicia previo al ciclo (interno) de los no primos}
+       For i := 1 to N do
+             Begin
+             Writeln('Ingrese un número no primo');  Readln(NP);
+             If   NP mod P =0 then
+                   ContM:= ContM +1;
+             End;
+        Writeln('los múltiplos de ', P, 'son',ContM);
+        If  ContM> Max then      {antes de leer otro primo verifica si este es maximo}
+              Begin
+              Max:= ContM;   MaxP:= P;
+              End;
+       Writeln('Ingrese un número primo'); Readln(P);
+       End;
+if Max <> 0 then
+            writeln ('El numero primo con mas múltiplos es', MaxP)
+else
+            writeln ('ningun numero primo tuvo múltiplos ') ;
+end.
+
+
+

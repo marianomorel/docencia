@@ -1,0 +1,20 @@
+:Base alldocs.hlp
+:Title SPECCTRA Documentation Library
+:Index Automatic Routing=route.hlp
+:Index Basic Operations=basic.hlp
+:Index Do File Examples=do.hlp
+:Index Interactive Routing=iroute.hlp
+:Index Menus and Dialog Boxes=menu_pcb.hlp
+:Index SPECCTRA Command Reference=cmds_pcb.hlp
+1 Welcome=welcome
+:include basic.cnt
+:include route.cnt
+:include iroute.cnt
+:include menu_pcb.cnt
+1 Reference Manuals
+2 Commands=splash_screen@cmds_pcb.hlp>main
+2 User's Reference (Acrobat file)=acrobat_windows>h_topics
+2 Design Language Reference (Acrobat file)=acrobat_windows>h_topics
+:include do.cnt
+1 Glossary
+2 Glossary=IDH_GLOSSARY@glossary.hlp>main

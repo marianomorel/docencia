@@ -1,0 +1,143 @@
+
+**** 09/18/23 13:49:35 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 5\g5_p3.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Mon Sep 18 13:49:35 2023
+
+
+
+** Analysis setup **
+.tran .002 4
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "g5_p3.net"
+
+**** INCLUDING g5_p3.net ****
+* Schematics Netlist *
+
+
+
+R_R1         $N_0002 $N_0001  10  
+R_R2         0 $N_0003  10  
+V_V1         $N_0002 0 DC 0 AC 0
++PULSE 0 2 0 .00001 .00001 2 4
+I_I1         0 $N_0003 DC 0 AC 0
++PULSE 0 1 0 .00001 .00001 2 4
+L_L1         $N_0001 $N_0003  10H  
+
+**** RESUMING g5_p3.cir ****
+.INC "g5_p3.als"
+
+
+
+**** INCLUDING g5_p3.als ****
+* Schematics Aliases *
+
+.ALIASES
+R_R1            R1(1=$N_0002 2=$N_0001 )
+R_R2            R2(1=0 2=$N_0003 )
+V_V1            V1(+=$N_0002 -=0 )
+I_I1            I1(+=0 -=$N_0003 )
+L_L1            L1(1=$N_0001 2=$N_0003 )
+.ENDALIASES
+
+
+**** RESUMING g5_p3.cir ****
+.probe
+
+
+.END
+
+**** 09/18/23 13:49:35 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 5\g5_p3.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   ($N_0002)    0.0000                       
+
+($N_0003)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 09/18/23 13:49:35 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 5\g5_p3.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+**** 09/18/23 13:49:35 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 5\g5_p3.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   ($N_0002)    0.0000                       
+
+($N_0003)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            0.00
+

@@ -1,0 +1,27 @@
+:Base iroute
+:Title Routing interactively
+1 Interactive Routing
+2 Preparing for interactive routing
+3 General information about interactive routing=About_interactive_routing@iroute.hlp>main
+3 Using the Interactive Route menu=Using_the_Interactive_Route_menu@iroute.hlp>main
+3 Setting the interactive routing environment=Setting_the_interactive_routing_environment@iroute.hlp>main
+3 Setting routing rules=Setting_routing_rules@iroute.hlp>main
+3 Setting rule checking on or off=Checking_design_rule_violations@iroute.hlp>main
+3 Using the layer panel=Using_the_layer_panel@iroute.hlp>main
+3 Setting the primary and secondary routing layers=Setting_primary_and_secondary_routing_layers@iroute.hlp>main
+3 Selecting and unselecting design objects=Selecting_routing_or_placement_objects@iroute.hlp>main
+3 Using Rulers=Using_Rulers@iroute.hlp>main
+3 Choosing an interactive routing mode=Choosing_an_interactive_routing_mode@iroute.hlp>main
+2 Using SPECCTRA interactive EditRoute tools
+3 Routing wires=Routing_wires@iroute.hlp>main
+3 Using vias during interactive routing=Using_vias_during_interactive_routing@iroute.hlp>main
+3 Controlling the routing layer=Controlling_the_routing_layer@iroute.hlp>main
+3 Moving wire segments or vias=Moving_a_wire_segment_or_a_via@iroute.hlp>main
+3 Cutting wire segments=Cutting_wire_segments@iroute.hlp>main
+3 Copying wires and vias=Copying_wires_and_vias@iroute.hlp>main
+3 Removing wire bends=Removing_bends_in_a_wire@iroute.hlp>main
+3 Deleting wires=Deleting_wires@iroute.hlp>main
+3 Using Undo and Redo=Using_Undo_and_Redo@iroute.hlp>main
+3 Checking design rule violations=Checking_design_rules_and_reporting_conflicts@iroute.hlp>main
+3 Changing existing vias=Changing_vias@iroute.hlp>main
+3 Changing wire segment widths=Changing_wire_segment_widths@iroute.hlp>main

@@ -1,0 +1,43 @@
+
+   --- Expanded Deck Component Count ---
+I's 1
+Q's 2
+R's 4
+V's 2
+tot: 9
+
+
+    --- Expanded Netlist ---
+* C:\Claudio\Docencia personal\LTSpice\Varios\prueba real3.asc
+q1 n002 n004 0 0 2n3904
+q2 o n002 n005 0 2n3904
+r1 n001 o 500
+i1 n001 n002 200µ
+v1 n001 0 10
+r2 n005 0 140
+r3 n005 n004 10k
+r4 n004 n003 10k
+v2 n003 0 0 ac 1
+.model 2n3904 npn(is=1e-14 vaf=100 bf=300 ikf=0.4 xtb=1.5 br=4 cjc=4e-12 cje=8e-12 rb=20 rc=0.1 re=0.1 tr=250e-9 tf=350e-12 itf=1 vtf=2 xtf=3 vceo=40 icrating=200m mfg=philips)
+.ac dec 1000 10 100
+.end
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Mon Nov 11 15:45:53 2019
+Total elapsed time: 0.047 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 9
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 14
+fillins = 6
+solver = Normal
+Matrix Compiler1:      67 opcodes
+Matrix Compiler2: 1,20 KB object code size
+

@@ -1,0 +1,21 @@
+Circuit: * E:\Claudio\Docencia personal\LTSpice\Varios\Draft4.asc
+
+.OP point found by inspection.
+
+Date: Wed Apr 13 12:30:54 2022
+Total elapsed time: 0.955 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 200034
+traniter = 200034
+tranpoints = 100018
+accept = 100018
+rejected = 0
+matrix size = 3
+fillins = 0
+solver = Normal
+Matrix Compiler1: 50 bytes object code size  0.1/0.1/[0.1]
+Matrix Compiler2: 175 bytes object code size  0.2/0.2/[0.1]
+

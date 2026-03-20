@@ -1,0 +1,36 @@
+LTspice 24.0.12 for Windows
+Circuit: * E:\Claudio\Docencia personal\LTSpice\Varios\noise4.asc
+Start Time: Thu Dec  5 10:51:26 2024
+solver = Normal
+Maximum thread count: 8
+
+
+
+Direct Newton iteration for .op point succeeded.
+.step temp=-25°C
+
+
+
+.step temp=0°C
+
+
+
+.step temp=25°C
+
+
+
+.step temp=50°C
+
+
+
+.step temp=75°C
+
+
+
+.step temp=100°C
+tnom = 27
+temp = 125
+method = modified trap
+.step temp=125°C
+Total elapsed time: 0.978 seconds.
+

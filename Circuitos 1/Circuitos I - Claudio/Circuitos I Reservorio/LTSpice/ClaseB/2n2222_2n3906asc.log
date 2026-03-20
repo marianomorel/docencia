@@ -1,0 +1,82 @@
+Circuit: * E:\Claudio\Docencia personal\LTSpice\ClaseB\2n2222_2n3906asc.asc
+
+.OP point found by inspection.
+.step i1=0
+.step i1=2e-005
+.step i1=4e-005
+.step i1=6e-005
+.step i1=8e-005
+.step i1=0.0001
+.step i1=0.00012
+.step i1=0.00014
+.step i1=0.00016
+.step i1=0.00018
+.step i1=0.0002
+.step i1=0.00022
+.step i1=0.00024
+.step i1=0.00026
+.step i1=0.00028
+.step i1=0.0003
+.step i1=0.00032
+.step i1=0.00034
+.step i1=0.00036
+.step i1=0.00038
+.step i1=0.0004
+.step i1=0.00042
+.step i1=0.00044
+.step i1=0.00046
+.step i1=0.00048
+.step i1=0.0005
+.step i1=0.00052
+.step i1=0.00054
+.step i1=0.00056
+.step i1=0.00058
+.step i1=0.0006
+.step i1=0.00062
+.step i1=0.00064
+.step i1=0.00066
+.step i1=0.00068
+.step i1=0.0007
+.step i1=0.00072
+.step i1=0.00074
+.step i1=0.00076
+.step i1=0.00078
+.step i1=0.0008
+.step i1=0.00082
+.step i1=0.00084
+.step i1=0.00086
+.step i1=0.00088
+.step i1=0.0009
+.step i1=0.00092
+.step i1=0.00094
+.step i1=0.00096
+.step i1=0.00098
+.step i1=0.001
+.step i1=0.00102
+.step i1=0.00104
+.step i1=0.00106
+.step i1=0.00108
+.step i1=0.0011
+.step i1=0.00112
+.step i1=0.00114
+.step i1=0.00116
+.step i1=0.00118
+.step i1=0.0012
+
+Date: Thu Nov 02 14:32:59 2023
+Total elapsed time: 3.879 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 1220740
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 12
+fillins = 0
+solver = Normal
+Matrix Compiler1:      42 opcodes  0.5/[0.4]/0.4
+Matrix Compiler2: 954 bytes object code size  0.3/0.6/[0.3]
+

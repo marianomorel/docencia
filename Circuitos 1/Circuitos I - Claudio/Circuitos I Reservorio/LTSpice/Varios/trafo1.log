@@ -1,0 +1,18 @@
+Circuit: * F:\Vice 21-12-18\Claudio\Docencia personal\LTSpice\Varios\trafo1.asc
+
+
+Date: Fri Jan 25 11:24:10 2019
+Total elapsed time: 0.125 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 0
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 6
+fillins = 2
+solver = Normal
+

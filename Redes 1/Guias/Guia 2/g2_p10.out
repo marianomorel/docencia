@@ -1,0 +1,134 @@
+
+**** 08/14/23 14:41:32 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 2\g2_p10.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Mon Aug 14 14:40:12 2023
+
+
+
+** Analysis setup **
+.tran .01 1
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "g2_p10.net"
+
+**** INCLUDING g2_p10.net ****
+* Schematics Netlist *
+
+
+
+R_R3         $N_0002 $N_0001  4  
+R_R1         0 $N_0001  2  
+R_R2         0 $N_0001  3  
+I_I2         $N_0002 0 DC 0 AC 0
++SIN 0 3 5 0 0 90
+
+**** RESUMING g2_p10.cir ****
+.INC "g2_p10.als"
+
+
+
+**** INCLUDING g2_p10.als ****
+* Schematics Aliases *
+
+.ALIASES
+R_R3            R3(1=$N_0002 2=$N_0001 )
+R_R1            R1(1=0 2=$N_0001 )
+R_R2            R2(1=0 2=$N_0001 )
+I_I2            I2(+=$N_0002 -=0 )
+.ENDALIASES
+
+
+**** RESUMING g2_p10.cir ****
+.probe
+
+
+.END
+
+**** 08/14/23 14:41:32 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 2\g2_p10.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   ($N_0002)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 08/14/23 14:41:32 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 2\g2_p10.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+**** 08/14/23 14:41:32 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 2\g2_p10.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)   -3.6000                   ($N_0002)  -15.6000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            0.00
+

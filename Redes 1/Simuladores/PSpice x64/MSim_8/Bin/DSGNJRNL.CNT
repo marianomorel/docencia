@@ -1,0 +1,30 @@
+:Base DsgnJrnl.HLP>msimmain
+:Title Design Journal
+1 Design Journal
+2 About Design Journal
+3 About Design Journal=DsgnJrnl_About_Design_Journal
+3 Understanding the Journal Process=Understanding_the_Journal_Process@DsgnJrnl.HLP>msimmain
+2 Starting with a Working Schematic
+3 About Working Schematics=DsgnJrnl_About_Working_Schematics@DsgnJrnl.HLP>msimmain
+2 Working with Checkpoints
+3 About Checkpoints=DsgnJrnl_About_Checkpoints@DsgnJrnl.HLP>msimmain
+3 Creating a Checkpoint=DsgnJrnl_Creating_a_Checkpoint@DsgnJrnl.HLP>tablesec
+3 Restoring a Checkpoint=DsgnJrnl_Restoring_a_Checkpoint@DsgnJrnl.HLP>msimsec
+3 Deleting a Checkpoint=DsgnJrnl_Deleting_a_Checkpoint@DsgnJrnl.HLP>msimsec
+3 Managing Your Checkpoints with Design Manager=DsgnJrnl_Managing_Your_Checkpoints_with_Design_Manager@DsgnJrnl.HLP>msimmain
+2 Working with Checkpoint Schematics
+3 About Checkpoint Schematics=DsgnJrnl_About_Checkpoint_Schematics@DsgnJrnl.HLP>msimmain
+3 Editing a Checkpoint Schematic=DsgnJrnl_Editing_a_Checkpoint_Schematic@DsgnJrnl.HLP>msimsec
+3 Editing the Checkpoint Schematic Description=DsgnJrnl_Editing_the_Checkpoint_Schematic_Description@DsgnJrnl.HLP>msimmain
+3 Simulating a Checkpoint Schematic=DsgnJrnl_Simulating_a_Checkpoint_Schematic@DsgnJrnl.HLP>msimsec
+2 Setting Checkpoint Options for Viewing in Probe
+3 About Setting Checkpoint Options for Viewing in Probe=DsgnJrnl_About_Setting_Checkpoint_Options_for_Viewing_in_Probe
+3 Loading Checkpoint Data into Probe Automatically=DsgnJrnl_Loading_Checkpoint_Data_into_Probe_Automatically@DsgnJrnl.HLP>msimsec
+3 Setting the Checkpoint Plot Window Configuration for Probe from Schematics=DsgnJrnl_Setting_the_Checkpoint_Plot_Window_View_for_Probe_from_Schematics@DsgnJrnl.HLP>msimsec
+3 Setting Trace Color for Probe from Schematics=DsgnJrnl_Setting_Trace_Color_for_Probe_from_Schematics@DsgnJrnl.HLP>msimsec
+2 Reviewing Your Jounal
+3 Reviewing Your Journal=DsgnJrnl_Reviewing_Your_Journal@DsgnJrnl.HLP>msimsec
+2 Hints and Tips
+3 Hints and Tips=DsgnJrnl_Hints_and_Tips@DsgnJrnl.HLP>msimsec
+2 Design Manager Help
+3 Design Manager Help=DsgnJrnl_Design_Manager_Help@DsgnJrnl.HLP>msimmain

@@ -1,0 +1,14 @@
+WARNING: Can't resolve .param a=if(time<1m,100,10)
+Questionable use of curly braces in "r1 n002 0 {a}"
+    Error: yet unevaluated parameter in: "[a]"
+LTspice 24.0.12 for Windows
+Circuit: * E:\Claudio\Docencia personal\LTSpice\Varios\Draft7.asc
+Start Time: Fri Sep 27 16:27:34 2024
+Error on line 3 : r1 n002 0 (a)
+	 Unable to find definition of model "a"
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = modified trap
+Fatal Error: Missing resistance value for "r1"

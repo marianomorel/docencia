@@ -1,0 +1,37 @@
+
+   --- Expanded Deck Component Count ---
+J's 1
+R's 1
+V's 2
+tot: 4
+
+
+    --- Expanded Netlist ---
+* C:\Claudio\Docencia personal\LTSpice\Osciladores\Draft3.asc
+v1 n002 0 -1
+v2 n001 0 1
+r1 n001 0 200
+j1 n001 n002 0 2n3819
+.model 2n3819 njf(beta=1.304m betatce=-.5 rd=1 rs=1 lambda=2.25m vto=-3 vtotc=-2.5m is=33.57f isr=322.4f n=1 nr=2 xti=3 alpha=311.7u vk=243.6 cgd=1.6p m=.3622 pb=1 fc=.5 cgs=2.414p kf=9.882e-18 af=1 mfg=vishay)
+.dc v2 -0.1 0.1 .0001
+.end
+
+
+Date: Thu Jun 07 16:03:46 2018
+Total elapsed time: 0.219 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 4004
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 6
+fillins = 0
+solver = Normal
+Matrix Compiler1: 182 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: 408 bytes object code size  0.2/0.2/[0.1]
+
+

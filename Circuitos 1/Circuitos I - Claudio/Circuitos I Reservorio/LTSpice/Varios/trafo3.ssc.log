@@ -1,0 +1,13 @@
+LTspice 24.0.12 for Windows
+Circuit: * E:\Claudio\Docencia personal\LTSpice\Varios\trafo3.ssc.asc
+Start Time: Fri Mar  7 13:21:26 2025
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = modified trap
+WARNING: Node N003 is floating.
+
+.OP point found by inspection.
+Total elapsed time: 49.728 seconds.
+

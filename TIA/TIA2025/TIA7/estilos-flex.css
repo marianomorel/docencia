@@ -1,0 +1,54 @@
+.caja-flex {
+
+    background-color: wheat;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: space-evenly;   /*OJO CON flex-grow y flex-shrink */
+    align-items: center;
+
+    /*utilizar solo con flex-wrap: wrap;*/
+    height: 500px;
+    align-content: space-around;
+
+}
+
+.items {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.primero {
+    background-color: red;
+    font-size: 30px;
+
+    flex-basis: 300px;
+    flex-grow: 3;
+    flex-shrink: 3;
+}
+.segundo {
+    background-color: blue;
+    font-size: 10px;
+    align-self: start;
+
+    flex-grow: 2;
+    flex-shrink: 1;
+}
+.tercero {
+    background-color: green;
+    font-size: 80px;
+
+    flex-basis: 600px;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+}
+.cuarto {
+    background-color: yellow;
+    font-size: 50px;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+}

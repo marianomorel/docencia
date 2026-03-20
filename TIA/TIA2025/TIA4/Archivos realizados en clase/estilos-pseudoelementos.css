@@ -1,0 +1,35 @@
+:root {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    --color-principal: red;
+}
+.clase-1::before {
+    content: "IMPORTANTE: ";
+    color: var(--color-principal, black);
+    background-color: lightpink;
+}
+.clase-1::after {
+    content: " FIN";
+ /*   content: url("imagen.jpg"); */
+    color: darkblue;
+    background-color: lightskyblue;
+}
+
+.clase-2::first-letter {
+    font-size: 60px;
+    font-weight: bold;
+}
+.clase-2::first-line {
+    text-transform: uppercase;
+}
+
+.clase-2::selection {
+    color: darkmagenta;
+    background-color: lightgray;
+}
+
+.clase-3 {
+    width: calc(100px + 50%);
+    height: clamp(450px 50% 650px)
+}
+    

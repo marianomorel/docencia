@@ -1,0 +1,87 @@
+LTspice 24.0.12 for Windows
+Circuit: * E:\Claudio\Docencia personal\LTSpice\Fuentes\fuente basica 1x.asc
+Start Time: Wed Nov 13 15:44:04 2024
+Warning: Multiple definitions of model "2scr375p" Type: BJT
+Warning: Multiple definitions of model "bc857b" Type: BJT
+Warning: Multiple definitions of model "bc847c" Type: BJT
+Warning: Multiple definitions of model "bc847b" Type: BJT
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = modified trap
+Early termination of direct N-R iteration.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Increasing initial diagonal Gmin to 100
+Increasing initial diagonal Gmin to 1000
+Gmin = 1000
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+Gmin = 836.601
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+Gmin = 822.125
+vernier = 0.00195312
+vernier = 0.000976562
+vernier = 0.000488281
+Gmin = 0
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+vernier = 0.25
+Source Step = 0.378788%
+Source Step = 0.852273%
+Source Step = 1.32576%
+Source Step = 1.79924%
+Source Step = 2.27273%
+vernier = 0.0234375
+Source Step = 2.91193%
+Source Step = 3.62216%
+Source Step = 4.33239%
+Source Step = 5.04261%
+Source Step = 5.75284%
+vernier = 0.0351562
+Source Step = 6.67614%
+Source Step = 7.74148%
+Source Step = 8.80682%
+Source Step = 9.87216%
+Source Step = 10.9375%
+vernier = 0.0527344
+Source Step = 12.2692%
+Source Step = 13.8672%
+Source Step = 15.4652%
+Source Step = 17.0632%
+Source Step = 18.6612%
+vernier = 0.0791016
+Source Step = 20.5788%
+Source Step = 22.9759%
+Source Step = 25.3729%
+Source Step = 27.7699%
+Source Step = 30.1669%
+vernier = 0.118652
+Source Step = 32.9235%
+Source Step = 36.519%
+Source Step = 40.1145%
+Source Step = 43.71%
+Source Step = 47.3056%
+vernier = 0.177979
+Source Step = 51.2607%
+Source Step = 56.6539%
+Source Step = 62.0472%
+Source Step = 67.4405%
+Source Step = 72.8338%
+vernier = 0.266968
+Source Step = 78.4968%
+Source Step = 86.5867%
+Source Step = 94.6766%
+Source stepping succeeded in finding the operating point.
+
+Total elapsed time: 30.850 seconds.
+

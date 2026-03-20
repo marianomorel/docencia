@@ -1,0 +1,92 @@
+\babel@toc {nil}{}
+\contentsline {chapter}{\numberline {1}Realimentación Negativa en Amplificadores}{3}%
+\contentsline {section}{\numberline {1.1}Introducción}{3}%
+\contentsline {section}{\numberline {1.2}Estructura general de un amplificador realimentado}{3}%
+\contentsline {section}{\numberline {1.3}Propiedades de la realimentación negativa.}{4}%
+\contentsline {subsection}{\numberline {1.3.1}Insensibilización de la ganancia}{4}%
+\contentsline {subsection}{\numberline {1.3.2}Efectos sobre la distorsión no lineal}{5}%
+\contentsline {subsection}{\numberline {1.3.3}Incremento en el ancho de banda}{5}%
+\contentsline {subsection}{\numberline {1.3.4}Relación señal-ruido}{5}%
+\contentsline {subsection}{\numberline {1.3.5}Control de las impedancias de entrada y salida}{6}%
+\contentsline {section}{\numberline {1.4}Configuraciones de amplificadores realimentados}{6}%
+\contentsline {subsection}{\numberline {1.4.1}Configuración Serie-Paralelo}{7}%
+\contentsline {subsection}{\numberline {1.4.2}Configuración Paralelo-Serie}{12}%
+\contentsline {subsection}{\numberline {1.4.3}Configuración Paralelo-Paralelo}{16}%
+\contentsline {subsection}{\numberline {1.4.4}Configuración Serie-Serie}{25}%
+\contentsline {chapter}{\numberline {2}Estabilidad de los amplificadores realimentados}{31}%
+\contentsline {section}{\numberline {2.1}Visión general}{31}%
+\contentsline {section}{\numberline {2.2}Amplificador pasa bajos de un polo}{31}%
+\contentsline {section}{\numberline {2.3}Amplificador pasa altos de un polo}{33}%
+\contentsline {section}{\numberline {2.4}Amplificador de dos polos}{33}%
+\contentsline {section}{\numberline {2.5}Criterio de estabilidad de Bode}{34}%
+\contentsline {section}{\numberline {2.6}Relación entre el margen de fase y la respuesta en frecuencia}{37}%
+\contentsline {section}{\numberline {2.7}Compensación}{39}%
+\contentsline {subsection}{\numberline {2.7.1}Compensación por polo dominante}{39}%
+\contentsline {subsection}{\numberline {2.7.2}Compensación por corrimiento del primer polo}{40}%
+\contentsline {subsection}{\numberline {2.7.3}Compensación por atraso de fase}{42}%
+\contentsline {subsection}{\numberline {2.7.4}Compensación por adelanto de fase}{44}%
+\contentsline {section}{\numberline {2.8}Criterio de estabilidad de Routh}{45}%
+\contentsline {section}{\numberline {2.9}Lugar de raíces}{48}%
+\contentsline {chapter}{\numberline {3}Amplificadores clase B y AB}{52}%
+\contentsline {section}{\numberline {3.1}Introducción}{52}%
+\contentsline {section}{\numberline {3.2}Configuraciones básicas}{52}%
+\contentsline {section}{\numberline {3.3}Potencia de salida, rendimiento y potencia disipada en los transistores de salida de una etapa clase B}{54}%
+\contentsline {section}{\numberline {3.4}Realizaciones prácticas de etapas de salida clase A y AB}{58}%
+\contentsline {section}{\numberline {3.5}Factores térmicos que se deben tener en cuenta.}{61}%
+\contentsline {chapter}{\numberline {4}Amplificadores Operacionales. }{66}%
+\contentsline {section}{\numberline {4.1}Amplificadores operacionales ideales}{66}%
+\contentsline {section}{\numberline {4.2}Amplificadores operacionales reales}{67}%
+\contentsline {subsection}{\numberline {4.2.1}Amplificadores operacionales como amplificadores de tensión reales}{67}%
+\contentsline {subsection}{\numberline {4.2.2}Estructura interna de los amplificadores operacionales}{69}%
+\contentsline {subsection}{\numberline {4.2.3}Características de corriente continua}{70}%
+\contentsline {subsubsection}{Desajuste de tensión}{71}%
+\contentsline {subsubsection}{Desajuste debido a las corrientes de polarización de entrada}{71}%
+\contentsline {subsubsection}{Modelo completo de desajuste}{72}%
+\contentsline {subsubsection}{Circuitos para anular la tensión de desajuste de salida}{74}%
+\contentsline {subsection}{\numberline {4.2.4}Rapidez de respuesta (\emph {Slew Rate})}{74}%
+\contentsline {subsection}{\numberline {4.2.5}El amplificador operacional real. Análisis de su hoja de datos.}{77}%
+\contentsline {section}{\numberline {4.3}Aplicaciones de amplificadores operacionales}{78}%
+\contentsline {subsection}{\numberline {4.3.1}Aplicaciones operacionales básicas}{78}%
+\contentsline {subsubsection}{Inversor con cambio de escala}{78}%
+\contentsline {subsubsection}{Amplificador no inversor con cambio de escala}{78}%
+\contentsline {subsubsection}{Sumador ponderado}{78}%
+\contentsline {subsubsection}{Restador (amplificador diferencial)}{78}%
+\contentsline {subsubsection}{Integrador}{80}%
+\contentsline {subsubsection}{Derivador}{82}%
+\contentsline {subsection}{\numberline {4.3.2}Aplicaciones de corriente alterna}{82}%
+\contentsline {subsubsection}{Amplificador inversor de C. A.}{84}%
+\contentsline {subsubsection}{Amplificador no inversor de C. A.}{84}%
+\contentsline {subsubsection}{Filtros utilizando AOs}{84}%
+\contentsline {subsubsection}{Impedancias simuladas}{84}%
+\contentsline {subsection}{\numberline {4.3.3}Aplicaciones no lineales}{86}%
+\contentsline {subsubsection}{Diodo de precisión}{86}%
+\contentsline {subsubsection}{Rectificador de onda completa}{88}%
+\contentsline {subsubsection}{Detector de picos}{89}%
+\contentsline {subsubsection}{Limitador de tensión}{89}%
+\contentsline {subsubsection}{Amplificadores logarítmicos y antilogarítmicos}{91}%
+\contentsline {subsection}{\numberline {4.3.4}Otras aplicaciones}{91}%
+\contentsline {section}{\numberline {4.4}Comparadores}{93}%
+\contentsline {subsection}{\numberline {4.4.1}Comparadores de tensión}{94}%
+\contentsline {subsection}{\numberline {4.4.2}Comparador con histéresis (Schmitt Trigger)}{94}%
+\contentsline {subsection}{\numberline {4.4.3}Generadores de señales con comparadores.}{95}%
+\contentsline {chapter}{\numberline {5}Osciladores senoidales.}{101}%
+\contentsline {section}{\numberline {5.1}Principios básicos}{101}%
+\contentsline {subsection}{\numberline {5.1.1}Osciladores senoidales como sistemas realimentados}{101}%
+\contentsline {subsection}{\numberline {5.1.2}Criterio de oscilación}{101}%
+\contentsline {subsection}{\numberline {5.1.3}Control no lineal de amplitud}{102}%
+\contentsline {section}{\numberline {5.2}Circuitos osciladores R-C}{105}%
+\contentsline {subsection}{\numberline {5.2.1}Oscilador puente de Wien}{105}%
+\contentsline {subsection}{\numberline {5.2.2}Oscilador de desplazamiento de fase}{105}%
+\contentsline {section}{\numberline {5.3}Osciladores L-C y a cristal}{108}%
+\contentsline {subsection}{\numberline {5.3.1}Familia de osciladores L-C}{108}%
+\contentsline {subsection}{\numberline {5.3.2}Osciladores a cristal}{113}%
+\contentsline {chapter}{\numberline {6}Fuentes Reguladas de Tensión}{117}%
+\contentsline {section}{\numberline {6.1}Introducción}{117}%
+\contentsline {section}{\numberline {6.2}Parámetros característicos de una fuente regulada}{117}%
+\contentsline {section}{\numberline {6.3}Teoría básica de los reguladores}{119}%
+\contentsline {subsection}{\numberline {6.3.1}Regulador serie}{120}%
+\contentsline {subsection}{\numberline {6.3.2}Regulador paralelo}{121}%
+\contentsline {subsection}{\numberline {6.3.3}Regulador de conmutación}{122}%
+\contentsline {section}{\numberline {6.4}Ejemplo de una fuente regulada serie}{122}%
+\contentsline {subsection}{\numberline {6.4.1}Protección contra corto circuito}{125}%
+\contentsline {section}{\numberline {6.5}Fuentes reguladas serie integradas}{127}%

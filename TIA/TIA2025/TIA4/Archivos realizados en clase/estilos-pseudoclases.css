@@ -1,0 +1,77 @@
+:root {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+}
+/* Pseudoclases de interacción */
+
+.h:hover {
+    font-weight: bold;
+}
+.a:active {
+    background-color: lightcoral;
+}
+.f:focus {
+    background-color: lightgray;
+}
+
+/* Pseudoclases de estructura */
+ul {
+    list-style-type: none;
+}
+.items:first-child {
+    color: blue;
+}
+.items:last-child{
+    color: red;
+}
+.items:first-of-type {
+    color: yellow;
+}
+.items:only-child {
+    color: darkmagenta;
+}
+
+.items:last-of-type {
+    background-color: lightgreen;
+}
+.e {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.e:empty{
+    background-color: cyan;
+}
+.items:nth-child(7) {
+    color: blueviolet;
+}
+.items:nth-last-child(3) {
+    color: brown;
+}
+/* Pseudoclases de ubicación */
+
+.items:any-link {
+    background-color: orange;
+}
+a:link {
+    background-color: lightsalmon;
+}
+a:visited {
+    background-color: lightblue;
+}
+/* Pseudoclases de combinación lógica */
+
+.comb:is(h3) {
+    font-style: italic;
+}
+.comb:not(li) {
+    color: red;
+}
+
+ul:has(h4){
+    background-color: lightblue;
+
+}
+
+

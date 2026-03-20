@@ -1,0 +1,167 @@
+
+**** 08/14/23 13:44:42 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 2\g2_p2.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Mon Aug 14 13:44:41 2023
+
+
+
+** Analysis setup **
+.tran .001 5
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "g2_p2.net"
+
+**** INCLUDING g2_p2.net ****
+* Schematics Netlist *
+
+
+
+V_V1         $N_0001 0 DC 0 AC 0
++SIN 0 10 1 0 0 0
+S_S1         $N_0001 $N_0002 $N_0001 0 Sbreak
+RS_S1        $N_0001 0 1G
+R_R1         $N_0002 0  100  
+
+**** RESUMING g2_p2.cir ****
+.INC "g2_p2.als"
+
+
+
+**** INCLUDING g2_p2.als ****
+* Schematics Aliases *
+
+.ALIASES
+V_V1            V1(+=$N_0001 -=0 )
+S_S1            S1(3=$N_0001 4=$N_0002 1=$N_0001 2=0 )
+RS_S1           S1(1=$N_0001 2=0 )
+R_R1            R1(1=$N_0002 2=0 )
+.ENDALIASES
+
+
+**** RESUMING g2_p2.cir ****
+.probe
+
+
+.END
+
+**** 08/14/23 13:44:42 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 2\g2_p2.sch
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Sbreak          
+         RON    1            
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+**** 08/14/23 13:44:42 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 2\g2_p2.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   ($N_0002)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 08/14/23 13:44:42 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 2\g2_p2.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** VOLTAGE CONTROLLED SWITCHES
+
+
+NAME         S_S1      
+MODEL        Sbreak    
+I LOAD       0.00E+00 
+V LOAD       0.00E+00 
+R LOAD       1.00E+06 
+V CTRL       0.00E+00 
+**** 08/14/23 13:44:42 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 2\g2_p2.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   ($N_0002)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .13
+

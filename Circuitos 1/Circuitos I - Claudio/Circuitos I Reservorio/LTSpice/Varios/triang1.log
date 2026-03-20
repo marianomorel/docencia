@@ -1,0 +1,42 @@
+
+   --- Expanded Deck Component Count ---
+C's 1
+E's 2
+I's 1
+R's 3
+tot: 7
+
+
+    --- Expanded Netlist ---
+* C:\Claudio\Docencia personal\LTSpice\Varios\triang1.asc
+e1 a 0 0 n003 table=(-100,-12)(-60u,-12)(60u,12)(100,12)
+e2 n001 0 n002 0 table=(-100,-12)(-60u,-12)(60u,12)(100,12)
+c1 a n003 .5µ
+r1 n003 n001 10k
+r2 a n002 10k
+r3 n002 n001 20k
+i1 n003 0 1m
+.ic v(a)=10
+.tran 0 2 0 .01m uic
+.end
+
+Per .tran options, skipping operating point for transient analysis.
+
+Date: Wed Nov 27 16:17:35 2019
+Total elapsed time: 1.935 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 400156
+traniter = 400156
+tranpoints = 200018
+accept = 200018
+rejected = 0
+matrix size = 6
+fillins = 1
+solver = Normal
+Matrix Compiler1: 312 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: 444 bytes object code size  0.1/0.2/[0.1]
+
+

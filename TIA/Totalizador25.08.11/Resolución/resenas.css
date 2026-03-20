@@ -1,0 +1,19 @@
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+
+article p {
+    text-align: justify;
+    font-style: italic;
+}
+
+.texto {
+    padding-top: 15px;
+}
+
+.subtitulo {
+    color: var(--color-gris-claro);
+}

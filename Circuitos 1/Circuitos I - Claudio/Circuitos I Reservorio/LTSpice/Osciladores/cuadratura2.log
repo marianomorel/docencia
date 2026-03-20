@@ -1,0 +1,67 @@
+Circuit: * E:\Claudio\Docencia personal\LTSpice\Osciladores\cuadratura2.asc
+
+Limiting rise time of source v1 to 0.05
+Limiting fall time of source v1 to 0.05
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+Gmin = 1.08884
+vernier = 0.03125
+vernier = 0.015625
+Gmin = 1.03122
+vernier = 0.0078125
+vernier = 0.0104167
+vernier = 0.00520833
+Gmin = 1.01988
+vernier = 0.00260417
+vernier = 0.00347222
+Gmin = 1.01305
+vernier = 0.00173611
+vernier = 0.00231481
+vernier = 0.00115741
+Gmin = 1.01085
+vernier = 0.00154321
+vernier = 0.000771604
+Gmin = 1.00871
+vernier = 0.00102881
+vernier = 0.000514403
+Gmin = 1.00715
+vernier = 0.00068587
+vernier = 0.000514403
+Gmin = 1.0059
+vernier = 0.00068587
+vernier = 0.000514402
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source stepping succeeded in finding the operating point.
+
+
+Date: Tue Apr 30 16:02:02 2024
+Total elapsed time: 1.949 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 106678
+traniter = 100295
+tranpoints = 50032
+accept = 50026
+rejected = 6
+matrix size = 19
+fillins = 19
+solver = Normal
+Thread vector: 15.4/9.8[2] 3.8/3.3[2] 2.9/2.9[1] 0.1/1.0[1]  2592/500
+Matrix Compiler1: 2.35 KB object code size  1.6/0.6/[0.5]
+Matrix Compiler2: 2.47 KB object code size  0.7/0.9/[0.3]
+

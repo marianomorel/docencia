@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Instituto TIA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <img src="logo.png">
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">
+            <img src="inicio.svg">
+            Inicio
+          </a>
+        </li>
+        <li>
+          <a href="niveles.html">
+            <img src="niveles.svg">
+            Niveles
+          </a>
+        </li>
+        <li>
+          <a href="matriculacion.html">
+            <img src="matriculacion.svg">
+            Matriculación
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form method="post" id="matriculacion">
+      <h2>Solicitud de matriculación</h2>
+      <div>
+        <label for="nombre">Nombre completo</label>
+        <input type="text" name="nombre" id="nombre" required>
+      </div>
+      <div>
+        <label for="fecha">Fecha de nacimiento</label>
+        <input type="date" name="fecha" id="fecha" required>
+      </div>
+      <div>
+        <p>Turno</p>
+        <div id="turno">
+          <input type="radio" name="turno" id="manana" required>
+          <label for="manana">Mañana</label>
+          <input type="radio" name="turno" id="tarde" required>
+          <label for="tarde">Tarde</label>
+        </div>
+      </div>
+      <div>
+        <label for="nivel">Nivel</label>
+        <select name="nivel" id="nivel" required>
+          <option value="incial">Inicial</option>
+          <option value="primaria">Primaria</option>
+          <option value="secundaria">Secundaria</option>
+        </select>
+      </div>
+      <div>
+        <label for="email">Correo electrónico</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+      <div>
+        <label for="telefono">Teléfono</label>
+        <input type="tel" name="telefono" id="telefono" required>
+      </div>
+      <input type="submit" value="Solicitar">
+    </form>
+  </main>
+
+  <footer>
+    <h2>Instituto TIA</h2>
+    <address>
+      <ul>
+        <li>(0223) 471 - 2345</li>
+        <li>
+          <a href="mailto:info@tia.edu.ar">info@tia.edu.ar</a>
+        </li>
+        <li>Av. Juan B. Justo 4302</li>
+      </ul>
+    </address>
+  </footer>
+</body>
+
+</html>

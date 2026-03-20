@@ -1,0 +1,126 @@
+
+**** 09/14/23 12:04:11 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 3\g3_p20.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Thu Sep 14 11:58:43 2023
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "g3_p20.net"
+
+**** INCLUDING g3_p20.net ****
+* Schematics Netlist *
+
+
+
+R_R4         0 $N_0001  1k  
+R_R3         $N_0002 $N_0001  1k  
+R_R5         $N_0004 $N_0003  500  
+R_R1         $N_0005 $N_0002  1k  
+V_V1         $N_0005 0 1V
+R_R2         $N_0002 $N_0004  500  
+F_F1         $N_0001 0 VF_F1 100
+VF_F1        $N_0003 0 0V
+
+**** RESUMING g3_p20.cir ****
+.INC "g3_p20.als"
+
+
+
+**** INCLUDING g3_p20.als ****
+* Schematics Aliases *
+
+.ALIASES
+R_R4            R4(1=0 2=$N_0001 )
+R_R3            R3(1=$N_0002 2=$N_0001 )
+R_R5            R5(1=$N_0004 2=$N_0003 )
+R_R1            R1(1=$N_0005 2=$N_0002 )
+V_V1            V1(+=$N_0005 -=0 )
+R_R2            R2(1=$N_0002 2=$N_0004 )
+F_F1            F1(3=$N_0001 4=0 )
+VF_F1           F1(1=$N_0003 2=0 )
+.ENDALIASES
+
+
+**** RESUMING g3_p20.cir ****
+.probe
+
+
+.END
+
+**** 09/14/23 12:04:11 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 3\g3_p20.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    -.9429                   ($N_0002)     .0190                       
+
+($N_0003)    0.0000                   ($N_0004)     .0095                       
+
+($N_0005)    1.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -9.810E-04
+    VF_F1        1.905E-05
+
+    TOTAL POWER DISSIPATION   9.81E-04  WATTS
+
+
+**** 09/14/23 12:04:11 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 3\g3_p20.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** CURRENT-CONTROLLED CURRENT SOURCES
+
+
+NAME         F_F1      
+I-SOURCE     1.905E-03
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            0.00
+

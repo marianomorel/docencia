@@ -1,0 +1,38 @@
+:Base pcboards.HLP
+1 Overview
+2 About PCBoards=About_PCBoards
+1 Getting Started
+2 Working with PCBoards=Working_with_PCBoards
+2 Starting a Design=Starting_a_Design
+2 Configuring the Layout Environment=Configuring_the_Layout_Environment
+1 Placing & Editing Components, Text, and Graphics
+2 Placing Components=Placing_Components
+2 Placing Text & Graphics=Placing_Text_Graphics
+1 Routing
+2 About Routing=About_Routing
+2 Setting Up for Routing=Setting_Up_for_Routing
+2 Routing Interactively=Routing_Interactively
+2 Autorouting=Autorouting
+1 Verifying & Finalizing the Design
+2 Checking Design Rules (DRC)=Checking_Design_Rules
+2 Finalizing the Design=Finalizing_the_Design
+2 Applying ECOs=Applying_ECOs
+1 Post-Processing
+2 Defining Output Jobs=Defining_Output_Jobs
+2 Generating Artwork (Gerber)=Generating_Artwork_Gerber
+2 Generating Drill Files=Generating_Drill_Files
+2 Generating Documentation=Generating_Documentation
+1 Building Components
+2 About Building Components=About_Building_Components
+2 Creating Footprints=Creating_Footprints
+2 Editing an Existing Footprint=Editing_an_Existing_Footprint
+2 Defining Packages=Defining_Packages
+2 Defining Padstacks=Defining_Padstacks
+1 What's New for Release 8
+2 Editing Boundaries for all polygonal types=Editing_Boundaries_for_all_polygonal_types
+2 Generating Autorouter Rules Reports=Generating_Reports
+2 Identifying Floating Copper=Deleting_Floating_Copper
+2 Importing a DXF File=Importing_a_DXF_File
+2 Using Interactive Netlist Readin=Using_Interactive_Netlist_Readin
+2 Using the Footprint Browser=Editing_an_Existing_Footprint
+2 Using the Add Component Part Browser=Adding_Components

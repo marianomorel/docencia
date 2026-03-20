@@ -1,0 +1,10 @@
+* Schematics Netlist *
+
+
+
+V_V1         $N_0001 0 3V
+I_I1         0 $N_0001 DC 1A  
+R_R2         0 $N_0001  1  
+R_R1         $N_0001 Vo  1  
+I_I2         Vo $N_0001 DC 3A  
+R_R3         0 Vo  1  

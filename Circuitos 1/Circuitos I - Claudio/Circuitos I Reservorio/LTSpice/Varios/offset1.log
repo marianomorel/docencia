@@ -1,0 +1,103 @@
+
+   --- Expanded Deck Component Count ---
+B's 2
+C's 2
+D's 5
+G's 2
+H's 1
+I's 1
+Q's 2
+R's 9
+V's 8
+tot: 32
+
+
+    --- Expanded Netlist ---
+* C:\Claudio\Docencia personal\LTSpice\Varios\offset1.asc
+v1 n001 0 12
+v2 0 n003 12
+c:u1:1 u1:11 u1:12 8.661e-12 
+c:u1:2 u1:6 u1:7 30.00e-12 
+d:u1:c n002 u1:53 u1:dy 
+d:u1:e u1:54 n002 u1:dy 
+d:u1:lp u1:90 u1:91 u1:dx 
+d:u1:ln u1:92 u1:90 u1:dx 
+d:u1:p n003 n001 u1:dx 
+b:u1:§egnd u1:99 0 v=.5*v(n001)+.5*v(n003)
+b:u1:§fb u1:7 u1:99 i=10.61e6*i(v:u1:b)+-1e3*i(v:u1:c)+1e3*i(v:u1:e)+10e6*i(v:u1:lp)+-10e6*i(v:u1:ln)
+g:u1:a u1:6 0 u1:11 u1:12 188.5e-6
+g:u1:cm 0 u1:6 u1:10 u1:99 5.961e-9
+i:u1:ee u1:10 n003 dc 15.16e-6
+h:u1:lim u1:90 0 v:u1:lim 1k
+q:u1:1 u1:11 n002 u1:13 u1:qx 
+q:u1:2 u1:12 0 u1:14 u1:qx 
+r:u1:2 u1:6 u1:9 100.0e3 
+r:u1:c1 n001 u1:11 5.305e3 
+r:u1:c2 n001 u1:12 5.305e3 
+r:u1:e1 u1:13 u1:10 1.836e3 
+r:u1:e2 u1:14 u1:10 1.836e3 
+r:u1:ee u1:10 u1:99 13.19e6 
+r:u1:o1 u1:8 n002 50 
+r:u1:o2 u1:7 u1:99 100 
+r:u1:p n001 n003 18.16e3 
+v:u1:b u1:9 0 dc 0
+v:u1:c n001 u1:53 dc 1
+v:u1:e u1:54 n003 dc 1
+v:u1:lim u1:7 u1:8 dc 0
+v:u1:lp u1:91 0 dc 40
+v:u1:ln 0 u1:92 dc 40
+.model u1:qx npn(is=800.0e-18 bf=93.75)
+.model u1:dy d(is=800.00e-18 rs=1m cjo=10p)
+.model u1:dx d(is=800.0e-18 rs=1)
+.op
+.end
+
+Direct Newton iteration for .op point succeeded.
+Semiconductor Device Operating Points:
+                        --- Diodes ---
+Name:    d:u1:p      d:u1:ln     d:u1:lp     d:u1:e      d:u1:c
+Model:    u1:dx       u1:dx       u1:dx       u1:dy       u1:dy
+Id:     -2.40e-11   -4.00e-11   -4.00e-11   -1.24e-11   -1.10e-11
+Vd:     -2.40e+01   -4.00e+01   -4.00e+01   -1.10e+01   -1.10e+01
+Req:     1.00e+12    1.00e+12    1.00e+12    1.00e+12    1.00e+12
+CAP:     0.00e+00    0.00e+00    0.00e+00    2.89e-12    2.89e-12
+
+                        --- Bipolar Transistors ---
+Name:     q:u1:2      q:u1:1
+Model:     u1:qx       u1:qx
+Ib:       7.97e-08    7.98e-08
+Ic:       7.48e-06    7.48e-06
+Vbe:      5.94e-01    5.94e-01
+Vbc:     -1.20e+01   -1.20e+01
+Vce:      1.26e+01    1.26e+01
+BetaDC:   9.38e+01    9.38e+01
+Gm:       2.89e-04    2.89e-04
+Rpi:      3.24e+05    3.24e+05
+Rx:       0.00e+00    0.00e+00
+Ro:         NaN         NaN
+Cbe:      0.00e+00    0.00e+00
+Cbc:      0.00e+00    0.00e+00
+Cjs:      0.00e+00    0.00e+00
+BetaAC:   9.37e+01    9.37e+01
+Cbx:      0.00e+00    0.00e+00
+Ft:       0.00e+00    0.00e+00
+
+
+
+Date: Fri Dec 13 11:28:51 2019
+Total elapsed time: 0.000 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 12
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 33
+fillins = 48
+solver = Normal
+Matrix Compiler1: 4,01 KB object code size
+Matrix Compiler2: 3,49 KB object code size
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <header>
+            <h1>Pinturerías TIA</h1>
+            <img src="logo.png" alt="Logo">
+            <nav>
+                <ul>
+                    <li><a href="inicio.html" class="link-inicio">Inicio</a></li>
+                    <li><a href="colores.html" class="link-colores">Colores</a></li>
+                    <li><a href="asesoramiento.html" class="link-asesor">Asesoramiento</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="sect-asesor">
+                <h3>Asesoramiento</h3>
+                <form action="#" method="post">
+                    <section class="form-flex">
+                        <section class="flex-datos1">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" required>
+                            <label for="correo">Correo electrónico</label>
+                            <input type="email" id="correo" required>
+                            <label for="presupuesto">Presupuesto estimado</label>
+                            <input type="number" id="presupuesto" required>
+                        </section>
+                        <section class="flex-datos2">
+                            <label for="desc">Descripción del proyecto</label>
+                            <input type="textarea" id="desc" value="">
+                            <label for="fotos">Fotos el espacio</label>
+                            <input type="file" id="fotos">
+                        </section>
+                    </section>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+        <footer>© 2026 Pinturerías TIA. Todos los derechos reservados.</footer>
+    </body>
+</html>

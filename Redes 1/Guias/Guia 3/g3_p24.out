@@ -1,0 +1,295 @@
+
+**** 09/19/23 09:57:56 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 3\g3_p24.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Tue Sep 19 09:57:56 2023
+
+
+
+** Analysis setup **
+.tran .02 2
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "g3_p24.net"
+
+**** INCLUDING g3_p24.net ****
+* Schematics Netlist *
+
+
+
+V_V3         0 $N_0001 10V
+V_V7         $N_0002 0 10V
+I_I2         0 $N_0003 DC 0.01A  
+R_R5         $N_0004 $N_0003  1k  
+X_U4         0 $N_0003 $N_0002 $N_0001 $N_0005 uA741
+R_R6         0 $N_0004  2k  
+R_R4         $N_0005 $N_0004  0.8k  
+
+**** RESUMING g3_p24.cir ****
+.INC "g3_p24.als"
+
+
+
+**** INCLUDING g3_p24.als ****
+* Schematics Aliases *
+
+.ALIASES
+V_V3            V3(+=0 -=$N_0001 )
+V_V7            V7(+=$N_0002 -=0 )
+I_I2            I2(+=0 -=$N_0003 )
+R_R5            R5(1=$N_0004 2=$N_0003 )
+X_U4            U4(+=0 -=$N_0003 V+=$N_0002 V-=$N_0001 OUT=$N_0005 )
+R_R6            R6(1=0 2=$N_0004 )
+R_R4            R4(1=$N_0005 2=$N_0004 )
+.ENDALIASES
+
+
+**** RESUMING g3_p24.cir ****
+.probe
+
+
+.END
+
+**** 09/19/23 09:57:56 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 3\g3_p24.sch
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U4.dx         
+          IS  800.000000E-18 
+          RS    1            
+
+
+**** 09/19/23 09:57:56 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 3\g3_p24.sch
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U4.qx         
+               NPN             
+          IS  800.000000E-18 
+          BF   93.75         
+          NF    1            
+          BR    1            
+          NR    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 09/19/23 09:57:56 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 3\g3_p24.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(X_U4.6)    1.5664 (X_U4.7)  -10.2420 (X_U4.8)  -10.2420 (X_U4.9)    0.0000     
+
+($N_0001)  -10.0000                   ($N_0002)   10.0000                       
+
+($N_0003)    8.8466                   ($N_0004)   -1.1533                       
+
+($N_0005)   -9.6145                   (X_U4.10)    8.2047                       
+
+(X_U4.11)    9.9172                   (X_U4.12)   10.0000                       
+
+(X_U4.13)    8.2337                   (X_U4.14)    8.2047                       
+
+(X_U4.53)    9.0000                   (X_U4.54)   -9.0000                       
+
+(X_U4.90)  -12.5470                   (X_U4.91)   40.0000                       
+
+(X_U4.92)  -40.0000                   (X_U4.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -1.100E-03
+    V_V7        -1.117E-03
+    X_U4.vb      1.566E-05
+    X_U4.vc      1.861E-11
+    X_U4.ve     -1.661E-05
+    X_U4.vlim   -1.255E-02
+    X_U4.vlp    -5.255E-11
+    X_U4.vln    -2.746E-11
+
+    TOTAL POWER DISSIPATION   2.22E-02  WATTS
+
+
+**** 09/19/23 09:57:56 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 3\g3_p24.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** VOLTAGE-CONTROLLED CURRENT SOURCES
+
+
+NAME         X_U4.ga     X_U4.gcm  
+I-SOURCE    -1.562E-05   4.891E-08
+
+
+**** VOLTAGE-CONTROLLED VOLTAGE SOURCES
+
+
+NAME         X_U4.egnd 
+V-SOURCE     0.000E+00
+I-SOURCE     1.255E-02
+
+
+**** CURRENT-CONTROLLED CURRENT SOURCES
+
+
+NAME         X_U4.fb   
+I-SOURCE     1.150E-01
+
+
+**** CURRENT-CONTROLLED VOLTAGE SOURCES
+
+
+NAME         X_U4.hlim 
+V-SOURCE    -1.255E+01
+I-SOURCE     2.510E-11
+
+
+**** DIODES
+
+
+NAME         X_U4.dc     X_U4.de     X_U4.dlp    X_U4.dln    X_U4.dp   
+MODEL        X_U4.dx     X_U4.dx     X_U4.dx     X_U4.dx     X_U4.dx   
+ID          -1.86E-11    1.66E-05   -5.25E-11   -2.75E-11   -2.00E-11 
+VD          -1.86E+01    6.14E-01   -5.25E+01   -2.75E+01   -2.00E+01 
+REQ          1.00E+12    1.56E+03    1.00E+12    1.00E+12    1.00E+12 
+CAP          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+
+
+**** BIPOLAR JUNCTION TRANSISTORS
+
+
+NAME         X_U4.q1     X_U4.q2   
+MODEL        X_U4.qx     X_U4.qx   
+IB           1.67E-07   -1.01E-11 
+IC           1.56E-05    1.18E-11 
+VBE          6.13E-01   -8.20E+00 
+VBC         -1.07E+00   -1.00E+01 
+VCE          1.68E+00    1.80E+00 
+BETADC       9.38E+01   -1.17E+00 
+GM           6.04E-04    0.00E+00 
+RPI          1.55E+05    9.38E+13 
+RX           0.00E+00    0.00E+00 
+RO           1.00E+12    1.00E+12 
+CBE          0.00E+00    0.00E+00 
+CBC          0.00E+00    0.00E+00 
+CJS          0.00E+00    0.00E+00 
+BETAAC       9.38E+01    0.00E+00 
+CBX/CBX2     0.00E+00    0.00E+00 
+FT/FT2       9.61E+15    0.00E+00 
+
+
+**** 09/19/23 09:57:56 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 3\g3_p24.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(X_U4.6)    1.5664 (X_U4.7)  -10.1440 (X_U4.8)  -10.1440 (X_U4.9)    0.0000     
+
+($N_0001)  -10.0000                   ($N_0002)   10.0000                       
+
+($N_0003)    8.8466                   ($N_0004)   -1.1533                       
+
+($N_0005)   -9.6145                   (X_U4.10)    8.2047                       
+
+(X_U4.11)    9.9172                   (X_U4.12)   10.0000                       
+
+(X_U4.13)    8.2337                   (X_U4.14)    8.2047                       
+
+(X_U4.53)    9.0000                   (X_U4.54)   -9.0000                       
+
+(X_U4.90)  -10.5920                   (X_U4.91)   40.0000                       
+
+(X_U4.92)  -40.0000                   (X_U4.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -1.100E-03
+    V_V7        -1.117E-03
+    X_U4.vb      1.566E-05
+    X_U4.vc      1.862E-11
+    X_U4.ve     -1.661E-05
+    X_U4.vlim   -1.059E-02
+    X_U4.vlp    -5.059E-11
+    X_U4.vln    -2.941E-11
+
+    TOTAL POWER DISSIPATION   2.22E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

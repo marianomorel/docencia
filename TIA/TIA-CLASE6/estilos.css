@@ -1,0 +1,57 @@
+.texto1{
+    border: 2px solid red;
+
+}
+.texto2{
+    width: 500px;
+    height: 100px;
+    border: 2px solid yellow;
+
+}
+.strong1{
+    border: 2px solid blue;
+}
+.clasea{
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    border: 2px solid black;
+}
+.block{
+    display: block;
+    color: white;
+    background-color: darkblue;
+}
+.inline{
+    display: inline;
+    color: wheat;
+    background-color: darkred;
+}
+.inline-block{
+    display: inline-block;
+    color: white;
+    background-color: indigo;
+}
+
+.box1 {
+    width: 100px;
+    height: 120px;
+    padding: 10px;
+    border: 2px solid blue;
+    box-sizing: content-box;
+}
+
+.box2 {
+    width: 100px;
+    height: 120px;
+    padding: 10px;
+    border: 2px solid red;
+    box-sizing: border-box;
+}
+.autor{
+    font-style: italic;
+}
+pre{
+    font-family: Arial, Helvetica, sans-serif;
+}
+

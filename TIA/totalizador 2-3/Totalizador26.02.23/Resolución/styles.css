@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.2em solid red;
+  padding: 1em;
+}
+
+header > img {
+  height: 2em;
+}
+
+header nav {
+  flex: 1;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav img {
+  width: 1.5em;
+  margin-right: 0.5em;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+main {
+  padding: 1em;
+}
+
+main h2 {
+  font-weight: normal;
+  margin: 0;
+}
+
+section:not(:last-child) {
+  margin-bottom: 2em;
+}
+
+#nosotros p {
+  text-align: justify;
+}
+
+#propuestas {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  text-align: center;
+  margin-top: 1em;
+}
+
+#propuestas article {
+  margin: 0.5em;
+}
+
+#propuestas h3 {
+  font-weight: normal;
+  font-style: italic;
+  margin: 0.5em 0;
+}
+
+#propuestas div:has(img) {
+  background-color: pink;
+  width: 4em;
+  height: 4em;
+  padding: 1em;
+  border-radius: 50%;
+  margin: auto;
+}
+
+#propuestas p {
+  margin: 0;
+}
+
+#niveles article:not(:last-child) {
+  border-bottom: 0.15em dashed pink;
+  margin-bottom: 1em;
+}
+
+#matriculacion {
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+  margin: auto;
+  background-color: pink;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+#matriculacion > * {
+  display: flex;
+  flex-direction: column;
+  margin: 0.25em 0;
+}
+
+#matriculacion label:not(#turno label), #matriculacion p {
+  margin: 0;
+  font-style: italic;
+}
+
+#matriculacion input, #matriculacion select {
+  border-radius: 0.25em;
+  border: 0;
+  padding: 0.25em;
+  outline: none;
+}
+
+#matriculacion input[type="submit"] {
+  background-color: darkred;
+  color: white;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+
+footer {
+  background-color: darkred;
+  color: white;
+  padding: 1em;
+  text-align: right;
+}
+
+footer h2 {
+  font-size: 1em;
+  margin: 0;
+}
+
+footer ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-top: 0.25em;
+}
+
+footer a {
+  color: white;
+}

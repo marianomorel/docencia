@@ -1,0 +1,113 @@
+
+**** 09/13/23 18:06:10 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 3\g3_p21.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Wed Sep 13 18:06:06 2023
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "g3_p21.net"
+
+**** INCLUDING g3_p21.net ****
+* Schematics Netlist *
+
+
+
+V_V1         $N_0001 0 1V
+R_Rinf         0 $N_0001  1e9  
+G_G1         0 $N_0002 $N_0001 $N_0002 0.01
+R_R1         0 $N_0002  1k  
+
+**** RESUMING g3_p21.cir ****
+.INC "g3_p21.als"
+
+
+
+**** INCLUDING g3_p21.als ****
+* Schematics Aliases *
+
+.ALIASES
+V_V1            V1(+=$N_0001 -=0 )
+R_Rinf          Rinf(1=0 2=$N_0001 )
+G_G1            G1(3=0 4=$N_0002 1=$N_0001 2=$N_0002 )
+R_R1            R1(1=0 2=$N_0002 )
+.ENDALIASES
+
+
+**** RESUMING g3_p21.cir ****
+.probe
+
+
+.END
+
+**** 09/13/23 18:06:10 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 3\g3_p21.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    1.0000                   ($N_0002)     .9091                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.000E-09
+
+    TOTAL POWER DISSIPATION   1.00E-09  WATTS
+
+
+**** 09/13/23 18:06:10 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 3\g3_p21.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** VOLTAGE-CONTROLLED CURRENT SOURCES
+
+
+NAME         G_G1      
+I-SOURCE     9.091E-04
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            0.00
+

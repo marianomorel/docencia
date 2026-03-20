@@ -1,0 +1,108 @@
+
+   --- Expanded Deck Component Count ---
+A's 2
+B's 3
+C's 9
+D's 2
+M's 2
+R's 3
+V's 3
+tot: 24
+
+
+    --- Expanded Netlist ---
+* C:\Claudio\Docencia personal\LTSpice\741\Draft51.asc
+v1 n001 0 12
+v2 0 n004 12
+v3 n003 0 0 ac 1 0
+r1 n002 0 10000
+a:u1:1 0 u1:n004 0 0 0 0 u1:x 0 ota g=150u iout=7u cout=28p en=9.8n enk=4 vhigh=1e308 vlow=-1e308
+a:u1:2 0 n003 0 0 0 0 0 0 ota g=0 in=.1p ink=70
+c:u1:2 u1:n004 0 .75p rpar=100k noiseless
+r:u1:1 n001 u1:x 10g noiseless 
+r:u1:2 u1:x n004 10g noiseless 
+m:u1:1 n001 u1:n005 n002 n002 u1:n temp=27
+m:u1:2 n004 u1:n005 n002 n002 u1:p temp=27
+d:u1:1 n002 u1:x u1:x 
+c:u1:3 u1:n005 0 .075p rpar=1meg noiseless
+d:u1:4 0 n003 u1:di 
+c:u1:5 0 n003 1p rpar=80meg 
+c:u1:7 n001 n002 .2p 
+c:u1:8 n002 n004 .2p 
+b:u1:1 0 u1:n004 i=10u*dnlim(uplim(v(n003),v(n001)-.9,.3), v(n004)+.9, .3)+1n*v(n003)
+b:u1:2 u1:n004 0 i=10u*dnlim(uplim(v(0),v(n001)-.899,.3), v(n004)+.899, .3)+1n*v(0)
+b:u1:3 0 u1:n005 i=1u*dnlim(uplim(v(u1:x),v(n001)-.9,.5), v(n004)+.9,.5)+1p*v(u1:x)
+c:u1:9 n001 n003 .5p rpar=1.12t noiseless
+c:u1:4 n003 n004 .5p rpar=1.12t noiseless
+c:u1:6 0 n004 .5p rpar=1.12t noiseless
+c:u1:10 n001 0 .5p rpar=1.12t noiseless
+.model u1:di d(ron=1.15k roff=1g vfwd=1 vrev=1 epsilon=1 revepsilon=1 noiseless)
+.model u1:p vdmos(vto=300m kp=50m pchan)
+.model u1:n vdmos(vto=-300m kp=50m)
+.model u1:x d(ron=10k roff=1t vfwd=.82 vrev=.82 epsilon=.1 revepsilon=.1)
+.ac dec 1000 .1 10meg
+.end
+
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+Gmin = 1.08884
+vernier = 0.03125
+vernier = 0.015625
+Gmin = 1.03122
+vernier = 0.0078125
+vernier = 0.0104167
+vernier = 0.00520833
+Gmin = 1.01988
+vernier = 0.00260417
+vernier = 0.00347222
+Gmin = 1.01305
+vernier = 0.00173611
+vernier = 0.00231481
+vernier = 0.00115741
+Gmin = 1.01085
+vernier = 0.00154321
+vernier = 0.000771604
+Gmin = 1.00871
+vernier = 0.00102881
+vernier = 0.000514403
+Gmin = 1.00715
+vernier = 0.00068587
+vernier = 0.000514403
+Gmin = 1.0059
+vernier = 0.00068587
+vernier = 0.000514402
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source stepping succeeded in finding the operating point.
+
+
+Date: Fri Feb 08 15:05:28 2019
+Total elapsed time: 0.233 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 6348
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 10
+fillins = 1
+solver = Normal
+Matrix Compiler1:      28 opcodes
+Matrix Compiler2: off  [0.2]/0.3/0.6
+
+

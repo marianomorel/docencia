@@ -1,0 +1,55 @@
+
+   --- Expanded Deck Component Count ---
+C's 3
+D's 2
+Q's 3
+R's 5
+V's 4
+tot: 17
+
+
+    --- Expanded Netlist ---
+* C:\Claudio\Docencia personal\LTSpice\ClaseB\claseabteo3.asc
+v1 n001 0 10
+v2 0 n009 10
+d1 n003 n005 1n4148
+d2 n005 n006 1n4148
+r1 n004 0 10
+r2 n010 n009 100
+c1 n010 n009 100µ
+r3 n008 n011 22k
+v3 n011 n009 7.272
+c2 n008 n007 10µ
+v4 n007 0 sine(0 .01 1000)
+q1 n001 n003 n004 0 npn
+q2 n009 n006 n004 0 pnp
+q3 n006 n008 n010 0 npn
+r4 n001 n002 231.7
+r5 n002 n003 231.7
+c3 n002 n004 500µ
+.model pnp pnp
+.model npn npn
+.model 1n4148 d(is=2.52n rs=.568 n=1.752 cjo=4p m=.4 tt=20n iave=200m vpk=75 mfg=onsemi type=silicon)
+.tran 0 100m 90m .001m
+.end
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Thu Oct 31 17:35:28 2019
+Total elapsed time: 1.560 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 200048
+traniter = 200043
+tranpoints = 100021
+accept = 100021
+rejected = 0
+matrix size = 17
+fillins = 7
+solver = Normal
+Matrix Compiler1: 1,38 KB object code size  0.6/0.5/[0.2]
+Matrix Compiler2: 1,45 KB object code size  0.3/0.5/[0.4]
+
+

@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightgray;
+}
+
+header, footer {
+  background-color: darkgreen;
+  color: white;
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: normal;
+}
+
+header nav {
+  flex: 1;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+
+header nav a {
+  color: orange;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer input {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  text-align: center;
+  outline: none;
+  width: 20%;
+}
+
+footer input[type="submit"] {
+  background-color: orange;
+  font-weight: bold;
+}
+
+section {
+  margin: 0 1rem;
+  padding: 1rem 0;
+  text-align: justify;
+}
+
+section#presentacion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-style: italic;
+  border-bottom: 0.15rem solid orange;
+}
+
+section#presentacion img {
+  width: 20%;
+  margin-right: 1rem;
+}
+
+section#presentacion p {
+  margin: 0;
+}
+
+section#componentes {
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+  gap: 1em;
+}
+
+section#componentes article {
+  border: 0.2rem dashed darkgreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+section#componentes img {
+  width: 50%;
+  height: 100%;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+section#componentes h3 {
+  width: 50%;
+  text-align: center;
+}
+
+section#componentes article:nth-child(1) {
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 2;
+  font-size: 1.5rem;
+}
+
+section#componentes article:nth-child(2) {
+  grid-row: 3 / span 2;
+  grid-column: 1 / span 2;
+  font-size: 1.5rem;
+}
+
+section#componentes article:nth-child(3) {
+  grid-row: 1 / span 2;
+  grid-column: 3 / span 2;
+  font-size: 1.5rem;
+}
+
+section#componentes article:nth-child(4) {
+  grid-row: 3 / span 1;
+  grid-column: 3 / span 1;
+  font-size: 1rem;
+}
+
+section#componentes article:nth-child(5) {
+  grid-row: 3 / span 1;
+  grid-column: 4 / span 1;
+  font-size: 1rem;
+}
+
+section#componentes article:nth-child(6) {
+  grid-row: 4 / span 1;
+  grid-column: 3 / span 1;
+  font-size: 1rem;
+}
+
+section#componentes article:nth-child(7) {
+  grid-row: 4 / span 1;
+  grid-column: 4 / span 1;
+  font-size: 1rem;
+}

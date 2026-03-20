@@ -1,0 +1,418 @@
+
+**** 08/20/25 12:32:24 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 2\g2_p11.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Mon Aug 14 14:42:36 2023
+
+
+
+** Analysis setup **
+.tran .001 32
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "g2_p11.net"
+
+**** INCLUDING g2_p11.net ****
+* Schematics Netlist *
+
+
+
+V_V8         $N_0001 0 10V
+V_V9         0 $N_0002 12V
+V_V10         $N_0003 0 12V
+R_R18         $N_0005 $N_0004  1k  
+R_R13         $N_0007 $N_0006  1k  
+R_R14         $N_0008 $N_0007  1k  
+R_R15         $N_0009 $N_0008  1k  
+R_R16         0 $N_0009  2k  
+S_S1         $N_0011 $N_0001 $N_0010 0 Sbreak
+RS_S1        $N_0010 0 1G
+R_R9         $N_0011 $N_0006  2k  
+S_S2         $N_0013 $N_0001 $N_0012 0 Sbreak
+RS_S2        $N_0012 0 1G
+R_R10         $N_0013 $N_0007  2k  
+S_S3         $N_0015 $N_0001 $N_0014 0 Sbreak
+RS_S3        $N_0014 0 1G
+R_R11         $N_0015 $N_0008  2k  
+S_S4         $N_0017 $N_0001 $N_0016 0 Sbreak
+RS_S4        $N_0016 0 1G
+R_R12         $N_0017 $N_0009  2k  
+R_R22         0 $N_0017  1  
+R_R2         0 $N_0012  1k  
+R_R3         0 $N_0014  1k  
+R_R1         0 $N_0010  1k  
+X_U2         0 $N_0005 $N_0003 $N_0002 $N_0004 uA741
+R_R19         0 $N_0011  1  
+R_R17         $N_0006 $N_0005  2k  
+R_R20         0 $N_0013  1  
+R_R4         0 $N_0016  1k  
+R_R21         0 $N_0015  1  
+V_V11         $N_0010 0 DC 0 AC 0
++PULSE 0 5 8 .0001 .0001 8 16
+V_V13         $N_0012 0 DC 0 AC 0
++PULSE 0 5 4 .0001 .0001 4 8
+V_V2         $N_0014 0 DC 0 AC 0
++PULSE 0 5 2 .0001 .0001 2 4
+V_V12         $N_0016 0 DC 0 AC 0
++PULSE 0 5 1 .0001 .0001 1 2
+
+**** RESUMING g2_p11.cir ****
+.INC "g2_p11.als"
+
+
+
+**** INCLUDING g2_p11.als ****
+* Schematics Aliases *
+
+.ALIASES
+V_V8            V8(+=$N_0001 -=0 )
+V_V9            V9(+=0 -=$N_0002 )
+V_V10           V10(+=$N_0003 -=0 )
+R_R18           R18(1=$N_0005 2=$N_0004 )
+R_R13           R13(1=$N_0007 2=$N_0006 )
+R_R14           R14(1=$N_0008 2=$N_0007 )
+R_R15           R15(1=$N_0009 2=$N_0008 )
+R_R16           R16(1=0 2=$N_0009 )
+S_S1            S1(3=$N_0011 4=$N_0001 1=$N_0010 2=0 )
+RS_S1           S1(1=$N_0010 2=0 )
+R_R9            R9(1=$N_0011 2=$N_0006 )
+S_S2            S2(3=$N_0013 4=$N_0001 1=$N_0012 2=0 )
+RS_S2           S2(1=$N_0012 2=0 )
+R_R10           R10(1=$N_0013 2=$N_0007 )
+S_S3            S3(3=$N_0015 4=$N_0001 1=$N_0014 2=0 )
+RS_S3           S3(1=$N_0014 2=0 )
+R_R11           R11(1=$N_0015 2=$N_0008 )
+S_S4            S4(3=$N_0017 4=$N_0001 1=$N_0016 2=0 )
+RS_S4           S4(1=$N_0016 2=0 )
+R_R12           R12(1=$N_0017 2=$N_0009 )
+R_R22           R22(1=0 2=$N_0017 )
+R_R2            R2(1=0 2=$N_0012 )
+R_R3            R3(1=0 2=$N_0014 )
+R_R1            R1(1=0 2=$N_0010 )
+X_U2            U2(+=0 -=$N_0005 V+=$N_0003 V-=$N_0002 OUT=$N_0004 )
+R_R19           R19(1=0 2=$N_0011 )
+R_R17           R17(1=$N_0006 2=$N_0005 )
+R_R20           R20(1=0 2=$N_0013 )
+R_R4            R4(1=0 2=$N_0016 )
+R_R21           R21(1=0 2=$N_0015 )
+V_V11           V11(+=$N_0010 -=0 )
+V_V13           V13(+=$N_0012 -=0 )
+V_V2            V2(+=$N_0014 -=0 )
+V_V12           V12(+=$N_0016 -=0 )
+.ENDALIASES
+
+
+**** RESUMING g2_p11.cir ****
+.probe
+
+
+.END
+
+**** 08/20/25 12:32:24 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 2\g2_p11.sch
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.dx         
+          IS  800.000000E-18 
+          RS    1            
+
+
+**** 08/20/25 12:32:24 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 2\g2_p11.sch
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.qx         
+               NPN             
+          IS  800.000000E-18 
+          BF   93.75         
+          NF    1            
+          BR    1            
+          NR    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 08/20/25 12:32:24 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 2\g2_p11.sch
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Sbreak          
+         RON    1            
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+**** 08/20/25 12:32:24 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 2\g2_p11.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(X_U2.6)-11.11E-09 (X_U2.7) 106.5E-06 (X_U2.8) 106.5E-06 (X_U2.9)    0.0000     
+
+($N_0001)   10.0000                   ($N_0002)  -12.0000                       
+
+($N_0003)   12.0000                   ($N_0004) 102.3E-06                       
+
+($N_0005) 19.25E-06                   ($N_0006) 12.67E-06                       
+
+($N_0007) 10.71E-06                   ($N_0008) 9.104E-06                       
+
+($N_0009) 7.052E-06                   ($N_0010)    0.0000                       
+
+($N_0011) 10.00E-06                   ($N_0012)    0.0000                       
+
+($N_0013) 10.00E-06                   ($N_0014)    0.0000                       
+
+($N_0015) 10.00E-06                   ($N_0016)    0.0000                       
+
+($N_0017) 9.999E-06                   (X_U2.10)    -.6077                       
+
+(X_U2.11)   11.9600                   (X_U2.12)   11.9600                       
+
+(X_U2.13)    -.5938                   (X_U2.14)    -.5938                       
+
+(X_U2.53)   11.0000                   (X_U2.54)  -11.0000                       
+
+(X_U2.90) 83.06E-06                   (X_U2.91)   40.0000                       
+
+(X_U2.92)  -40.0000                   (X_U2.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V8        -4.000E-05
+    V_V9        -1.337E-03
+    V_V10       -1.337E-03
+    V_V11        0.000E+00
+    V_V13        0.000E+00
+    V_V2         0.000E+00
+    V_V12        0.000E+00
+    X_U2.vb     -1.111E-13
+    X_U2.vc      1.100E-11
+    X_U2.ve      1.100E-11
+    X_U2.vlim    8.306E-08
+    X_U2.vlp    -4.000E-11
+    X_U2.vln    -4.000E-11
+
+    TOTAL POWER DISSIPATION   3.25E-02  WATTS
+
+
+**** 08/20/25 12:32:24 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 2\g2_p11.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** VOLTAGE-CONTROLLED CURRENT SOURCES
+
+
+NAME         X_U2.ga     X_U2.gcm  
+I-SOURCE    -3.622E-09  -3.622E-09
+
+
+**** VOLTAGE-CONTROLLED VOLTAGE SOURCES
+
+
+NAME         X_U2.egnd 
+V-SOURCE     0.000E+00
+I-SOURCE    -1.273E-07
+
+
+**** CURRENT-CONTROLLED CURRENT SOURCES
+
+
+NAME         X_U2.fb   
+I-SOURCE    -1.280E-06
+
+
+**** CURRENT-CONTROLLED VOLTAGE SOURCES
+
+
+NAME         X_U2.hlim 
+V-SOURCE     8.306E-05
+I-SOURCE    -1.661E-16
+
+
+**** DIODES
+
+
+NAME         X_U2.dc     X_U2.de     X_U2.dlp    X_U2.dln    X_U2.dp   
+MODEL        X_U2.dx     X_U2.dx     X_U2.dx     X_U2.dx     X_U2.dx   
+ID          -1.10E-11   -1.10E-11   -4.00E-11   -4.00E-11   -2.40E-11 
+VD          -1.10E+01   -1.10E+01   -4.00E+01   -4.00E+01   -2.40E+01 
+REQ          1.00E+12    1.00E+12    1.00E+12    1.00E+12    1.00E+12 
+CAP          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+
+
+**** BIPOLAR JUNCTION TRANSISTORS
+
+
+NAME         X_U2.q1     X_U2.q2   
+MODEL        X_U2.qx     X_U2.qx   
+IB           7.98E-08    7.97E-08 
+IC           7.48E-06    7.48E-06 
+VBE          5.94E-01    5.94E-01 
+VBC         -1.20E+01   -1.20E+01 
+VCE          1.26E+01    1.26E+01 
+BETADC       9.38E+01    9.38E+01 
+GM           2.89E-04    2.89E-04 
+RPI          3.24E+05    3.24E+05 
+RX           0.00E+00    0.00E+00 
+RO           1.00E+12    1.00E+12 
+CBE          0.00E+00    0.00E+00 
+CBC          0.00E+00    0.00E+00 
+CJS          0.00E+00    0.00E+00 
+BETAAC       9.38E+01    9.38E+01 
+CBX/CBX2     0.00E+00    0.00E+00 
+FT/FT2       4.60E+15    4.60E+15 
+
+
+
+
+**** VOLTAGE CONTROLLED SWITCHES
+
+
+NAME         S_S1        S_S2        S_S3        S_S4      
+MODEL        Sbreak      Sbreak      Sbreak      Sbreak    
+I LOAD      -1.00E-05   -1.00E-05   -1.00E-05   -1.00E-05 
+V LOAD      -1.00E+01   -1.00E+01   -1.00E+01   -1.00E+01 
+R LOAD       1.00E+06    1.00E+06    1.00E+06    1.00E+06 
+V CTRL       0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+**** 08/20/25 12:32:24 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 2\g2_p11.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(X_U2.6)-11.11E-09 (X_U2.7) 106.5E-06 (X_U2.8) 106.5E-06 (X_U2.9)    0.0000     
+
+($N_0001)   10.0000                   ($N_0002)  -12.0000                       
+
+($N_0003)   12.0000                   ($N_0004) 102.3E-06                       
+
+($N_0005) 19.25E-06                   ($N_0006) 12.67E-06                       
+
+($N_0007) 10.71E-06                   ($N_0008) 9.104E-06                       
+
+($N_0009) 7.052E-06                   ($N_0010)    0.0000                       
+
+($N_0011) 10.00E-06                   ($N_0012)    0.0000                       
+
+($N_0013) 10.00E-06                   ($N_0014)    0.0000                       
+
+($N_0015) 10.00E-06                   ($N_0016)    0.0000                       
+
+($N_0017) 9.999E-06                   (X_U2.10)    -.6077                       
+
+(X_U2.11)   11.9600                   (X_U2.12)   11.9600                       
+
+(X_U2.13)    -.5938                   (X_U2.14)    -.5938                       
+
+(X_U2.53)   11.0000                   (X_U2.54)  -11.0000                       
+
+(X_U2.90) 83.06E-06                   (X_U2.91)   40.0000                       
+
+(X_U2.92)  -40.0000                   (X_U2.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V8        -4.000E-05
+    V_V9        -1.337E-03
+    V_V10       -1.337E-03
+    V_V11        0.000E+00
+    V_V13        0.000E+00
+    V_V2         0.000E+00
+    V_V12        0.000E+00
+    X_U2.vb     -1.112E-13
+    X_U2.vc      1.100E-11
+    X_U2.ve      1.100E-11
+    X_U2.vlim    8.306E-08
+    X_U2.vlp    -4.000E-11
+    X_U2.vln    -4.000E-11
+
+    TOTAL POWER DISSIPATION   3.25E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .09
+

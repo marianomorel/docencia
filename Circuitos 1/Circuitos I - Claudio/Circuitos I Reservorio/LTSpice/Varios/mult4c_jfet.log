@@ -1,0 +1,54 @@
+LTspice 24.0.12 for Windows
+Circuit: * E:\Claudio\Docencia personal\LTSpice\Varios\mult4c_jfet.asc
+Start Time: Tue Mar 18 10:31:49 2025
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = modified trap
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-05
+Gmin = 1.6455e-06
+Gmin = 1.76685e-07
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+vernier = 0.03125
+Gmin = 1.38086e-07
+vernier = 0.0416667
+vernier = 0.0555555
+Gmin = 1.24282e-07
+vernier = 0.074074
+Gmin = 1.05349e-07
+vernier = 0.0987653
+vernier = 0.131687
+Gmin = 7.99472e-08
+vernier = 0.175583
+vernier = 0.23411
+Gmin = 5.16799e-08
+vernier = 0.312147
+Gmin = 2.62248e-08
+vernier = 0.416196
+vernier = 0.554928
+Gmin = 8.61184e-09
+vernier = 0.739903
+vernier = 0.986537
+Gmin = 1.54354e-09
+vernier = 1
+Gmin = 1.67533e-10
+Gmin = 1.79888e-11
+Gmin = 1.93153e-12
+Gmin = 2.07396e-13
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+Total elapsed time: 0.681 seconds.
+

@@ -1,0 +1,11 @@
+LTspice 24.0.12 for Windows
+Circuit: * E:\Claudio\Docencia personal\LTSpice\Operacionales\rectificador negativo.asc
+Start Time: Tue May 27 17:38:30 2025
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = modified trap
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 4.939 seconds.
+

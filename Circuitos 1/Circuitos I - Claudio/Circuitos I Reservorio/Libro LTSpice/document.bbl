@@ -1,0 +1,44 @@
+\begin{thebibliography}{1}
+
+\bibitem{boyle74}
+G.R. Boyle, D.O. Pederson, B.M. Cohn, and J.E. Solomon.
+\newblock Macromodeling of integrated circuit operational amplifiers.
+\newblock {\em IEEE Journal of Solid-State Circuits}, 9(6):353--364, 1974.
+
+\bibitem{chua1990}
+G.~N. Chua, L. O. y~Lin.
+\newblock Canonical realization of chua’s circuit.
+\newblock {\em IEEE Transaction on Circuits and Systems}, 37(7), 1990.
+
+\bibitem{queiros91}
+Luiz de~Queiros~Orsini.
+\newblock {\em Simulaçao de Circuitos Electrônicos.}
+\newblock V Scola Brasileiro-Argentina de Informática., 1991.
+
+\bibitem{gonza18}
+Mónica~Liliana González.
+\newblock {\em LTSpice: Análisis de Circuitos y Dispositivos Electrónicos.}
+\newblock Editorial de la Universidad Nacional de La Plata (EDULP), 2018.
+
+\bibitem{gray95}
+P.R. Gray and R.G. Meyer.
+\newblock {\em Análisis y Diseño de Circuitos Integrados Analógicos}.
+\newblock Prentice Hall Hispanoamericana, S.A., 1995.
+
+\bibitem{Nagel75}
+Laurence~W. Nagel.
+\newblock {\em SPICE2: A Computer Program to Simulate Semiconductor Circuits}.
+\newblock PhD thesis, EECS Department, University of California, Berkeley, May
+  1975.
+
+\bibitem{Rosenstark86}
+S.~Rosenstrark.
+\newblock {\em Feedback Amplifiers Principles}.
+\newblock Macmillan Publishing Company, New York, 1986.
+
+\bibitem{sedra99}
+A.S. Sedra and K.C. Smith.
+\newblock {\em Circuitos Microelectrónicos}.
+\newblock Prentice Hall Hispanoamericana, S.A., 1995.
+
+\end{thebibliography}

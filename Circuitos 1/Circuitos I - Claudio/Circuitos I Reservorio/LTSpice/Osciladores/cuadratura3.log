@@ -1,0 +1,11 @@
+LTspice 24.0.12 for Windows
+Circuit: * E:\Claudio\Docencia personal\LTSpice\Osciladores\cuadratura3.asc
+Start Time: Thu Oct 31 13:03:37 2024
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = modified trap
+Per .tran options, skipping operating point for transient analysis.
+Total elapsed time: 11.778 seconds.
+

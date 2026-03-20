@@ -1,0 +1,87 @@
+Circuit: * E:\Claudio\Docencia personal\LTSpice\Fuentes\fuente clase 1.asc
+
+Early termination of direct N-R iteration.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Increasing initial diagonal Gmin to 100
+Increasing initial diagonal Gmin to 1000
+Gmin = 1000
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+Gmin = 836.601
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+Gmin = 822.125
+vernier = 0.00195313
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 0
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source stepping succeeded in finding the operating point.
+
+Semiconductor Device Operating Points:
+                        --- Diodes ---
+Name:    d:u2:p      d:u2:ln     d:u2:lp     d:u2:e      d:u2:c
+Model:    u2:dx       u2:dx       u2:dx       u2:dy       u2:dy
+Id:     -1.26e-11   -4.05e-11   -3.96e-11   -9.10e-12   -1.78e-12
+Vd:     -1.26e+01   -4.04e+01   -3.96e+01   -9.15e+00   -1.45e+00
+Req:     1.00e+12    1.00e+12    1.00e+12    1.00e+12    1.00e+12
+CAP:     0.00e+00    0.00e+00    0.00e+00    3.14e-12    6.39e-12
+
+Name:      d1        d:u1:1
+Model: bzx84c6v2l    u1:dsub
+Id:     -8.22e-04   -1.06e-11
+Vd:     -6.19e+00   -4.62e+00
+Req:     9.44e+01    1.00e+12
+CAP:     6.90e-11    4.11e-11
+
+                        --- Bipolar Transistors ---
+Name:     q:u2:2      q:u2:1      q:u1:2      q:u1:1
+Model:     u2:qx       u2:qx      u1:qpwr     u1:qpwr
+Ib:       7.97e-08    7.97e-08    2.81e-02    3.71e-04
+Ic:       7.47e-06    7.47e-06    1.96e+00    3.69e-02
+Vbe:      5.94e-01    5.94e-01    1.39e+00    7.74e-01
+Vbc:     -6.37e+00   -6.37e+00   -3.23e+00   -2.45e+00
+Vce:      6.97e+00    6.97e+00    4.62e+00    3.23e+00
+BetaDC:   9.38e+01    9.38e+01    6.99e+01    9.95e+01
+Gm:       2.89e-04    2.89e-04    5.48e+01    1.29e+00
+Rpi:      3.24e+05    3.24e+05    9.25e-01    7.06e+01
+Rx:       0.00e+00    0.00e+00    1.32e+00    1.32e+01
+Ro:       0.00e+00    0.00e+00    6.98e+01    3.71e+03
+Cbe:      0.00e+00    0.00e+00    4.67e-06    1.10e-07
+Cbc:      0.00e+00    0.00e+00    7.11e-11    7.38e-12
+Cjs:      0.00e+00    0.00e+00    0.00e+00    0.00e+00
+BetaAC:   9.37e+01    9.37e+01    5.07e+01    9.12e+01
+Cbx:      0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Ft:       0.00e+00    0.00e+00    1.86e+06    1.86e+06
+
+
+
+Date: Wed May 29 12:44:29 2024
+Total elapsed time: 0.263 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 1832
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 46
+fillins = 111
+solver = Normal
+Matrix Compiler1: 9.94 KB object code size
+Matrix Compiler2: off  [0.9]/1.9/1.2
+

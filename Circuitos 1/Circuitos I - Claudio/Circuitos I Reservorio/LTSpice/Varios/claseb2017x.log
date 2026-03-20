@@ -1,0 +1,45 @@
+
+   --- Expanded Deck Component Count ---
+I's 2
+Q's 2
+R's 2
+V's 3
+tot: 9
+
+
+    --- Expanded Netlist ---
+* C:\Claudio\Docencia personal\LTSpice\Varios\claseb2017x.asc
+v1 n001 0 11
+v2 n003 0 sine(0 5 1k)
+q1 n001 n002 n004 0 2n3904
+q3 n006 n005 n004 0 2n3906
+v3 0 n006 11
+i1 n001 n002 12m
+i2 n005 n006 12m
+r1 n002 n003 50
+r2 n003 n005 50
+.model 2n3906 pnp(is=1e-14 vaf=100 bf=200 ikf=0.4 xtb=1.5 br=4 cjc=4.5e-12 cje=10e-12 rb=20 rc=0.1 re=0.1 tr=250e-9 tf=350e-12 itf=1 vtf=2 xtf=3 vceo=40 icrating=200m mfg=philips)
+.model 2n3904 npn(is=1e-14 vaf=100 bf=300 ikf=0.4 xtb=1.5 br=4 cjc=4e-12 cje=8e-12 rb=20 rc=0.1 re=0.1 tr=250e-9 tf=350e-12 itf=1 vtf=2 xtf=3 vceo=40 icrating=200m mfg=philips)
+.tran 0 10m 0 .01m
+.end
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Tue May 16 16:28:21 2017
+Total elapsed time: 0.105 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2039
+traniter = 2034
+tranpoints = 1018
+accept = 1018
+rejected = 0
+matrix size = 15
+fillins = 0
+solver = Normal
+Matrix Compiler1: 898 bytes object code size  0.4/0.4/[0.2]
+Matrix Compiler2: 1,15 KB object code size  0.3/0.4/[0.3]
+
+

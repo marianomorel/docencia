@@ -1,0 +1,89 @@
+
+   --- Expanded Deck Component Count ---
+A's 4
+B's 6
+C's 18
+D's 4
+M's 4
+R's 6
+V's 3
+tot: 45
+
+
+    --- Expanded Netlist ---
+* C:\Claudio\Docencia personal\LTSpice\Varios\ppp.asc
+v1 n001 0 15
+v2 0 n004 15
+v3 n002 0 1m ac 1
+a:u1:1 0 u1:n004 0 0 0 0 u1:x 0 ota g=150u iout=7u cout=28p en=9.8n enk=4 vhigh=1e308 vlow=-1e308
+a:u1:2 0 n002 0 0 0 0 0 0 ota g=0 in=.1p ink=70
+c:u1:2 u1:n004 0 .75p rpar=100k noiseless
+r:u1:1 n001 u1:x 10g noiseless 
+r:u1:2 u1:x n004 10g noiseless 
+m:u1:1 n001 u1:n005 vc vc u1:n temp=27
+m:u1:2 n004 u1:n005 vc vc u1:p temp=27
+d:u1:1 vc u1:x u1:x 
+c:u1:3 u1:n005 0 .075p rpar=1meg noiseless
+d:u1:4 0 n002 u1:di 
+c:u1:5 0 n002 1p rpar=80meg 
+c:u1:7 n001 vc .2p 
+c:u1:8 vc n004 .2p 
+b:u1:1 0 u1:n004 i=10u*dnlim(uplim(v(n002),v(n001)-.9,.3), v(n004)+.9, .3)+1n*v(n002)
+b:u1:2 u1:n004 0 i=10u*dnlim(uplim(v(0),v(n001)-.899,.3), v(n004)+.899, .3)+1n*v(0)
+b:u1:3 0 u1:n005 i=1u*dnlim(uplim(v(u1:x),v(n001)-.9,.5), v(n004)+.9,.5)+1p*v(u1:x)
+c:u1:9 n001 n002 .5p rpar=1.12t noiseless
+c:u1:4 n002 n004 .5p rpar=1.12t noiseless
+c:u1:6 0 n004 .5p rpar=1.12t noiseless
+c:u1:10 n001 0 .5p rpar=1.12t noiseless
+a:u2:1 0 u2:n004 0 0 0 0 u2:x 0 ota g=150u iout=7u cout=28p en=9.8n enk=4 vhigh=1e308 vlow=-1e308
+a:u2:2 0 n002 0 0 0 0 0 0 ota g=0 in=.1p ink=70
+c:u2:2 u2:n004 0 .75p rpar=100k noiseless
+r:u2:1 n001 u2:x 10g noiseless 
+r:u2:2 u2:x n004 10g noiseless 
+m:u2:1 n001 u2:n005 n003 n003 u2:n temp=27
+m:u2:2 n004 u2:n005 n003 n003 u2:p temp=27
+d:u2:1 n003 u2:x u2:x 
+c:u2:3 u2:n005 0 .075p rpar=1meg noiseless
+d:u2:4 0 n002 u2:di 
+c:u2:5 0 n002 1p rpar=80meg 
+c:u2:7 n001 n003 .2p 
+c:u2:8 n003 n004 .2p 
+b:u2:1 0 u2:n004 i=10u*dnlim(uplim(v(n002),v(n001)-.9,.3), v(n004)+.9, .3)+1n*v(n002)
+b:u2:2 u2:n004 0 i=10u*dnlim(uplim(v(0),v(n001)-.899,.3), v(n004)+.899, .3)+1n*v(0)
+b:u2:3 0 u2:n005 i=1u*dnlim(uplim(v(u2:x),v(n001)-.9,.5), v(n004)+.9,.5)+1p*v(u2:x)
+c:u2:9 n001 n002 .5p rpar=1.12t noiseless
+c:u2:4 n002 n004 .5p rpar=1.12t noiseless
+c:u2:6 0 n004 .5p rpar=1.12t noiseless
+c:u2:10 n001 0 .5p rpar=1.12t noiseless
+r1 vc 0 10k
+r2 n003 0 10k
+.model u2:di d(ron=1.15k roff=1g vfwd=1 vrev=1 epsilon=1 revepsilon=1 noiseless)
+.model u2:p vdmos(vto=300m kp=50m pchan)
+.model u2:n vdmos(vto=-300m kp=50m)
+.model u2:x d(ron=10k roff=1t vfwd=.82 vrev=.82 epsilon=.1 revepsilon=.1)
+.model u1:di d(ron=1.15k roff=1g vfwd=1 vrev=1 epsilon=1 revepsilon=1 noiseless)
+.model u1:p vdmos(vto=300m kp=50m pchan)
+.model u1:n vdmos(vto=-300m kp=50m)
+.model u1:x d(ron=10k roff=1t vfwd=.82 vrev=.82 epsilon=.1 revepsilon=.1)
+.ac dec 100 1 10meg
+.end
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Thu Nov 09 16:22:27 2017
+Total elapsed time: 0.140 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 9
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 14
+fillins = 0
+solver = Normal
+Matrix Compiler1:      37 opcodes
+Matrix Compiler2: 1,39 KB object code size
+

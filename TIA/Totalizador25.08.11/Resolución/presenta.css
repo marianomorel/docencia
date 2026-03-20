@@ -1,0 +1,52 @@
+section {
+    max-width: 900px;
+    display: grid;
+    grid-template: repeat(2,1fr) / repeat(2,1fr);
+}
+
+section div {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid var(--color-secundario);
+}
+
+.art-present {
+    width: 90%;
+    height: 90%;
+    background-color: var(--color-gris-claro);
+    border-radius: 10px;
+}
+
+.art-present h3 {
+    text-align: center;
+    color: var(--color-primario);
+    padding-top: 8px;
+    border-radius: 10px 10px 0 0;
+    height: 40px;
+    background-color: var(--color-secundario);
+}
+
+.art-present p {
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+}
+
+.art1 {
+    background-image: url(presenta1.jpg);
+}
+
+.art2 {
+    background-image: url(presenta2.jpg);
+}
+
+.art3 {
+    background-image: url(presenta3.jpg);
+}
+
+.art4 {
+    background-image: url(presenta4.jpg);
+}

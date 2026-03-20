@@ -1,0 +1,41 @@
+
+   --- Expanded Deck Component Count ---
+C's 1
+E's 1
+I's 2
+R's 1
+tot: 5
+
+
+    --- Expanded Netlist ---
+* C:\Claudio\Docencia personal\LTSpice\Varios\intideal3.asc
+e1 a 0 0 n001 table=(-100,-12)(-60u,-12)(60u,12)(100,12)
+c1 a n001 .5µ
+i1 n001 0 1µ
+i2 n001 0 sine(0 400u 100 0 0 0 0)
+r1 n001 0 40k
+.tran 0 1 0 .001m uic
+.ic v(a)=12 v(b)=0
+.end
+
+Unknown node in .ic card: "b" -- ignoring
+Per .tran options, skipping operating point for transient analysis.
+
+Date: Wed Nov 27 16:34:40 2019
+Total elapsed time: 10.725 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2001619
+traniter = 2001619
+tranpoints = 1000310
+accept = 1000221
+rejected = 89
+matrix size = 3
+fillins = 0
+solver = Normal
+Matrix Compiler1: 104 bytes object code size  0.1/0.1/[0.1]
+Matrix Compiler2: 183 bytes object code size  0.1/0.1/[0.1]
+
+

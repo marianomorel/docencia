@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: left;
+    margin: 20px;
+}
+
+/* Estilos para el título */
+.titulo {
+    color: blue;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Estilos para la primera letra del párrafo */
+.parrafo::first-letter {
+    font-size: 36px;
+    font-weight: bold;
+    color: darkblue;
+}
+
+/* Agregar un símbolo de copyright después del párrafo */
+.parrafo::after {
+    content: " ©";
+    color: gray;
+    font-size: 14px;
+}
+
+/* Agregar un icono de estrella antes de cada elemento de la lista */
+.lista-interactiva li::before {
+    content: "★ ";
+    color: black;
+    font-size: 16px;
+}
+
+/* Cambiar el color del último elemento de la lista */
+.lista-interactiva li:last-child {
+    color: red;
+    font-weight: bold;
+}
+
+/* Instrucciones para el estudiante:
+En el archivo estilos.css, completa las reglas CSS para que:
+-El título tenga color azul, negrita y tamaño de fuente de 24px.
+-La primera letra del párrafo sea grande (36px) y negrita.
+-"Después" del párrafo, se muestre un símbolo de copyright (©) en color gris.
+-"Antes" de cada elemento de la lista, se muestre un icono de estrella (★) en color negro.
+-El último elemento de la lista tenga el texto en color rojo. */

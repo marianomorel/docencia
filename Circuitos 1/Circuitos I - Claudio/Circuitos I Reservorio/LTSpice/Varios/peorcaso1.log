@@ -1,0 +1,113 @@
+LTspice 24.0.12 for Windows
+Circuit: * E:\Claudio\Docencia personal\LTSpice\Varios\peorcaso1.asc
+Start Time: Thu Aug 15 12:11:33 2024
+solver = Normal
+Maximum thread count: 8
+
+
+
+Direct Newton iteration for .op point succeeded.
+.step p=1
+
+
+
+.step p=2
+
+
+
+.step p=3
+
+
+
+.step p=4
+
+
+
+.step p=5
+
+
+
+.step p=6
+
+
+
+.step p=7
+
+
+
+.step p=8
+
+
+
+.step p=9
+
+
+
+.step p=10
+
+
+
+.step p=11
+
+
+
+.step p=12
+
+
+
+.step p=13
+
+
+
+.step p=14
+
+
+
+.step p=15
+
+
+
+.step p=16
+
+
+
+.step p=17
+
+
+
+.step p=18
+
+
+
+.step p=19
+tnom = 27
+temp = 27
+method = modified trap
+.step p=20
+
+
+Measurement: vmax
+  step	MIN(v(o))	FROM	TO
+     1	-1.21199	0.001	0.0011
+     2	-1.20698	0.001	0.0011
+     3	-1.29681	0.001	0.0011
+     4	-1.21621	0.001	0.0011
+     5	-1.29285	0.001	0.0011
+     6	-1.19878	0.001	0.0011
+     7	-1.30849	0.001	0.0011
+     8	-1.32217	0.001	0.0011
+     9	-1.24794	0.001	0.0011
+    10	-1.28088	0.001	0.0011
+    11	-1.35312	0.001	0.0011
+    12	-1.29873	0.001	0.0011
+    13	-1.23557	0.001	0.0011
+    14	-1.27832	0.001	0.0011
+    15	-1.28266	0.001	0.0011
+    16	-1.22082	0.001	0.0011
+    17	-1.29614	0.001	0.0011
+    18	-1.21366	0.001	0.0011
+    19	-1.28095	0.001	0.0011
+    20	-1.31177	0.001	0.0011
+
+Total elapsed time: 5.039 seconds.
+

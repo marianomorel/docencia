@@ -1,0 +1,13 @@
+:Base cmds_pcb.hlp
+:Title SPECCTRA Command Reference
+1 Commands
+2 General information=About_SPECCTRA_COMMANDS@cmds_pcb.hlp>main
+2 Using command reference help=using_command_reference_help@cmds_pcb.hlp>main
+2 Conventions=General_Command_Conventions>topic
+2 Placement commands
+3 Quick command reference=Placement_commands_by_function
+3 Alphabetical command list=Alphabetical_list_of_placement_commands@cmds_pcb.hlp>cmds
+2 Routing Commands
+3 Quick command reference=Routing_commands_by_function>topic
+3 Alphabetical command list=Alphabetical_list_of_routing_commands@cmds_pcb.hlp>cmds
+1 Index of SPECCTRA commands=Index_of_SPECCTRA_references@cmds_pcb.hlp>cmds

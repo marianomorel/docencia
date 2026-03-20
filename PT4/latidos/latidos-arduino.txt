@@ -1,0 +1,95 @@
+#include <Arduino.h>
+
+const int sensorPin = A0;      // Pin analógico del KY-039
+const int ledPin = 13;         // LED incorporado
+const unsigned long medicionDuracion = 15000; // 15 segundos
+const unsigned long minEntreLatidos = 300;    // 300 ms mínimo entre latidos
+const float factorFiltro = 0.75;             // coeficiente filtro pasa bajos
+
+volatile int beats = 0;         // Contador de latidos (accesible desde ISR)
+volatile int lastState = LOW;   // Estado previo del pulso
+volatile unsigned long lastBeatTime = 0; // Tiempo del último latido
+volatile float valorAnterior = 0;        // Para filtro
+
+unsigned long tiempoInicioMedicion = 0;
+bool midiendo = false;
+int valorMin = 1023;
+int valorMax = 0;
+
+void setup() {
+  pinMode(ledPin, OUTPUT);
+  Serial.begin(9600);
+  Serial.println("Coloca tu dedo en el sensor...");
+  
+  tiempoInicioMedicion = millis() + 5000; // espera inicial de 5 segundos
+
+  // Configurar Timer1 para interrupción cada 5 ms
+  noInterrupts();           // Desactivar interrupciones
+  TCCR1A = 0;               // Configuración normal
+  TCCR1B = 0;
+  TCNT1  = 0;
+  OCR1A = 624;              // 16MHz/256 prescaler: 16e6/256/200Hz ≈ 312.5 -> usamos 624 y prescaler 64
+  TCCR1B |= (1 << WGM12);   // Modo CTC
+  TCCR1B |= (1 << CS11) | (1 << CS10); // prescaler 64
+  TIMSK1 |= (1 << OCIE1A);  // Habilitar interrupción comparador A
+  interrupts();             // Activar interrupciones
+}
+
+// Función ISR del Timer1: se ejecuta cada 5 ms
+ISR(TIMER1_COMPA_vect) {
+  if (!midiendo) return;
+
+  int valorLeido = analogRead(sensorPin);
+  float valorFiltrado = factorFiltro * valorAnterior + (1 - factorFiltro) * valorLeido;
+  valorAnterior = valorFiltrado;
+
+  // Actualizar mínimo y máximo para umbral dinámico
+  if (valorFiltrado < valorMin) valorMin = valorFiltrado;
+  if (valorFiltrado > valorMax) valorMax = valorFiltrado;
+
+  int threshold = (valorMin + valorMax) / 2;
+  int estado = (valorFiltrado > threshold) ? HIGH : LOW;
+
+  unsigned long ahora = millis();
+
+  if (estado == HIGH && lastState == LOW) {
+    if (ahora - lastBeatTime > minEntreLatidos) {
+      beats++;
+      lastBeatTime = ahora;
+      digitalWrite(ledPin, HIGH); // Parpadea LED en cada latido
+    }
+  } else {
+    digitalWrite(ledPin, LOW);
+  }
+  lastState = estado;
+}
+
+void loop() {
+  unsigned long ahora = millis();
+
+  // Espera inicial de 5 segundos
+  if (ahora < tiempoInicioMedicion) return;
+
+  // Inicia medición
+  if (!midiendo) {
+    beats = 0;
+    lastBeatTime = 0;
+    lastState = LOW;
+    valorMin = 1023;
+    valorMax = 0;
+    valorAnterior = analogRead(sensorPin); // inicializar filtro
+    tiempoInicioMedicion = ahora;          // marcar inicio de medición
+    midiendo = true;
+    Serial.println("Midiendo latidos...");
+  }
+
+  // Terminar medición después de 15 segundos
+  if (midiendo && (ahora - tiempoInicioMedicion >= medicionDuracion)) {
+    int bpm = beats * 4; // 15 segundos -> multiplicar por 4
+    Serial.print("Latidos por minuto: ");
+    Serial.println(bpm);
+    Serial.println("----------------------");
+    tiempoInicioMedicion = ahora + 3000; // espera 3 segundos antes de siguiente medición
+    midiendo = false;
+  }
+}

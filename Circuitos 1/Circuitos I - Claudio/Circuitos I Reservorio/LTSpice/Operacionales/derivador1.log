@@ -1,0 +1,21 @@
+Circuit: * E:\Claudio\Docencia personal\LTSpice\Operacionales\derivador1.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Thu Aug 11 15:19:27 2022
+Total elapsed time: 0.334 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 10831
+traniter = 10819
+tranpoints = 4616
+accept = 4326
+rejected = 290
+matrix size = 37
+fillins = 51
+solver = Normal
+Matrix Compiler1: 4.33 KB object code size  1.9/1.2/[0.9]
+Matrix Compiler2: off  [0.9]/1.5/0.9
+

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio CSS</title>
+    <!-- Vincula aquí tu archivo CSS -->
+    <link rel="stylesheet" href="TIA-A3-estilos.css">
+</head>
+<body>
+        <h1 class="titulo">Bienvenido al curso de HTML y CSS</h1>
+        <p class="parrafo">Este es un párrafo de ejemplo.</p>
+        <button class="boton">Haz clic aquí</button>
+        <ul class="lista-interactiva">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+</body>
+</html>

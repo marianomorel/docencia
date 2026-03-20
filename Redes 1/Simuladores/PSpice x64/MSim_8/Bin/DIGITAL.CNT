@@ -1,0 +1,38 @@
+:Base Digital.HLP
+1 Targeting Your Design for Programmable Logic
+2 Targeting PLDs and CPLDs
+3 Targeting Parts for Programmable Logic=IDH_REFERENC_Targeting_Parts_for_Programmable_Logic
+3 Creating and Editing DSL Blocks=IDH_REFERENC_Creating_and_Editing_DSL_Blocks
+3 Using PLSyn with Schematics=IDH_REFERENC_Using_PLSyn
+3 Updating the Schematic with the PLD(s) from PLSyn=IDH_REFERENC_Updating_the_Schematic_with_the_PLD_s
+2 Targeting Xininx FPGAs
+3 About Targeting Xilinx FPGAs
+4 About the FPGA Design Flow=FPGA_About_the_FPGA_Design_Flow
+4 About Naming Conventions=FPGA_About_Naming_Conventions
+4 About the Xilinx Universal Library=FPGA_About_Xilinx_Universal_Library
+3 Entering FPGA Designs
+4 Entering an FPGA-Only Design=FPGA_Entering_an_FPGA_Only_Design
+4 Entering an FPGA Block in a Mixed Design=FPGA_Entering_an_FPGA_Block_in_a_Mixed_Design
+4 Incorporating an Existing Xilinx Schematic into a Design=FPGA_Incorporating_an_Existing_Xilinx_Schematic_into_a_Design
+4 Defining Inputs and Outputs=FPGA_Defining_Inputs_and_Outputs
+4 Specifying Xilinx Parameters=FPGA_Specifying_Xilinx_Parameters
+4 Changing the Device Family=FPGA_Changing_the_Device_Family
+4 Using X-BLOX=FPGA_Using_X_BLOX
+4 Starting XACTstep=FPGA_Starting_XACTstep
+3 Simulating FPGA Designs
+4 Specifying Global Signals
+5 Specifying Global Reset on XC2000 and XC3000=FPGA_Specifying_Global_Reset_on_XC2000_and_XC3000
+5 Specifying Global Set/Reset on XC4000 and XC4000E Devices=FPGA_Specifying_Global_Set_Reset_on_XC4000_and_XC4000E_Devices
+5 Specifying Global Reset on XC5200 Devices=FPGA_Specifying_Global_Reset_on_XC5200_Devices
+5 Specifying Global Tristate on XC4000, XC4000E, and XC5200 Devices=FPGA_Specifying_Global_Tristate_on_XC4000_XC4000E_and_XC5200_Devices
+4 Accessing Oscillators
+5 Using the OSC (XC2000/XC3000)=FPGA_Using_the_OSC_XC2000_XC3000
+5 Using the OSC4 (XC4000/XC4000E=FPGA_Using_the_OSC4_XC4000_XC4000E
+5 Using the OSC5 (XC5200)=FPGA_Using_the_OSC5_XC5200
+4 Setting up the Simulation
+5 Setting up the Simulation=FPGA_Setting_up_the_Simulation
+4 Starting the Simulation
+5 Starting the Simulation=FPGA_Starting_the_Simulation
+4 Understanding Node Names in Probe
+5 About Xilinx Node Names for FPGA-Only Designs=FPGA_About_Xilinx_Node_Names_for_FPGA_Only_Designs
+5 About Node Names for Mixed Designs=FPGA_About_Node_Names_for_Mixed_Designs

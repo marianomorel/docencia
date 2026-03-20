@@ -1,0 +1,113 @@
+LTspice 24.0.12 for Windows
+Circuit: * E:\Claudio\Docencia personal\LTSpice\Varios\gauss1.asc
+Start Time: Fri Mar  7 13:17:00 2025
+solver = Normal
+Maximum thread count: 8
+
+
+
+Direct Newton iteration for .op point succeeded.
+.step p=1
+
+
+
+.step p=2
+
+
+
+.step p=3
+
+
+
+.step p=4
+
+
+
+.step p=5
+
+
+
+.step p=6
+
+
+
+.step p=7
+
+
+
+.step p=8
+
+
+
+.step p=9
+
+
+
+.step p=10
+
+
+
+.step p=11
+
+
+
+.step p=12
+
+
+
+.step p=13
+
+
+
+.step p=14
+
+
+
+.step p=15
+
+
+
+.step p=16
+
+
+
+.step p=17
+
+
+
+.step p=18
+
+
+
+.step p=19
+tnom = 27
+temp = 27
+method = modified trap
+.step p=20
+
+
+Measurement: vmax
+  step	MIN(v(o))	FROM	TO
+     1	-2.21023	0.001	0.005
+     2	-2.19855	0.001	0.005
+     3	-2.17247	0.001	0.005
+     4	-2.20479	0.001	0.005
+     5	-2.22471	0.001	0.005
+     6	-2.18993	0.001	0.005
+     7	-2.20247	0.001	0.005
+     8	-2.21001	0.001	0.005
+     9	-2.20133	0.001	0.005
+    10	-2.19208	0.001	0.005
+    11	-2.19947	0.001	0.005
+    12	-2.22687	0.001	0.005
+    13	-2.18827	0.001	0.005
+    14	-2.19453	0.001	0.005
+    15	-2.195	0.001	0.005
+    16	-2.18068	0.001	0.005
+    17	-2.1911	0.001	0.005
+    18	-2.18762	0.001	0.005
+    19	-2.18496	0.001	0.005
+    20	-2.18432	0.001	0.005
+
+Total elapsed time: 5.173 seconds.
+

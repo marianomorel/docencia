@@ -1,0 +1,764 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.12.1)  25 OCT 2024 12:29
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**principal.tex
+(./principal.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14>
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@chapter=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/02/14 3.40 The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2020/02/14 3.40 Babel switching mechanism
+)
+
+! Package babel Error: Unknown option `spanish'. Either you misspelled it
+(babel)                or the language definition file spanish.ldf was not foun
+d.
+
+See the babel package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.542 \ProcessOptions*
+                      
+Valid options are: shorthands=, KeepShorthandsActive,
+activeacute, activegrave, noconfigs, safe=, main=, math=
+headfoot=, strings=, config=, hyphenmap=, or a language name.
+
+Package babel Info: You haven't specified a language. I'll use 'nil'
+(babel)             as the main language. Reported on input line 572.
+(/usr/share/texlive/texmf-dist/tex/generic/babel/nil.ldf
+Language: nil 2020/02/14 3.40 Nil language
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/02/14 3.40 Babel common definitions
+\babel@savecnt=\count176
+\U@D=\dimen135
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count177
+)
+\l@nil=\language3
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen136
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen137
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count178
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count179
+\leftroot@=\count180
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count181
+\DOTSCASE@=\count182
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box45
+\strutbox@=\box46
+\big@size=\dimen138
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count183
+\c@MaxMatrixCols=\count184
+\dotsspace@=\muskip16
+\c@parentequation=\count185
+\dspbrk@lvl=\count186
+\tag@help=\toks17
+\row@=\count187
+\column@=\count188
+\maxfields@=\count189
+\andhelp@=\toks18
+\eqnshift@=\dimen139
+\alignsep@=\dimen140
+\tagshift@=\dimen141
+\tagwidth@=\dimen142
+\totwidth@=\dimen143
+\lineht@=\dimen144
+\@envbody=\toks19
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen145
+\Gin@req@width=\dimen146
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count190
+\lst@gtempboxa=\box47
+\lst@token=\toks22
+\lst@length=\count191
+\lst@currlwidth=\dimen147
+\lst@column=\count192
+\lst@pos=\count193
+\lst@lostspace=\dimen148
+\lst@width=\dimen149
+\lst@newlines=\count194
+\lst@lineno=\count195
+\lst@maxwidth=\dimen150
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count196
+\lst@skipnumbers=\count197
+\lst@framebox=\box48
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/09/10 1.8c listings configuration
+))
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+)
+! Undefined control sequence.
+l.60 \setpapersize
+                  {A4}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 \setpapersize{A
+                    4}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.61 \setmargins
+                {2.5cm}       % margen izquierdo
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count198
+\l__pdf_internal_box=\box49
+)
+(./principal.aux (./inicio.aux) (./realimentacion.aux))
+\openout1 = `principal.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count199
+\scratchdimen=\dimen151
+\scratchbox=\box50
+\nofMPsegments=\count266
+\nofMParguments=\count267
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count268
+\MPscratchDim=\dimen152
+\MPnumerator=\count269
+\makeMPintoPDFobject=\count270
+\everyMPtoPDFconversion=\toks24
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\c@lstlisting=\count271
+
+(./portada.tex [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<figuras/logo fi unmdp.png, id=7, 635.37375pt x 144.54pt>
+File: figuras/logo fi unmdp.png Graphic file (type png)
+<use figuras/logo fi unmdp.png>
+Package pdftex.def Info: figuras/logo fi unmdp.png  used on input line 5.
+(pdftex.def)             Requested size: 345.0pt x 78.48491pt.
+ [1 <./figuras/logo fi unmdp.png>]) (./principal.toc)
+\tf@toc=\write3
+\openout3 = `principal.toc'.
+
+ [1
+
+] [2] [3]
+\openout2 = `inicio.aux'.
+
+ (./inicio.tex
+Chapter 1.
+
+Overfull \hbox (0.2506pt too wide) in paragraph at lines 3--4
+\OT1/cmr/m/n/10 r^^Sapida y de alto rendimiento del circuito en cuesti^^Son uti
+lizando modelos eficientes
+ []
+
+
+Overfull \hbox (60.66742pt too wide) in paragraph at lines 3--4
+\OT1/cmr/m/n/10 fabricante Analog Devices, Inc, pudi^^Sendose descargar de: htt
+ps://www.analog.com/en/design-
+ []
+
+
+Overfull \hbox (7.49136pt too wide) in paragraph at lines 3--4
+\OT1/cmr/m/n/10 center/design-tools-and-calculators/ltspice-simulator.html. El 
+software corre bajo
+ []
+
+
+LaTeX Warning: Citation `Nagel75' on page 4 undefined on input line 6.
+
+
+LaTeX Warning: Citation `queiros91' on page 4 undefined on input line 6.
+
+
+Overfull \hbox (6.0284pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/n/10 Circuits Emphasis), desarrollado por por L. Nagel y D. Pederson
+ en la Universidad
+ []
+
+
+Overfull \hbox (21.66727pt too wide) in paragraph at lines 11--12
+[]\OT1/cmr/m/n/10 An^^Salisis de corriente continua (CC), que obtiene el compor
+tamiento estacionario
+ []
+
+
+Overfull \hbox (2.27837pt too wide) in paragraph at lines 16--17
+\OT1/cmr/m/n/10 los dispositivos no lineales involucrados, se obtienen los par^
+^Sametros incrementales
+ []
+
+
+Overfull \hbox (21.88951pt too wide) in paragraph at lines 16--17
+\OT1/cmr/m/n/10 de dichos dispositivos, se reemplazan los dispositivos por los 
+modelos correspondientes
+ []
+
+
+Overfull \hbox (3.10251pt too wide) in paragraph at lines 18--19
+\OT1/cmr/m/n/10 layout del componente. Los modelos de los distintos dispositivo
+s son almacenados
+ []
+
+[4
+
+
+]
+
+LaTeX Warning: Citation `gonza18' on page 5 undefined on input line 20.
+
+
+Overfull \hbox (9.90248pt too wide) in paragraph at lines 20--21
+\OT1/cmr/m/n/10 Nacional de La Plata, EDULP (http://sedici.unlp.edu.ar/handle/1
+0915/69818)[[]]. 
+ []
+
+
+Overfull \hbox (13.9439pt too wide) in paragraph at lines 22--23
+[]\OT1/cmr/m/n/10 A continuaci^^Son se describen brevemente los distintos tipos
+ de an^^Salisis disponibles
+ []
+
+<figuras/fig 1-1x.png, id=27, 1202.4925pt x 882.29625pt>
+File: figuras/fig 1-1x.png Graphic file (type png)
+<use figuras/fig 1-1x.png>
+Package pdftex.def Info: figuras/fig 1-1x.png  used on input line 51.
+(pdftex.def)             Requested size: 345.0pt x 253.12642pt.
+<figuras/fig 1-2xx.png, id=28, 1201.48875pt x 883.3pt>
+File: figuras/fig 1-2xx.png Graphic file (type png)
+<use figuras/fig 1-2xx.png>
+Package pdftex.def Info: figuras/fig 1-2xx.png  used on input line 70.
+(pdftex.def)             Requested size: 345.0pt x 253.63004pt.
+[5] [6 <./figuras/fig 1-1x.png>] [7 <./figuras/fig 1-2xx.png>]
+<figuras/fig 1-3x.png, id=46, 1226.5825pt x 901.3675pt>
+File: figuras/fig 1-3x.png Graphic file (type png)
+<use figuras/fig 1-3x.png>
+Package pdftex.def Info: figuras/fig 1-3x.png  used on input line 82.
+(pdftex.def)             Requested size: 345.0pt x 253.52274pt.
+ [8 <./figuras/fig 1-3x.png>]
+<figuras/fig 1-4xx.png, id=50, 1228.59pt x 905.3825pt>
+File: figuras/fig 1-4xx.png Graphic file (type png)
+<use figuras/fig 1-4xx.png>
+Package pdftex.def Info: figuras/fig 1-4xx.png  used on input line 97.
+(pdftex.def)             Requested size: 345.0pt x 254.23756pt.
+<figuras/fig 1-5x.png, id=51, 885.3075pt x 727.71875pt>
+File: figuras/fig 1-5x.png Graphic file (type png)
+<use figuras/fig 1-5x.png>
+Package pdftex.def Info: figuras/fig 1-5x.png  used on input line 104.
+(pdftex.def)             Requested size: 345.0pt x 283.58708pt.
+<figuras/fig 1-6xx.png, id=52, 1159.33125pt x 850.17625pt>
+File: figuras/fig 1-6xx.png Graphic file (type png)
+<use figuras/fig 1-6xx.png>
+Package pdftex.def Info: figuras/fig 1-6xx.png  used on input line 113.
+(pdftex.def)             Requested size: 345.0pt x 252.99219pt.
+
+Overfull \hbox (3.19493pt too wide) in paragraph at lines 120--121
+\OT1/cmr/m/n/10 transferencias de circuitos resistivos con fuentes de corriente
+ o tensi^^Son controladas
+ []
+
+[9 <./figuras/fig 1-4xx.png>] [10 <./figuras/fig 1-5x.png>] [11 <./figuras/fig 
+1-6xx.png>]
+Overfull \hbox (0.47287pt too wide) in paragraph at lines 122--123
+\OT1/cmr/m/n/10 para el transistor bipolar el modelo de emisor com^^Sun simplif
+icado con par^^Sametros
+ []
+
+<figuras/fig 1-7xx.png, id=63, 1230.5975pt x 907.39pt>
+File: figuras/fig 1-7xx.png Graphic file (type png)
+<use figuras/fig 1-7xx.png>
+Package pdftex.def Info: figuras/fig 1-7xx.png  used on input line 139.
+(pdftex.def)             Requested size: 345.0pt x 254.38591pt.
+<figuras/fig 1-8x.png, id=64, 1199.48125pt x 882.29625pt>
+File: figuras/fig 1-8x.png Graphic file (type png)
+<use figuras/fig 1-8x.png>
+Package pdftex.def Info: figuras/fig 1-8x.png  used on input line 146.
+(pdftex.def)             Requested size: 345.0pt x 253.75917pt.
+[12] [13 <./figuras/fig 1-7xx.png>] [14 <./figuras/fig 1-8x.png>]
+<figuras/fig 1-9x.png, id=74, 1114.1625pt x 722.7pt>
+File: figuras/fig 1-9x.png Graphic file (type png)
+<use figuras/fig 1-9x.png>
+Package pdftex.def Info: figuras/fig 1-9x.png  used on input line 159.
+(pdftex.def)             Requested size: 345.0pt x 223.78105pt.
+<figuras/fig 1-10x.png, id=75, 1144.275pt x 840.13875pt>
+File: figuras/fig 1-10x.png Graphic file (type png)
+<use figuras/fig 1-10x.png>
+Package pdftex.def Info: figuras/fig 1-10x.png  used on input line 171.
+(pdftex.def)             Requested size: 345.0pt x 253.29988pt.
+) [15 <./figuras/fig 1-9x.png>] [16 <./figuras/fig 1-10x.png>]
+\openout2 = `realimentacion.aux'.
+
+ (./realimentacion.tex
+Chapter 2.
+
+LaTeX Warning: Citation `gray95' on page 17 undefined on input line 3.
+
+
+LaTeX Warning: Citation `sedra99' on page 17 undefined on input line 3.
+
+<figuras/real1.png, id=82, 494.84875pt x 244.915pt>
+File: figuras/real1.png Graphic file (type png)
+<use figuras/real1.png>
+Package pdftex.def Info: figuras/real1.png  used on input line 23.
+(pdftex.def)             Requested size: 172.5pt x 85.37398pt.
+[17
+
+
+
+ <./figuras/real1.png>]
+Overfull \hbox (1.75052pt too wide) in paragraph at lines 76--85
+  \OT1/cmr/m/n/10 Los amplificadores de tensi^^Son son esencialmente fuentes de
+ tensi^^Son controladas
+ []
+
+[18]
+<figuras/real2x.png, id=91, 1204.5pt x 888.31876pt>
+File: figuras/real2x.png Graphic file (type png)
+<use figuras/real2x.png>
+Package pdftex.def Info: figuras/real2x.png  used on input line 95.
+(pdftex.def)             Requested size: 345.0pt x 254.43405pt.
+ [19 <./figuras/real2x.png>]
+
+LaTeX Warning: Citation `gray95' on page 20 undefined on input line 106.
+
+<figuras/real3x.png, id=95, 1207.51125pt x 889.3225pt>
+File: figuras/real3x.png Graphic file (type png)
+<use figuras/real3x.png>
+Package pdftex.def Info: figuras/real3x.png  used on input line 126.
+(pdftex.def)             Requested size: 345.0pt x 254.08376pt.
+<figuras/real4x.png, id=96, 1202.4925pt x 887.315pt>
+File: figuras/real4x.png Graphic file (type png)
+<use figuras/real4x.png>
+Package pdftex.def Info: figuras/real4x.png  used on input line 133.
+(pdftex.def)             Requested size: 345.0pt x 254.56627pt.
+
+Underfull \hbox (badness 2856) in paragraph at lines 134--134
+[]\OT1/cmr/m/n/10 Figure 2.4: Configuraci^^Son Serie-Paralelo. Reemplazo de las
+ red de
+ []
+
+<figuras/real5.png, id=97, 485.815pt x 159.59625pt>
+File: figuras/real5.png Graphic file (type png)
+<use figuras/real5.png>
+Package pdftex.def Info: figuras/real5.png  used on input line 140.
+(pdftex.def)             Requested size: 172.5pt x 56.66801pt.
+
+LaTeX Warning: Citation `gray95' on page 20 undefined on input line 154.
+
+
+Overfull \hbox (18.30612pt too wide) in paragraph at lines 159--160
+[]\OT1/cmr/m/n/10 La red de realimentaci^^Son deber^^Sa reemplazarse por su equ
+ivalente en par^^Sametros
+ []
+
+[20] [21 <./figuras/real3x.png>] [22 <./figuras/real4x.png> <./figuras/real5.pn
+g>]
+Overfull \hbox (9.22282pt too wide) in paragraph at lines 169--170
+\OT1/cmr/m/n/10 se deber^^S^^Pa hallar primero el punto de operaci^^Son de cont
+inua, obtener los par^^Sametros
+ []
+
+
+Overfull \hbox (24.84781pt too wide) in paragraph at lines 169--170
+\OT1/cmr/m/n/10 capacitores externos y la fuente $\OML/cmm/m/it/10 V[]$ \OT1/cm
+r/m/n/10 cortocircuitados y con los transistores reemplazados
+ []
+
+
+Overfull \hbox (24.86179pt too wide) in paragraph at lines 180--181
+\OT1/cmr/m/n/10 hallarse por c^^Sa[]lculo utilizando los valores obtenidos y la
+ teor^^S^^Pa b^^Sasica de realimentaci^^Son
+ []
+
+<figuras/real6x.png, id=107, 1230.5975pt x 909.3975pt>
+File: figuras/real6x.png Graphic file (type png)
+<use figuras/real6x.png>
+Package pdftex.def Info: figuras/real6x.png  used on input line 187.
+(pdftex.def)             Requested size: 345.0pt x 254.94872pt.
+<figuras/real7.png, id=108, 653.44125pt x 572.1375pt>
+File: figuras/real7.png Graphic file (type png)
+<use figuras/real7.png>
+Package pdftex.def Info: figuras/real7.png  used on input line 194.
+(pdftex.def)             Requested size: 310.4979pt x 271.86417pt.
+[23] [24 <./figuras/real6x.png>] [25 <./figuras/real7.png>]
+<figuras/real8x.png, id=119, 1175.39125pt x 865.2325pt>
+File: figuras/real8x.png Graphic file (type png)
+<use figuras/real8x.png>
+Package pdftex.def Info: figuras/real8x.png  used on input line 205.
+(pdftex.def)             Requested size: 345.0pt x 253.96074pt.
+<figuras/real9.png, id=120, 650.43pt x 768.8725pt>
+File: figuras/real9.png Graphic file (type png)
+<use figuras/real9.png>
+Package pdftex.def Info: figuras/real9.png  used on input line 215.
+(pdftex.def)             Requested size: 276.00105pt x 326.26787pt.
+ [26 <./figuras/real8x.png>] [27 <./figuras/real9.png>]
+<figuras/real10.png, id=128, 436.63126pt x 204.765pt>
+File: figuras/real10.png Graphic file (type png)
+<use figuras/real10.png>
+Package pdftex.def Info: figuras/real10.png  used on input line 233.
+(pdftex.def)             Requested size: 276.00105pt x 129.43379pt.
+ [28 <./figuras/real10.png>]
+<figuras/real11.png, id=135, 956.57375pt x 649.42625pt>
+File: figuras/real11.png Graphic file (type png)
+<use figuras/real11.png>
+Package pdftex.def Info: figuras/real11.png  used on input line 242.
+(pdftex.def)             Requested size: 276.00105pt x 187.37749pt.
+<figuras/real12.png, id=136, 968.61874pt x 514.92375pt>
+File: figuras/real12.png Graphic file (type png)
+<use figuras/real12.png>
+Package pdftex.def Info: figuras/real12.png  used on input line 249.
+(pdftex.def)             Requested size: 345.0pt x 183.40813pt.
+
+
+LaTeX Warning: Citation `Rosenstark86' on page 29 undefined on input line 256.
+
+
+LaTeX Warning: Citation `sedra99' on page 29 undefined on input line 256.
+
+
+Overfull \hbox (10.27823pt too wide) in paragraph at lines 256--257
+[]\OT1/cmr/m/n/10 Si no se pueden encontrar en el circuito puntos de las caract
+er^^S^^Psticas presentadas
+ []
+
+
+Overfull \hbox (19.95892pt too wide) in paragraph at lines 256--257
+\OT1/cmr/m/n/10 anteriormente se puede utilizar el m^^Setodo propuesto por Rose
+nstark [[]] y desarrollado
+ []
+
+<figuras/real13.png, id=137, 429.10312pt x 276.28218pt>
+File: figuras/real13.png Graphic file (type png)
+<use figuras/real13.png>
+Package pdftex.def Info: figuras/real13.png  used on input line 264.
+(pdftex.def)             Requested size: 276.00105pt x 177.70528pt.
+[29 <./figuras/real11.png>] [30 <./figuras/real12.png> <./figuras/real13.png>]
+<figuras/real14.png, id=146, 1308.89pt x 674.52pt>
+File: figuras/real14.png Graphic file (type png)
+<use figuras/real14.png>
+Package pdftex.def Info: figuras/real14.png  used on input line 275.
+(pdftex.def)             Requested size: 345.0pt x 177.78976pt.
+) [31 <./figuras/real14.png>]
+Chapter 3.
+<figuras/xxx.png, id=150, 528.97626pt x 554.07pt>
+File: figuras/xxx.png Graphic file (type png)
+<use figuras/xxx.png>
+Package pdftex.def Info: figuras/xxx.png  used on input line 135.
+(pdftex.def)             Requested size: 172.5pt x 180.67934pt.
+
+LaTeX Warning: Citation `lopez18' on page 32 undefined on input line 142.
+
+
+Overfull \hbox (5.22284pt too wide) in paragraph at lines 142--143
+\OT1/cmr/m/n/10 con lenguaje matem^^Satico que los editores de texto de la ^^Se
+poca no pod^^S^^Pan solventar.
+ []
+
+[32
+
+
+ <./figuras/xxx.png>] [33]
+Chapter 4.
+<figuras/maquinaDeEstados.jpg, id=157, 1606.0pt x 741.77126pt>
+File: figuras/maquinaDeEstados.jpg Graphic file (type jpg)
+<use figuras/maquinaDeEstados.jpg>
+Package pdftex.def Info: figuras/maquinaDeEstados.jpg  used on input line 149.
+(pdftex.def)             Requested size: 276.00105pt x 127.46898pt.
+
+Overfull \hbox (4.15804pt too wide) in paragraph at lines 154--156
+\OT1/cmr/m/n/10 Las figuras nos permiten ilustrar conceptos de forma m^^Sas dir
+ecta. Adicionalmente
+ []
+
+[34
+
+ <./figuras/maquinaDeEstados.jpg>]
+Overfull \hbox (1.83388pt too wide) in paragraph at lines 211--212
+\OT1/cmr/m/n/10 cap^^S^^Ptulo 4[] se enfoca m^^Sas en funcionalidades puntuales
+ que pueden ser interesantes
+ []
+
+[35]
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 2
+20.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <8> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 220.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 2
+22.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 222.
+ [36]
+! Undefined control sequence.
+<recently read> \url 
+                     
+l.247     \url
+              {https://manualdelatex.com/tutoriales/tablas}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \url 
+                     
+l.250     \url
+              {https://www.overleaf.com/learn/latex/bibliography_management_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.250 ...ww.overleaf.com/learn/latex/bibliography_
+                                                  management_with_bibtex}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.250 ...atex/bibliography_management_with_bibtex}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.251 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.251 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (8.28273pt too wide) in paragraph at lines 249--251
+\OT1/cmr/m/n/10 https://www.overleaf.com/learn/latex/bibliography$[]\OML/cmm/m/
+it/10 anagement[]ith[]ibtex[]$ 
+ []
+
+! Undefined control sequence.
+<recently read> \url 
+                     
+l.253     \url
+              {http://metodos.fam.cie.uva.es/~latex/apuntes/apuntes3.pdf}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \url 
+                     
+l.256     \url
+              {https://www.overleaf.com/learn/latex/beamer}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \url 
+                     
+l.259     \url
+              {https://www.overleaf.com/gallery/tagged/charts}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+No file principal.bbl.
+[37] (./principal.aux (./inicio.aux) (./realimentacion.aux))
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4419 strings out of 483183
+ 60263 string characters out of 5966292
+ 495922 words of memory out of 5000000
+ 19359 multiletter control sequences out of 15000+600000
+ 538799 words of font info for 46 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 30i,19n,51p,1383b,1351s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/claudio/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.6
+00pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmtt10.pfb>
+Output written on principal.pdf (39 pages, 1160886 bytes).
+PDF statistics:
+ 248 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 136 words of extra memory for PDF output out of 10000 (max. 10000000)
+

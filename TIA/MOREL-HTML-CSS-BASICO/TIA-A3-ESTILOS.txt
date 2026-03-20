@@ -1,0 +1,74 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    text-align: left;
+    margin: 20px;
+}
+
+/* Estilos para el título */
+.titulo {
+    color: blue;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Estilos para el párrafo */
+.parrafo {
+    color: #888;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Estilos para el botón */
+.boton {
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Cambio de estilo al pasar el mouse sobre el botón */
+.boton:hover {
+    background-color: red;
+}
+
+/* Estilos para la lista interactiva */
+.lista-interactiva {
+    list-style-type: none; 
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* Organiza los elementos de la lista */
+.lista-interactiva li {
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilo para el primer elemento de la lista */
+.lista-interactiva li:first-child {
+    background-color: yellow;
+}
+
+/* Estilo para los elementos pares de la lista */
+.lista-interactiva li:nth-child(even) {
+    background-color: lightcoral;
+}
+
+/* Estilo para los elementos impares de la lista */
+.lista-interactiva li:nth-child(odd):not(:first-child) {
+    background-color: lightgreen;
+}
+
+/* Instrucciones para los estudiantes:
+En el archivo estilos.css, completa las reglas CSS para que:
+-El título tenga color azul, negrita y tamaño de fuente de 24px.
+-El párrafo tenga color gris y un margen superior de 10px.
+-El botón tenga fondo verde, texto blanco y bordes redondeados (5px).
+-Al pasar el mouse sobre el botón, su fondo cambie a rojo.
+-El primer elemento de la lista tenga un fondo amarillo.
+-Los elementos pares de la lista tengan un fondo coral (light).
+-Los elementos impares de la lista tengan un fondo verde (light) menos el primer elemento */

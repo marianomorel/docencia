@@ -1,0 +1,406 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2025.3.17)  6 AUG 2025 15:45
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**document.tex
+(./document.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14>
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@chapter=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/02/14 3.40 The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2020/02/14 3.40 Babel switching mechanism
+)
+Package babel Info: You haven't specified a language. I'll use 'nil'
+(babel)             as the main language. Reported on input line 572.
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/nil.ldf
+Language: nil 2020/02/14 3.40 Nil language
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/02/14 3.40 Babel common definitions
+\babel@savecnt=\count176
+\U@D=\dimen135
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count177
+)
+\l@nil=\language3
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen136
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen137
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count178
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count179
+\leftroot@=\count180
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count181
+\DOTSCASE@=\count182
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box45
+\strutbox@=\box46
+\big@size=\dimen138
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count183
+\c@MaxMatrixCols=\count184
+\dotsspace@=\muskip16
+\c@parentequation=\count185
+\dspbrk@lvl=\count186
+\tag@help=\toks17
+\row@=\count187
+\column@=\count188
+\maxfields@=\count189
+\andhelp@=\toks18
+\eqnshift@=\dimen139
+\alignsep@=\dimen140
+\tagshift@=\dimen141
+\tagwidth@=\dimen142
+\totwidth@=\dimen143
+\lineht@=\dimen144
+\@envbody=\toks19
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+))
+\Gm@cnth=\count190
+\Gm@cntv=\count191
+\c@Gm@tempcnt=\count192
+\Gm@bindingoffset=\dimen145
+\Gm@wd@mp=\dimen146
+\Gm@odd@mp=\dimen147
+\Gm@even@mp=\dimen148
+\Gm@layoutwidth=\dimen149
+\Gm@layoutheight=\dimen150
+\Gm@layouthoffset=\dimen151
+\Gm@layoutvoffset=\dimen152
+\Gm@dimlist=\toks22
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen153
+\Gin@req@width=\dimen154
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count193
+\l__pdf_internal_box=\box47
+)
+
+LaTeX Warning: Unused global option(s):
+    [spanish].
+
+(./document.aux (./guia1.aux) (./guia2.aux) (./guia3.aux) (./guia4.aux)
+(./guia5.aux))
+\openout1 = `document.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 455.24411pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=731.23584pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=57.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count194
+\scratchdimen=\dimen155
+\scratchbox=\box48
+\nofMPsegments=\count195
+\nofMParguments=\count196
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count197
+\MPscratchDim=\dimen156
+\MPnumerator=\count198
+\makeMPintoPDFobject=\count199
+\everyMPtoPDFconversion=\toks24
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+(./portada.tex
+<figuras/logo fi unmdp.png, id=1, 635.37375pt x 144.54pt>
+File: figuras/logo fi unmdp.png Graphic file (type png)
+<use figuras/logo fi unmdp.png>
+Package pdftex.def Info: figuras/logo fi unmdp.png  used on input line 5.
+(pdftex.def)             Requested size: 455.24411pt x 103.56584pt.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figuras/logo fi unmdp.pn
+g>])
+\openout2 = `guia1.aux'.
+
+ (./guia1.tex
+Guía de Laboratorio 1.
+<figuras/lab1_1.png, id=9, 1211.52625pt x 822.07124pt>
+File: figuras/lab1_1.png Graphic file (type png)
+<use figuras/lab1_1.png>
+Package pdftex.def Info: figuras/lab1_1.png  used on input line 10.
+(pdftex.def)             Requested size: 364.19667pt x 247.12502pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+
+ <./figuras/lab1_1.png>]
+Overfull \hbox (0.73401pt too wide) in paragraph at lines 47--53
+[]\T1/cmr/m/n/10 Realizar las simulaciones de la respuesta en frecuencia y la r
+espuesta al escal�n del circuito propuesto,
+ []
+
+<figuras/lab1_2.png, id=19, 1772.6225pt x 667.49374pt>
+File: figuras/lab1_2.png Graphic file (type png)
+<use figuras/lab1_2.png>
+Package pdftex.def Info: figuras/lab1_2.png  used on input line 61.
+(pdftex.def)             Requested size: 364.19667pt x 137.14265pt.
+<figuras/lab1_3.png, id=20, 1028.84375pt x 590.205pt>
+File: figuras/lab1_3.png Graphic file (type png)
+<use figuras/lab1_3.png>
+Package pdftex.def Info: figuras/lab1_3.png  used on input line 67.
+(pdftex.def)             Requested size: 364.19667pt x 208.92535pt.
+) [2 <./figuras/lab1_2.png> <./figuras/lab1_3.png>]
+\openout2 = `guia2.aux'.
+
+ (./guia2.tex
+Guía de Laboratorio 2.
+<figuras/lab2_1.png, id=25, 1182.4175pt x 766.865pt>
+File: figuras/lab2_1.png Graphic file (type png)
+<use figuras/lab2_1.png>
+Package pdftex.def Info: figuras/lab2_1.png  used on input line 55.
+(pdftex.def)             Requested size: 364.19667pt x 236.19281pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [3
+
+
+
+] [4 <./figuras/lab2_1.png>]
+\openout2 = `guia3.aux'.
+
+ (./guia3.tex
+Guía de Laboratorio 3.
+<figuras/lab3_1.png, id=32, 982.67125pt x 870.25125pt>
+File: figuras/lab3_1.png Graphic file (type png)
+<use figuras/lab3_1.png>
+Package pdftex.def Info: figuras/lab3_1.png  used on input line 28.
+(pdftex.def)             Requested size: 364.19667pt x 322.53236pt.
+) [5
+
+
+
+ <./figuras/lab3_1.png>]
+\openout2 = `guia4.aux'.
+
+ (./guia4.tex
+Guía de Laboratorio 4.
+<figuras/lab5_1.png, id=36, 1010.77625pt x 734.745pt>
+File: figuras/lab5_1.png Graphic file (type png)
+<use figuras/lab5_1.png>
+Package pdftex.def Info: figuras/lab5_1.png  used on input line 45.
+(pdftex.def)             Requested size: 364.19667pt x 264.74342pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [6
+
+
+
+] [7 <./figuras/lab5_1.png>]
+\openout2 = `guia5.aux'.
+
+ (./guia5.tex
+Guía de Laboratorio 5.
+<figuras/lab4_1.png, id=44, 1207.51125pt x 781.92125pt>
+File: figuras/lab4_1.png Graphic file (type png)
+<use figuras/lab4_1.png>
+Package pdftex.def Info: figuras/lab4_1.png  used on input line 46.
+(pdftex.def)             Requested size: 364.19667pt x 235.83095pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figuras/lab4_2.png, id=45, 1006.76125pt x 833.1125pt>
+File: figuras/lab4_2.png Graphic file (type png)
+<use figuras/lab4_2.png>
+Package pdftex.def Info: figuras/lab4_2.png  used on input line 52.
+(pdftex.def)             Requested size: 364.19667pt x 301.36946pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8
+
+
+
+] [9 <./figuras/lab4_1.png> <./figuras/lab4_2.png>] (./document.aux
+(./guia1.aux) (./guia2.aux) (./guia3.aux) (./guia4.aux) (./guia5.aux)) ) )
+(\end occurred when \iftrue on line 102 was incomplete)
+(\end occurred when \ifnum on line 102 was incomplete) 
+Here is how much of TeX's memory you used:
+ 3751 strings out of 483183
+ 48544 string characters out of 5966292
+ 295269 words of memory out of 5000000
+ 18691 multiletter control sequences out of 15000+600000
+ 539428 words of font info for 39 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 30i,6n,27p,225b,226s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/claudio/.texlive2
+019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/claudio/.texli
+ve2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk> </home/claudio/.te
+xlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/claudio/
+.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb>
+Output written on document.pdf (10 pages, 512505 bytes).
+PDF statistics:
+ 234 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+

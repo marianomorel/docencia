@@ -1,0 +1,24 @@
+* C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 1\g1_p1.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Fri Aug 04 12:50:18 2023
+
+
+
+** Analysis setup **
+.tran .01 4.1
+.TEMP 27
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "g1_p1.net"
+.INC "g1_p1.als"
+
+
+.probe
+
+
+.END

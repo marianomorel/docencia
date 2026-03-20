@@ -1,0 +1,189 @@
+
+   --- Expanded Deck Component Count ---
+C's 1
+D's 2
+Q's 20
+R's 11
+V's 3
+tot: 37
+
+
+    --- Expanded Netlist ---
+* C:\Claudio\Docencia personal\LTSpice\741\741disc_deajuste2.asc
+q1 n002 n005 n007 0 2n3904
+d1 n007 n010 cmdsh2-3
+q2 n002 0 n008 0 2n3904
+d2 n008 n011 cmdsh2-3
+q3 n015 n013 n010 0 2n3906
+q4 n016 n013 n011 0 2n3906
+q5 n015 n018 n020 0 2n3904
+q6 n016 n018 n021 0 2n3904
+q7 n001 n015 n018 0 2n3904
+q8 n002 n002 n001 0 2n3906
+r1 n020 n025 1k
+r2 n018 n025 51k
+r3 n021 n025 1k
+q9 n013 n002 n001 0 2n3906
+q10 n013 n017 n024 0 2n3904
+r4 n024 n025 4.7k
+q11 n017 n017 n025 0 2n3904
+r5 n003 n017 39k
+q12 n003 n003 n001 0 2n3906
+v1 n001 0 12
+v2 0 n025 12
+q13 n004 n003 n001 0 2n3906
+q14 n001 n004 n006 0 2n3904
+q15 n004 n006 n012 0 2n3904
+q16 n014 n016 n022 0 2n3904
+q17 n014 n022 n023 0 2n3904
+q18 n004 n009 n014 0 2n3904
+q20 n025 n014 n019 0 2n3906
+q22 n016 n023 n025 0 2n3904
+r7 n004 n009 4.7k
+r8 n009 n014 7.5k
+r9 n006 n012 24
+r10 n012 n019 51
+r11 n023 n025 51
+r12 n022 n025 51k
+c1 n004 n016 33p
+v3 n005 0 -272.41µv
+.model 2n3906 pnp(is=1e-14 vaf=100 bf=200 ikf=0.4 xtb=1.5 br=4 cjc=4.5e-12 cje=10e-12 rb=20 rc=0.1 re=0.1 tr=250e-9 tf=350e-12 itf=1 vtf=2 xtf=3 vceo=40 icrating=200m mfg=philips)
+.model 2n3904 npn(is=1e-14 vaf=100 bf=300 ikf=0.4 xtb=1.5 br=4 cjc=4e-12 cje=8e-12 rb=20 rc=0.1 re=0.1 tr=250e-9 tf=350e-12 itf=1 vtf=2 xtf=3 vceo=40 icrating=200m mfg=philips)
+.model cmdsh2-3 d(is=210na rs=.5 n=1.09 cjo=50p m=.5 eg=.69 xti=2 iave=200m vpk=30 mfg=central type=schottky)
+.op
+.end
+
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-005
+Gmin = 1.6455e-006
+Gmin = 1.76685e-007
+Gmin = 1.89714e-008
+Gmin = 2.03704e-009
+Gmin = 2.18725e-010
+Gmin = 2.34854e-011
+Gmin = 2.52173e-012
+Gmin = 2.70769e-013
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source stepping succeeded in finding the operating point.
+
+Semiconductor Device Operating Points:
+                        --- Diodes ---
+Name:      d2          d1
+Model:  cmdsh2-3    cmdsh2-3
+Id:      8.64e-06    8.61e-06
+Vd:      1.05e-01    1.05e-01
+Req:     3.19e+03    3.20e+03
+CAP:     5.29e-11    5.29e-11
+
+                        --- Bipolar Transistors ---
+Name:       q20         q13         q12         q9          q8
+Model:    2n3906      2n3906      2n3906      2n3906      2n3906
+Ib:      -3.19e-08   -2.89e-06   -2.89e-06   -8.51e-08   -8.51e-08
+Ic:      -7.11e-06   -6.39e-04   -5.77e-04   -1.92e-05   -1.70e-05
+Vbe:     -5.24e-01   -6.41e-01   -6.41e-01   -5.50e-01   -5.50e-01
+Vbc:      1.15e+01    1.08e+01    0.00e+00    1.26e+01    0.00e+00
+Vce:     -1.20e+01   -1.15e+01   -6.41e-01   -1.32e+01   -5.50e-01
+BetaDC:   2.23e+02    2.21e+02    2.00e+02    2.25e+02    2.00e+02
+Gm:       2.75e-04    2.47e-02    2.23e-02    7.41e-04    6.58e-04
+Rpi:      8.11e+05    8.96e+03    8.96e+03    3.04e+05    3.04e+05
+Rx:       2.00e+01    2.00e+01    2.00e+01    2.00e+01    2.00e+01
+Ro:       1.57e+07    1.73e+05    1.73e+05    5.87e+06    5.87e+06
+Cbe:      1.43e-11    2.41e-11    2.33e-11    1.48e-11    1.47e-11
+Cbc:      1.79e-12    1.82e-12    4.50e-12    1.74e-12    4.50e-12
+Cjs:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+BetaAC:   2.23e+02    2.21e+02    1.99e+02    2.25e+02    2.00e+02
+Cbx:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Ft:       2.71e+06    1.51e+08    1.27e+08    7.15e+06    5.44e+06
+
+Name:       q4          q3          q22         q18         q17
+Model:    2n3906      2n3906      2n3904      2n3904      2n3904
+Ib:      -3.92e-08   -3.90e-08   -1.15e-12    1.83e-06    1.88e-06
+Ic:      -8.60e-06   -8.57e-06    1.23e-12    5.52e-04    6.24e-04
+Vbe:     -5.30e-01   -5.30e-01    3.19e-02    6.40e-01    6.40e-01
+Vbc:      9.62e+00    9.76e+00   -1.18e+00   -4.10e-01   -1.08e+01
+Vce:     -1.01e+01   -1.03e+01    1.22e+00    1.05e+00    1.14e+01
+BetaDC:   2.19e+02    2.20e+02   -1.06e+00    3.01e+02    3.32e+02
+Gm:       3.32e-04    3.31e-04    1.34e-12    2.13e-02    2.41e-02
+Rpi:      6.60e+05    6.62e+05    9.96e+11    1.41e+04    1.38e+04
+Rx:       2.00e+01    2.00e+01    2.00e+01    2.00e+01    2.00e+01
+Ro:       1.28e+07    1.28e+07    2.91e+15    1.82e+05    1.78e+05
+Cbe:      1.44e-11    1.44e-11    8.12e-12    1.99e-11    2.08e-11
+Cbc:      1.89e-12    1.88e-12    2.93e-12    3.46e-12    1.62e-12
+Cjs:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+BetaAC:   2.19e+02    2.19e+02    1.34e+00    3.00e+02    3.31e+02
+Cbx:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Ft:       3.25e+06    3.24e+06    1.29e-02    1.45e+08    1.71e+08
+
+Name:       q16         q15         q14         q11         q10
+Model:    2n3904      2n3904      2n3904      2n3904      2n3904
+Ib:       4.54e-08   -5.27e-13    2.13e-08    1.94e-06    5.82e-08
+Ic:       1.50e-05    5.37e-13    7.12e-06    5.81e-04    1.92e-05
+Vbe:      5.44e-01    1.71e-04    5.24e-01    6.41e-01    5.50e-01
+Vbc:     -1.03e+01   -5.24e-01   -1.15e+01    0.00e+00   -1.02e+01
+Vce:      1.08e+01    5.25e-01    1.20e+01    6.41e-01    1.07e+01
+BetaDC:   3.31e+02   -1.02e+00    3.35e+02    3.00e+02    3.31e+02
+Gm:       5.80e-04    3.91e-13    2.75e-04    2.24e-02    7.44e-04
+Rpi:      5.70e+05    9.99e+11    1.22e+06    1.33e+04    4.44e+05
+Rx:       2.00e+01    2.00e+01    2.00e+01    2.00e+01    2.00e+01
+Ro:       7.34e+06    9.93e+15    1.57e+07    1.72e+05    5.72e+06
+Cbe:      1.18e-11    8.00e-12    1.15e-11    2.03e-11    1.19e-11
+Cbc:      1.65e-12    3.36e-12    1.59e-12    4.00e-12    1.65e-12
+Cjs:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+BetaAC:   3.31e+02    3.91e-01    3.34e+02    2.99e+02    3.30e+02
+Cbx:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Ft:       6.89e+06    1.29e-02    3.35e+06    1.47e+08    8.76e+06
+
+Name:       q7          q6          q5          q2          q1
+Model:    2n3904      2n3904      2n3904      2n3904      2n3904
+Ib:       2.88e-08    2.83e-08    2.83e-08    2.57e-08    2.57e-08
+Ic:       1.06e-05    8.55e-06    8.54e-06    8.61e-06    8.58e-06
+Vbe:      5.32e-01    5.32e-01    5.32e-01    5.29e-01    5.29e-01
+Vbc:     -2.29e+01   -6.76e-01   -5.32e-01   -1.15e+01   -1.15e+01
+Vce:      2.35e+01    1.21e+00    1.06e+00    1.20e+01    1.20e+01
+BetaDC:   3.69e+02    3.02e+02    3.02e+02    3.34e+02    3.34e+02
+Gm:       4.11e-04    3.31e-04    3.30e-04    3.33e-04    3.32e-04
+Rpi:      8.98e+05    9.14e+05    9.13e+05    1.00e+06    1.01e+06
+Rx:       2.00e+01    2.00e+01    2.00e+01    2.00e+01    2.00e+01
+Ro:       1.16e+07    1.18e+07    1.18e+07    1.29e+07    1.30e+07
+Cbe:      1.16e-11    1.16e-11    1.16e-11    1.15e-11    1.15e-11
+Cbc:      1.28e-12    3.24e-12    3.35e-12    1.59e-12    1.59e-12
+Cjs:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+BetaAC:   3.69e+02    3.02e+02    3.02e+02    3.34e+02    3.34e+02
+Cbx:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Ft:       5.08e+06    3.56e+06    3.52e+06    4.03e+06    4.02e+06
+
+
+
+Date: Thu Oct 31 17:46:54 2019
+Total elapsed time: 0.125 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 1184
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 90
+fillins = 96
+solver = Normal
+Thread vector: 14.1/10.5[2] 0.0/0.0[0] 3.2/2.1[2] 0.9/1.9[1]  2592/500
+Matrix Compiler1: 13,0 KB object code size
+Matrix Compiler2: off  [2.7]/3.2/5.9
+
+

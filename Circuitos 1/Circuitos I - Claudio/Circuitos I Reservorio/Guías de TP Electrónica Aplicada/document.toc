@@ -1,0 +1,4 @@
+\babel@toc {nil}{}
+\contentsline {section}{Prefacio}{2}%
+\contentsline {section}{Agradecimientos}{3}%
+\contentsline {chapter}{\numberline {1}Amplificadores Realimentados}{4}%

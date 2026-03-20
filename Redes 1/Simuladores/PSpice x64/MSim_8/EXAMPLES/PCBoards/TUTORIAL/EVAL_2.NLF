@@ -1,0 +1,215 @@
+*PCBoards Netlist Version 7.1p: Format 1.0
+*timestamp: netlist 842048652
+*timestamp: last backannotation 828128371
+*component c CK05 C1
+@attribute VALUE=.1uF
+*component c CK05 C2
+@attribute VALUE=.1uF
+*component c CK05 C3
+@attribute VALUE=.1uF
+*component c CK05 C4
+@attribute VALUE=.1uF
+*component c CK05 C5
+@attribute VALUE=.1uF
+*component edge26 EDGE26 P1
+*component R RC05 R1
+@attribute VALUE=1k
+*component R RC05 R2
+@attribute VALUE=10k
+*component R RC05 R3
+@attribute VALUE=1k
+*component R RC05 R4
+@attribute VALUE=1k
+*component R RC05 R5
+@attribute VALUE=10k
+*component R RC05 R6
+@attribute VALUE=1k
+*component R RC05 R7
+@attribute VALUE=10K
+*component R RC05 R8
+@attribute VALUE=10K
+*component R RC05 R9
+@attribute VALUE=10K
+*component R RC05 R10
+@attribute VALUE=10K
+*component 7442A DIP16 U1
+*component 7442A DIP16 U2
+*component 74157 DIP16 U3
+*component 7432 DIP14 U4
+*component 7486 DIP14 U5
+*component 7486 DIP14 U6
+*net CCLK1
++ U2.15
++ U5.2
+*net CCLK2
++ U2.14
++ U5.5
+*net CCLK3
++ U2.13
++ U5.10
+*net CCLK4
++ U2.12
++ U5.13
+*net CDAT1
++ U1.15
++ U6.2
+*net CDAT2
++ U1.14
++ U6.5
+*net CDAT3
++ U1.13
++ U6.10
+*net CDAT4
++ U1.12
++ U6.13
+*net DIG_GND
++ C1.2
++ C2.2
++ C3.2
++ C4.2
++ C5.2
++ P1.13
++ P1.14
++ P1.15
++ U4.7
++ U1.8
++ U2.8
++ U5.7
++ U6.7
++ U3.8
+*net DIG_PWR
++ C1.1
++ C2.1
++ C3.1
++ C4.1
++ C5.1
++ P1.12
++ P1.11
++ P1.10
++ R7.2
++ R8.2
++ R9.2
++ R10.2
++ U4.14
++ U1.16
++ U2.16
++ U5.14
++ U6.14
++ U3.16
+*net NN_0001
++ R1.2
++ U4.1
+*net NN_0002
++ R1.1
++ R2.2
++ P1.1
+*net NN_0003
++ R2.1
++ R3.1
++ P1.2
+*net NN_0004
++ R3.2
++ U4.2
+*net NN_0005
++ R4.2
++ U4.4
+*net NN_0006
++ R4.1
++ R5.2
++ P1.3
+*net NN_0007
++ R5.1
++ R6.1
++ P1.4
+*net NN_0008
++ R6.2
++ U4.5
+*net NN_0009
++ U4.3
++ U1.1
++ U2.1
+*net NN_0010
++ U4.6
++ U1.3
++ U2.3
+*net NN_0011
++ P1.5
++ U1.7
++ U2.7
+*net NN_0012
++ P1.6
++ U1.9
++ U2.9
+*net NN_0013
++ P1.7
++ U1.10
++ U2.10
+*net NN_0014
++ P1.8
++ U1.11
++ U2.11
+*net NN_0015
++ P1.9
++ U1.6
++ U2.6
+*net NN_0016
++ U1.2
++ U2.2
+*net NN_0017
++ U1.4
++ U2.4
+*net NN_0020
++ U5.1
++ U5.4
++ R9.1
+*net NN_0021
++ U5.3
++ U3.3
++ U3.5
+*net NN_0022
++ U5.6
++ U3.6
+*net NN_0023
++ U5.9
++ U5.12
++ R8.1
+*net NN_0024
++ U5.8
++ U3.11
+*net NN_0025
++ U5.11
++ U3.10
+*net NN_0026
++ U6.1
++ U6.4
++ R7.1
+*net NN_0027
++ U6.3
++ U3.2
++ U3.14
+*net NN_0028
++ U6.6
++ U3.13
+*net NN_0029
++ U6.9
++ U6.12
++ R10.1
+*net NN_0030
++ U6.8
++ U3.15
+*net NN_0031
++ U6.11
++ U3.1
+*net NN_0032
++ U3.4
++ P1.16
+*net NN_0033
++ U3.7
++ P1.17
+*net NN_0034
++ U3.9
++ P1.18
+*net NN_0035
++ U3.12
++ P1.19
+*End

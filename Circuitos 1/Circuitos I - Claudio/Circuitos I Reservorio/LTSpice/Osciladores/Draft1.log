@@ -1,0 +1,47 @@
+
+   --- Expanded Deck Component Count ---
+C's 4
+Q's 1
+R's 6
+V's 1
+tot: 12
+
+
+    --- Expanded Netlist ---
+* C:\Claudio\Docencia personal\LTSpice\Osciladores\Draft1.asc
+q1 n002 n005 n006 0 2n2222
+r1 n001 n002 6800
+r2 n001 n005 20k
+r3 n005 0 3k
+r4 n006 0 1000
+v1 n001 0 12
+c1 n006 0 100µ
+c2 n003 n002 19n
+r5 n003 0 1.8k
+c3 n004 n003 19n
+r6 n004 0 1.8k
+c4 n005 n004 19n
+.model 2n2222 npn(is=1e-14 vaf=100 bf=200 ikf=0.3 xtb=1.5 br=3 cjc=8e-12 cje=25e-12 tr=100e-9 tf=400e-12 itf=1 vtf=2 xtf=3 rb=10 rc=.3 re=.2 vceo=30 icrating=800m mfg=philips)
+.tran 0 250m 50m .001m
+.end
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Thu Oct 31 17:20:36 2019
+Total elapsed time: 3.344 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 500047
+traniter = 500040
+tranpoints = 250021
+accept = 250021
+rejected = 0
+matrix size = 10
+fillins = 4
+solver = Normal
+Matrix Compiler1: 818 bytes object code size  0.4/0.3/[0.2]
+Matrix Compiler2: off  [0.2]/0.3/0.3
+
+

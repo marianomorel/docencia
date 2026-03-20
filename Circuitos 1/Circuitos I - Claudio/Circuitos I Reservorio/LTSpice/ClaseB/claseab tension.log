@@ -1,0 +1,59 @@
+
+   --- Expanded Deck Component Count ---
+D's 4
+I's 2
+Q's 8
+R's 4
+V's 3
+tot: 21
+
+
+    --- Expanded Netlist ---
+* C:\Claudio\Docencia personal\LTSpice\ClaseB\claseab tension.asc
+v1 n001 0 12
+v2 0 n006 12
+v3 n003 0 sine(0 12 1000 0 0 0 4) ac 1 0
+d1 n002 n003 d
+d2 n003 n005 d
+r2 n004 0 33
+i1 n001 n002 3.1m
+i2 n005 n006 3.1m
+q1 n001 n002 n004 0 npn
+q2 n006 n005 n004 0 pnp
+d3 n007 n003 d
+d4 n003 n010 d
+r1 n009 0 33
+q3 n001 n007 n009 0 npn
+q4 n006 n010 n009 0 pnp
+q5 n007 n008 n001 0 pnp
+q6 n008 n008 n001 0 pnp
+r3 n008 0 3.64k
+q7 n010 n011 n006 0 npn
+q8 n011 n011 n006 0 npn
+r4 0 n011 3.64k
+.model pnp pnp
+.model npn npn
+.model d d
+.tran 0 4m 0 .01m
+.end
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Fri Apr 21 08:24:48 2017
+Total elapsed time: 0.124 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 1141
+traniter = 1135
+tranpoints = 418
+accept = 418
+rejected = 0
+matrix size = 14
+fillins = 0
+solver = Normal
+Matrix Compiler1: 654 bytes object code size  0.4/0.3/[0.2]
+Matrix Compiler2: 1,26 KB object code size  0.3/0.5/[0.3]
+
+

@@ -1,0 +1,13 @@
+LTspice 24.0.12 for Windows
+Circuit: * E:\Claudio\Docencia personal\LTSpice\Fuentes\stepdown2.asc
+Start Time: Thu Mar  6 13:22:29 2025
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = modified trap
+Limiting rise time of source v2 to 4.5e-05
+Limiting fall time of source v2 to 4.5e-05
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 1.801 seconds.
+

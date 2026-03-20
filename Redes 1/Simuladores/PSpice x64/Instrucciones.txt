@@ -1,0 +1,4 @@
+Descomprimir el archivo msim.zip en el escritorio o en el directorio que desees, luego de esto tendras dos archivos dentro, una carpeta (MSim_8) y un archivo (msim.ini).
+La carpeta la pegaras en la Raiz del disco duro C:/, luego de esto el archivo msim.ini lo pegaras en C:/windows. 
+
+Ahora para ejecutar el programa, buscas el ejecutable en C:/MSim_8/Bin, El ejecutable se llama PSCHED.EXE, ahora solo queda hacerle un acceso directo al escritorio 

@@ -1,0 +1,36 @@
+.menu {
+    background-color: lightcyan;
+    border-top: 2px solid darkblue;
+    border-bottom: 2px solid darkblue;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: space-evenly;
+
+
+}
+
+.opciones {
+    background-color: lightsteelblue;
+    color: darkblue;
+    list-style-type: none;
+    text-align: center;
+    margin: 20px 5px;
+    padding: 10px;
+
+
+    flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 1;
+
+}
+
+.enlace {
+    text-decoration: none;
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+

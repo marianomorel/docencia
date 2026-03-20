@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remodelacios TIA</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <header>
+      <div class="contenedor-header">
+        <h1><em> Remodelaciones </em></h1>
+        <span>
+          <img src="logo.svg" alt="logo" />
+          TIA
+        </span>
+      </div>
+      <nav>
+        <ul class="contenedor-nav">
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="trabajos.html">TRABAJOS</a></li>
+          <li class="active"><a href="presupuesto.html">PRESUPUESTO</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="contenedor-presupuesto">
+      <section class="contenedor-presupuesto-texto">
+        <h2>Pedinos tu presupuesto</h2>
+        <p>
+          Ponete en contacto para que podamos empezar a trabajar juntos. Dejanos
+          tus datos y te contactaremos en breve.
+        </p>
+      </section>
+      <section class="contenedor-formulario">
+        <form action="">
+          <div>
+            <em for="nombre">Nombre</em>
+            <input type="text" id="nombre" name="nombre" required />
+
+            <em for="email">Correo electrónico</em>
+            <input type="email" id="email" name="email" required />
+
+            <em for="telefono">Teléfono</em>
+            <input type="tel" id="telefono" name="telefono" required />
+          </div>
+          <div>
+            <em for="mensaje">Mensaje</em>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <input type="submit" value="Enviar" />
+          </div>
+        </form>
+      </section>
+    </div>
+    <footer>
+      <div class="contenedor-footer-left">
+        <h3>Remodelaciones TIA</h3>
+        <a href="mailto:info@tia.com.ar">info@tia.com.ar</a>
+        <p>+54 9 223 456 7890</p>
+      </div>
+      <div class="contenedor-footer-right">
+        <a href="instagram.com">
+          <img src="instagram.svg" alt="instagram" />
+        </a>
+        <a href="twitter.com">
+          <img src="twitter.svg" alt="twitter" />
+        </a>
+        <a href="tiktok.com">
+          <img src="tiktok.svg" alt="tiktok" />
+        </a>
+        <a href="facebook.com">
+          <img src="facebook.svg" alt="facebook" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

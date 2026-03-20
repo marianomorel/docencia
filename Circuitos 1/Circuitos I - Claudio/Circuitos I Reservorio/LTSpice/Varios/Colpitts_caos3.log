@@ -1,0 +1,38 @@
+Circuit: * E:\Claudio\Docencia personal\LTSpice\Varios\Colpitts_caos3.asc
+
+.OP point found by inspection.
+Heightened Def Con from 0.000141217 to 0.000141217
+Heightened Def Con from 0.000256852 to 0.000256852
+Heightened Def Con from 0.0014882 to 0.0014882
+Heightened Def Con from 0.00152667 to 0.00152667
+Heightened Def Con from 0.0016808 to 0.0016808
+Heightened Def Con from 0.00204558 to 0.00204558
+Heightened Def Con from 0.00252606 to 0.00252606
+Heightened Def Con from 0.00277586 to 0.00277586
+Heightened Def Con from 0.00281438 to 0.00281438
+Heightened Def Con from 0.00283363 to 0.00283363
+Heightened Def Con from 0.00296872 to 0.00296873
+Heightened Def Con from 0.00412396 to 0.00412396
+Heightened Def Con from 0.00423938 to 0.00423938
+Heightened Def Con from 0.00645247 to 0.00645248
+Heightened Def Con from 0.00789614 to 0.00789614
+Heightened Def Con from 0.00910818 to 0.00910818
+Heightened Def Con from 0.00949347 to 0.00949347
+
+Date: Tue Oct 31 16:35:39 2023
+Total elapsed time: 0.600 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 197113
+traniter = 197113
+tranpoints = 55913
+accept = 39364
+rejected = 16566
+matrix size = 9
+fillins = 0
+solver = Normal
+Matrix Compiler1: 282 bytes object code size  0.3/0.2/[0.2]
+Matrix Compiler2: 625 bytes object code size  0.2/0.3/[0.2]
+

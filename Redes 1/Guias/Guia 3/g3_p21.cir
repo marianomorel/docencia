@@ -1,0 +1,22 @@
+* C:\Users\Mariano\Desktop\D+I\docencia\redes 1\Guias\Guia 3\g3_p21.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Wed Sep 13 18:06:06 2023
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "g3_p21.net"
+.INC "g3_p21.als"
+
+
+.probe
+
+
+.END
