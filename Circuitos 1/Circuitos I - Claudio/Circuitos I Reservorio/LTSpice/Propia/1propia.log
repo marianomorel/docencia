@@ -1,0 +1,12 @@
+LTspice 24.1.9 for Windows
+Circuit: D:\Docencia\docencia\Circuitos 1\Circuitos I - Claudio\Circuitos I Reservorio\LTSpice\Propia\1propia.lib
+Start Time: Wed Apr 22 12:19:41 2026
+D:\Docencia\docencia\Circuitos 1\Circuitos I - Claudio\Circuitos I Reservorio\LTSpice\Propia\1propia.lib(173): Instance with that name already defined.
+q1 1 2 3 TIP30
+^^
+D:\Docencia\docencia\Circuitos 1\Circuitos I - Claudio\Circuitos I Reservorio\LTSpice\Propia\1propia.lib(191): Instance with that name already defined.
+q1 1 2 3 TIP31
+^^
+D:\Docencia\docencia\Circuitos 1\Circuitos I - Claudio\Circuitos I Reservorio\LTSpice\Propia\1propia.lib(206): Instance with that name already defined.
+q1 1 2 3 TIP32
+^^
