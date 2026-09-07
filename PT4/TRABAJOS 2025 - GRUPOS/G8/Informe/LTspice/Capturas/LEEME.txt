@@ -1,0 +1,5 @@
+En la captura del esquematico se ve una mitad del circuito, como el pc ocupa el mismo circuito para 2 ejes distintos, no había razón para simularlo 2 veces
+
+En cuanto al grafico, se observan las 2 entradas de referencia hacia los comparadores (celeste "ref+" y azul"ref-"), luego la entrada a comparar (verde claro "in"), que a diferencia de las referencias es compartida.
+Cuando el valor a comparar pasa por cierto umbral de las referencias, los comparadores (naranja "out+" y verde oscuro "out-") se van a 0 en distintos puntos de la variacion de la entrada a comparar.
+Luego la compuerta XOR (rosa "out") se activa en el unico escenario en el que las entradas son distintas, siendo este el periodo de variacion de "in" en el que se dispara unicamente "out+"

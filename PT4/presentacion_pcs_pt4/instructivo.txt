@@ -1,0 +1,8 @@
+ipconfig: XX.XX.XX.XX
+
+dirección: cd /d "C:\Users\Mariano\Desktop\presentacion"
+python servidor.py
+
+control: http://localhost:8000/control
+
+alumnos: http://XX.XX.XX.XX:8000

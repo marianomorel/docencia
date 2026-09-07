@@ -1,0 +1,15 @@
+Se adjuntan los siguientes archivos junto a una pequeña explicacion
+
+Codigo de arduino: Codigo creado y utilizado para la funcionalidad del proyecto, en el archivo se encuentra areas 
+	    	   marcadas con explicacion de cada parte del codigo.
+
+		   Pagina para descargar Arduino: https://www.arduino.cc/en/software/
+
+Esquemas: Esquemas del circuito tanto plaqueta como general del circuito, las plaquetas se dividen en 2 secciones, 
+	  sensor IR y conjunto de leds
+
+Simulador: El simulador utilizado fue Crumb, simulador 3D de circuitos electronicos proveniente de la plataforma Steam,
+	   se adjuntaron 3 imagenes y un video del  simulador funcionando ademas del archivo de la simulación
+
+	   Sitio web para descargar el programa de manera pirata (no puedo dar garantia de seguridad): 
+	   https://www.zona-leros.com/juegos-pc/crumb-circuit-simulator
